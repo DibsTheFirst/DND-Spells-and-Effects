@@ -36,5 +36,6 @@ The commands are **minor, greater, superior and supreme**. **Superior** will ret
 **wild_magic _number_** instead.
 ### 6) Roll stats
 **create_character** will _roll 4d6 and remove the lowest_ 6 times.
-## Homebrew
-Adding homebrew stuff on your own is really simple. 
+### Items
+The **item** command can be used to look up the information of any magic item. You will have to type in the name of the item as one
+single string (wrapped in quotation marks). So **item "alchemy jug"** is correct, **item alchemy jug** is not, as alchemy and jug is interprited as two arguments. Unlike most other commands, the arguments of **item** supports tab completion!
