@@ -1,8 +1,23 @@
 from Dice import *
 from prettytable import PrettyTable
-from cmd2 import Cmd
+from cmd2 import Cmd, with_argparser
+from cmd2.argparse_completer import *
+import shlex
+from Info import *
+import json
+from cmd2.rl_utils import readline
+
 
 print_rolls = True
+list_of_items = []
+
+
+def item_completer(text, state):
+    options = [item for item in list_of_items if item.startswith(text)]
+    if state < len(options):
+        return options[state]
+    else:
+        return None
 
 
 class Spells(Cmd):
@@ -10,6 +25,16 @@ class Spells(Cmd):
     intro = 'Hello! Please type the name of a spell or effect (all lowercase, underscore in place of space). ' \
             'Type help or ? to list all spells, or help "spell_name" for its full description.'
     prompt = 'Spell/Effect: '
+
+    # Creates a list with the name of all the items in the item.json file
+    with open('data/items.json') as json_file:
+        data = json.load(json_file)
+        for item in data['item']:
+            list_of_items.append(str.lower(item['name']))
+
+    # Creates a completer for the "item" command
+    item_parser = ACArgumentParser()
+    item_parser.add_argument('item', choices=list_of_items, type=str)
 
     def __init__(self):
         Cmd.__init__(self)
@@ -20,8 +45,9 @@ class Spells(Cmd):
         exit()
 
     def do_clear(self, arg):
-        """Clears the screen of text by printing 15 empty lines"""
-        print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+        """Clears the screen of text by printing 100 empty lines"""
+        print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+              '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
 
     def do_print_rolls(self, arg):
         """Turned on by default. Turning it off results in only the end sum of die rolls being shown."""
@@ -104,6 +130,60 @@ class Spells(Cmd):
                 print('Invalid Argument')
         else:
             print(d100())
+
+    def do_wild_magic(self, arg):
+        """Rolls on the wild magic table, can also be used to look up a roll. Optional input: Number from 1 - 100"""
+        if arg:
+            nr = check_arg_range_100(arg)
+            print(wild_magic_table[nr - 1])
+        else:
+            print(wild_magic_table[d100() - 1])
+
+    @with_argparser(item_parser)
+    def do_item(self, arg):
+        items = open('data/items.json')
+        arg = vars(arg)
+        #arg = check_arg_string(arg)
+        item_dict = json.load(items)
+        items.close()
+        for item in item_dict['item']:
+            if item['name'].lower() == str.lower(arg['item']):
+                print_item(item)
+
+
+    def do_encounter_arctic(self, arg):
+        """Returns a random encounter suitable to an arctic region. Requires input: Players' level (1 - 20)"""
+        if arg:
+            nr = check_arg_range_20(arg)
+            if nr <= 4:
+                print(arctic_low[d100()])
+            elif nr <= 10:
+                print(arctic_mid[d100()])
+            elif nr <= 16:
+                print(arctic_high[d100()])
+            elif nr <= 20:
+                print(arctic_epic[d100()])
+            else:
+                pass
+        else:
+            print("This feature requires the players' level as input (1 - 20).")
+
+    def do_encounter_coastal(self, arg):
+        """Returns a random encounter suitable to a coastal region. Requires input: Players' level (1 - 20)"""
+        if arg:
+            nr = check_arg_range_20(arg)
+            if nr <= 4:
+                print(coastal_low[d100()])
+            elif nr <= 10:
+                print(coastal_mid[d100()])
+            elif nr <= 16:
+                print(coastal_high[d100()])
+            elif nr <= 20:
+                print(coastal_epic[d100()])
+            else:
+                pass
+        else:
+            print("This feature requires the players' level as input (1 - 20).")
 
     def do_create_character(self, arg):
         """Rolls 4d6 and removes the lowest roll. Does it once for every stat(6 times)."""
@@ -538,9 +618,50 @@ Material Component: Gold dust worth at least 25 gp, which the spell consumes."""
         print_description('2nd', 'Arcane Lock', '1 Action', 'Until Dispelled', 'Touch', 'None', 'Utility',
                           'V, S, M', 'Abjuration')
 
+    def do_arcane_weapon(self, arg):
+        """You channel arcane energy into one simple or martial weapon you’re holding, and choose one damage type: acid, cold, fire, lightning, poison, or thunder. Until the spell ends, you deal an extra 1d6 damage of the chosen type to any target you hit with the weapon. If the weapon isn’t magical, it becomes a magic weapon for the spell’s duration.
+
+As a bonus action, you can change the damage type, choosing from the options above.
+
+At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can maintain your concentration on the spell for up to 8 hours."""
+        print_description('1st', 'Arcane Weapon', '1 Bonus Action', '1 Hour [C]', 'Self', 'None', 'Elemental/Buff',
+                          'V, S', 'Transmutation')
+
+    def do_arcanists_magic_aura(self, arg):
+        """You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isn't being carried or worn by another creature.
+When you cast the spell, choose one or both of the following effects. The effect lasts for the duration. If you cast this spell on the same creature or object every day for 30 days, placing the same effect on it each time, the illusion lasts until it is dispelled.
+
+False Aura. You change the way the target appears to spells and magical effects, such as detect magic, that detect magical auras. You can make a nonmagical object appear magical, a magical object appear nonmagical, or change the object's magical aura so that it appears to belong to a specific school of magic that you choose. When you use this effect on an object, you can make the false magic apparent to any creature that handles the item.
+
+Mask. You change the way the target appears to spells and magical effects that detect creature types, such as a paladin's Divine Sense or the trigger of a symbol spell. You choose a creature type and other spells and magical effects treat the target as if it were a creature of that type or of that alignment.
+
+Material Component: A small square of silk."""
+        print_description('2nd', "Arcanist's Magic Aura", '1 Action', '24 Hours', 'Touch', 'None', 'Deception',
+                          'V, S, M', 'Illusion')
+
+    def do_armor_of_agathys(self, arg):
+        """A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage.
+
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot.
+
+Material Component: A cup of water."""
+        print_description('1st', 'Armor of Agathys', '1 Action', '1 Hour', 'Self', 'None', 'Cold',
+                          'V, S, M', 'Abjuration')
+
+    def do_arms_of_hadar(self, arg):
+        """You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes 2d6 necrotic damage and can’t take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect.
+
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."""
+        print_description('1st', 'Arms of Hadar', '1 Action', 'Instantaneous', 'Self/10ft Sphere', 'STR Save', 'Necrotic',
+                          'V, S', 'Conjuration')
+        global print_rolls
+        die_rolls = 2
+        minimum_spell_level = 1
+        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
+
     '''
    def do_spell_name(self, arg):
-        """FULL SPELL DESCRIPTION"""
+        """
         print_description('LEVEL', 'NAME', 'CASTING TIME', 'DURATION', 'RANGE/AREA', 'ATTACK/SAVE', 'DAMAGE/EFFECT',
          'COMPONENTS', 'SCHOOL')
         global print_rolls
@@ -550,11 +671,50 @@ Material Component: Gold dust worth at least 25 gp, which the spell consumes."""
     '''
 
 
+def print_item(item):
+    if dict.get(item, 'entries'):
+        print(dict.pop(item, 'entries'))
+    table = PrettyTable()
+    table.field_names = dict.keys(item)
+    table.add_row(dict.values(item))
+    print(table)
+
 def print_description(level, name, casting_time, duration, range_area, attack_save, damage_effect, components, school):
     table = PrettyTable()
     table.field_names = ['LEVEL', 'NAME', 'CASTING TIME', 'DURATION', 'RANGE/AREA', 'ATTACK/SAVE', 'DAMAGE/EFFECT', 'COMPONENTS', 'SCHOOL']
     table.add_row([level, name, casting_time, duration, range_area, attack_save, damage_effect, components, school])
     print(table)
+
+def check_arg_range_100(arg):
+    arg = shlex.split(arg)
+    if len(arg) == 1 and str.isdigit(arg[0]):
+        nr = int(arg[0])
+        if 1 <= nr <= 100:
+            return nr
+        else:
+            print('Number has to be between (and including) 1 - 100')
+    else:
+        print('Invalid Argument')
+
+def check_arg_range_20(arg):
+    arg = shlex.split(arg)
+    if len(arg) == 1 and str.isdigit(arg[0]):
+        nr = int(arg[0])
+        if 1 <= nr <= 20:
+            return nr
+        else:
+            print('Number has to be between (and including) 1 - 20')
+            return nr
+    else:
+        print('Invalid Argument')
+        return 21
+
+def check_arg_string(arg):
+    if str.isprintable(arg):
+        return arg
+    else:
+        print('Invalid Argument')
+        return 'error'
 
 
 if __name__ == '__main__':
