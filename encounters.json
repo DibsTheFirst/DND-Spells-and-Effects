@@ -1,0 +1,8217 @@
+{
+	"encounter": [
+		{
+			"location": "Arctic",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 giant owl"
+						},
+						{
+							"min": 2,
+							"max": 5,
+							"enc": "1d6+3 kobolds"
+						},
+						{
+							"min": 6,
+							"max": 8,
+							"enc": "1d4+3 trappers  commoners)"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "1 owl"
+						},
+						{
+							"min": 11,
+							"max": 12,
+							"enc": "2d4 blood blood hawks"
+						},
+						{
+							"min": 13,
+							"max": 17,
+							"enc": "2d6 bandits"
+						},
+						{
+							"min": 18,
+							"max": 20,
+							"enc": "1d3 winged winged kobolds with 1d6 kobolds"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "The partially eaten carcass of a mammoth, from which 1d4 weeks of rations can be harvested."
+						},
+						{
+							"min": 26,
+							"max": 29,
+							"enc": "2d8 hunters tribal tribal warriors"
+						},
+						{
+							"min": 30,
+							"max": 35,
+							"enc": "1 half-ogre (half-ogre"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "Single-file tracks in the snow that stop abruptly"
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "1d3 ice ice mephits"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "1 brown bear"
+						},
+						{
+							"min": 51,
+							"max": 53,
+							"enc": "1d6+1 orcs"
+						},
+						{
+							"min": 54,
+							"max": 55,
+							"enc": "1 polar bear"
+						},
+						{
+							"min": 56,
+							"max": 57,
+							"enc": "1d6 scouts"
+						},
+						{
+							"min": 58,
+							"max": 60,
+							"enc": "1 saber-toothed tiger"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A frozen pond with a jagged hole in the ice that appears recently made"
+						},
+						{
+							"min": 66,
+							"max": 68,
+							"enc": "1 berserker"
+						},
+						{
+							"min": 69,
+							"max": 70,
+							"enc": "1 ogre"
+						},
+						{
+							"min": 71,
+							"max": 72,
+							"enc": "1 griffon"
+						},
+						{
+							"min": 73,
+							"max": 75,
+							"enc": "1 druid"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "3d4 refugees  commoners) fleeing from orcs"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1d3 veterans"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "1d4 orogs"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "2 brown brown bears"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "1 orc Eye of Gruumsh and 2d8 orcs"
+						},
+						{
+							"min": 85,
+							"max": 85,
+							"enc": "1d3 winter winter wolves"
+						},
+						{
+							"min": 86,
+							"max": 87,
+							"enc": "1d4 yetis"
+						},
+						{
+							"min": 88,
+							"max": 88,
+							"enc": "1 half-ogre (half-ogre"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "1d3 manticores"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1 bandit captain with 2d6 bandits"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1 revenant"
+						},
+						{
+							"min": 92,
+							"max": 93,
+							"enc": "1 troll"
+						},
+						{
+							"min": 94,
+							"max": 95,
+							"enc": "1 werebear"
+						},
+						{
+							"min": 96,
+							"max": 97,
+							"enc": "1 young remorhaz"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 mammoth"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 young white dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 frost giant"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 5,
+							"enc": "2 saber-toothed saber-toothed tigers"
+						},
+						{
+							"min": 6,
+							"max": 7,
+							"enc": "1d4 half-ogre (half-ogres"
+						},
+						{
+							"min": 8,
+							"max": 10,
+							"enc": "1d3+1 brown brown bears"
+						},
+						{
+							"min": 16,
+							"max": 20,
+							"enc": "2d4 berserkers"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A half-orc druid tending to an injured polar bear. If the characters assist the druid, she gives them a vial of antitoxin."
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "2d8 scouts"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "2d4 ice ice mephits"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "2d6+1 zombies aboard a galleon trapped in the ice. Searching the ship yields 2d20 days of rations."
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "1 manticore"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "2d6+3 orcs"
+						},
+						{
+							"min": 51,
+							"max": 53,
+							"enc": "1d6+2 ogres"
+						},
+						{
+							"min": 54,
+							"max": 55,
+							"enc": "2d4 griffons"
+						},
+						{
+							"min": 56,
+							"max": 57,
+							"enc": "1d4 veterans"
+						},
+						{
+							"min": 58,
+							"max": 60,
+							"enc": "1 bandit captain with 1 druid, 1d3 berserkers, and 2d10+5 bandits"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "1d4 hours of extreme cold (see chapter 5 of the @italic Dungeon Master's Guide)"
+						},
+						{
+							"min": 66,
+							"max": 68,
+							"enc": "1 young remorhaz"
+						},
+						{
+							"min": 69,
+							"max": 72,
+							"enc": "1 orc Eye of Gruumsh with 1d6 orogs and 2d8+6 orcs"
+						},
+						{
+							"min": 73,
+							"max": 75,
+							"enc": "1 revenant"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A howl that echoes over the land for 1d3 minutes"
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "1d3 mammoths"
+						},
+						{
+							"min": 83,
+							"max": 84,
+							"enc": "1 young white dragon"
+						},
+						{
+							"min": 85,
+							"max": 86,
+							"enc": "2d4 winter winter wolves"
+						},
+						{
+							"min": 87,
+							"max": 88,
+							"enc": "1d6+2 yetis"
+						},
+						{
+							"min": 89,
+							"max": 90,
+							"enc": "1d2 frost giants"
+						},
+						{
+							"min": 91,
+							"max": 92,
+							"enc": "1d3 werebears"
+						},
+						{
+							"min": 93,
+							"max": 94,
+							"enc": "1d4 trolls"
+						},
+						{
+							"min": 95,
+							"max": 96,
+							"enc": "1 abominable yeti"
+						},
+						{
+							"min": 97,
+							"max": 98,
+							"enc": "1 remorhaz"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 roc"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "2d4 young young remorhazes"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 16,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 abominable yeti"
+						},
+						{
+							"min": 2,
+							"max": 4,
+							"enc": "1d6 revenants"
+						},
+						{
+							"min": 5,
+							"max": 10,
+							"enc": "1d4+1 werebears"
+						},
+						{
+							"min": 11,
+							"max": 20,
+							"enc": "1d3 young white young white dragons"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A blizzard that reduces visibility to 5 feet for 1d6 hours"
+						},
+						{
+							"min": 26,
+							"max": 35,
+							"enc": "1 roc"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A herd of 3d20+60 caribou  deer) moving through the snow"
+						},
+						{
+							"min": 41,
+							"max": 50,
+							"enc": "1d4 mammoths"
+						},
+						{
+							"min": 51,
+							"max": 60,
+							"enc": "1d8+1 trolls"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A mile-wide frozen lake in which preserved corpses of strange creatures can be seen"
+						},
+						{
+							"min": 66,
+							"max": 75,
+							"enc": "2d4 young young remorhazes"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A crumbling ice castle littered with the frozen bodies of blue-skinned humanoids"
+						},
+						{
+							"min": 81,
+							"max": 90,
+							"enc": "1 adult white dragon"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1d8+1 frost giants"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1d4 young remorhazes"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient white dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 17,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 2,
+							"enc": "2d10 revenants"
+						},
+						{
+							"min": 3,
+							"max": 4,
+							"enc": "2d8 trolls"
+						},
+						{
+							"min": 5,
+							"max": 6,
+							"enc": "2d10 werebears"
+						},
+						{
+							"min": 7,
+							"max": 8,
+							"enc": "1 frost giant"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "2d4 young young remorhazes"
+						},
+						{
+							"min": 11,
+							"max": 20,
+							"enc": "1d4 frost giants"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A Circular patch of black ice on the ground. The air temperature around the patch is warmer than in the surrounding area, and characters who inspect the ice find bits of machinery frozen within."
+						},
+						{
+							"min": 26,
+							"max": 35,
+							"enc": "1 ancient white dragon"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "An adventurer frozen 6 feet under the ice; 50% chance the corpse has a rare magic item of the DM's choice"
+						},
+						{
+							"min": 41,
+							"max": 50,
+							"enc": "1d3 abominable abominable yetis"
+						},
+						{
+							"min": 51,
+							"max": 60,
+							"enc": "1d4 remorhazes"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A 500-foot-high wall of ice that is 300 feet thick and spread across 1d4 miles"
+						},
+						{
+							"min": 66,
+							"max": 75,
+							"enc": "1d4 rocs"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "The likeness of a stern woman with long, flowing hair, carved into the side of a mountain"
+						},
+						{
+							"min": 81,
+							"max": 90,
+							"enc": "1d10 frost giants with 2d4 polar polar bears"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1d3 adult white adult white dragons"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "2d4 abominable abominable yetis"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient white dragon with 1d3 young white young white dragons"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Coastal",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 pseudodragon"
+						},
+						{
+							"min": 2,
+							"max": 5,
+							"enc": "2d8 crabs"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "2d6 fishers  commoners)"
+						},
+						{
+							"min": 11,
+							"max": 11,
+							"enc": "1d3 poisonous snakes"
+						},
+						{
+							"min": 12,
+							"max": 13,
+							"enc": "1d6 guards protecting a standard noble"
+						},
+						{
+							"min": 14,
+							"max": 15,
+							"enc": "2d4 scouts"
+						},
+						{
+							"min": 16,
+							"max": 18,
+							"enc": "2d10 merfolk"
+						},
+						{
+							"min": 19,
+							"max": 20,
+							"enc": "1d6+2 sahuagin"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "1d4 ghouls feeding on corpses aboard the wreckage of a merchant ship. A search uncovers 2d6 bolts of ruined silk, a 50-foot length of rope. and a barrel of salted herring."
+						},
+						{
+							"min": 26,
+							"max": 27,
+							"enc": "1d4 winged winged kobolds with 1d6+1 kobolds"
+						},
+						{
+							"min": 28,
+							"max": 29,
+							"enc": "2d6 tribal tribal warriors"
+						},
+						{
+							"min": 30,
+							"max": 31,
+							"enc": "3d4 kobolds"
+						},
+						{
+							"min": 32,
+							"max": 33,
+							"enc": "2d4+5 blood blood hawks"
+						},
+						{
+							"min": 34,
+							"max": 35,
+							"enc": "1d8+1 pteranodons"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A few dozen baby turtles struggling to make their way to the sea"
+						},
+						{
+							"min": 41,
+							"max": 42,
+							"enc": "1d6+2 giant giant lizards"
+						},
+						{
+							"min": 43,
+							"max": 44,
+							"enc": "1d6+4 giant giant crabs"
+						},
+						{
+							"min": 45,
+							"max": 46,
+							"enc": "2d4 stirges"
+						},
+						{
+							"min": 47,
+							"max": 48,
+							"enc": "2d6+3 bandits"
+						},
+						{
+							"min": 49,
+							"max": 53,
+							"enc": "2d4 sahuagin"
+						},
+						{
+							"min": 54,
+							"max": 55,
+							"enc": "1d6+2 scouts"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1 sea hag"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A momentary formation in the waves that looks like an enormous humanoid face"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1 druid"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "1d4 harpies"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A lone hermit  acolyte) sitting on the beach contemplating the meaning of the multiverse"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1d4 berserkers"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "1d6 giant giant eagles"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "2d4 giant giant toads"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "1d4 ogres or 1d4 merrow"
+						},
+						{
+							"min": 85,
+							"max": 85,
+							"enc": "3d6 sahuagin"
+						},
+						{
+							"min": 86,
+							"max": 86,
+							"enc": "1d4 veterans"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1d2 plesiosauruses"
+						},
+						{
+							"min": 88,
+							"max": 88,
+							"enc": "1 bandit captain with 2d6 bandits"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "1d3 manticores"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1 banshee"
+						},
+						{
+							"min": 91,
+							"max": 92,
+							"enc": "1d4+3 griffons"
+						},
+						{
+							"min": 93,
+							"max": 94,
+							"enc": "1 sahuagin priestess with 1d3 merrow and 2d6 sahuagin"
+						},
+						{
+							"min": 95,
+							"max": 96,
+							"enc": "1 sahuagin baron"
+						},
+						{
+							"min": 97,
+							"max": 98,
+							"enc": "1 water elemental"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 cyclops"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 young bronze dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "2d8 giant wolf giant wolf spiders"
+						},
+						{
+							"min": 2,
+							"max": 3,
+							"enc": "3d6 pteranodons"
+						},
+						{
+							"min": 4,
+							"max": 5,
+							"enc": "2d4 scouts"
+						},
+						{
+							"min": 6,
+							"max": 7,
+							"enc": "1d6+2 sahuagin"
+						},
+						{
+							"min": 8,
+							"max": 8,
+							"enc": "1 sea hag"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "1d4+1 giant giant toads"
+						},
+						{
+							"min": 11,
+							"max": 15,
+							"enc": "3d6 sahuagin"
+						},
+						{
+							"min": 16,
+							"max": 20,
+							"enc": "2d6 giant giant eagles"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A pseudodragon chasing gulls through the air"
+						},
+						{
+							"min": 26,
+							"max": 29,
+							"enc": "1d2 druids"
+						},
+						{
+							"min": 30,
+							"max": 32,
+							"enc": "2d4+1 giant giant toads"
+						},
+						{
+							"min": 33,
+							"max": 35,
+							"enc": "1 commoner singing a dirge (day only) or 1 banshee (night only)"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A stoppered bottle containing an illegible note and half buried in the sand"
+						},
+						{
+							"min": 41,
+							"max": 43,
+							"enc": "3 sea sea hags"
+						},
+						{
+							"min": 44,
+							"max": 46,
+							"enc": "1d8+1 harpies"
+						},
+						{
+							"min": 47,
+							"max": 50,
+							"enc": "1d4 plesiosauruses"
+						},
+						{
+							"min": 51,
+							"max": 53,
+							"enc": "1d4 manticores"
+						},
+						{
+							"min": 54,
+							"max": 56,
+							"enc": "2d4 ogres"
+						},
+						{
+							"min": 57,
+							"max": 60,
+							"enc": "1d10 griffons"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A battle at sea between two galleons"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1d4+3 merrow"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "A pirate crew consisting of 1 bandit captain, 1 druid, 2 berserkers, and 2d12 bandits, all searching for buried treasure"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A severed humanoid hand tangled in a net"
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "1 water elemental"
+						},
+						{
+							"min": 83,
+							"max": 84,
+							"enc": "1 cyclops"
+						},
+						{
+							"min": 85,
+							"max": 86,
+							"enc": "1d4 banshees (night only)"
+						},
+						{
+							"min": 87,
+							"max": 88,
+							"enc": "2d4 veterans"
+						},
+						{
+							"min": 89,
+							"max": 90,
+							"enc": "1 young bronze dragon"
+						},
+						{
+							"min": 91,
+							"max": 93,
+							"enc": "1d3 cyclopes"
+						},
+						{
+							"min": 94,
+							"max": 95,
+							"enc": "1 young blue dragon"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1 sahuagin baron with 1d3 sahuagin priestesses and 2d8 sahuagin"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 djinni"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 roc"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 marid"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 storm giant"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 16,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1d4 banshees (night only)"
+						},
+						{
+							"min": 2,
+							"max": 4,
+							"enc": "1 cyclops"
+						},
+						{
+							"min": 5,
+							"max": 8,
+							"enc": "1d6+2 manticores"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "1d8+2 veterans"
+						},
+						{
+							"min": 11,
+							"max": 20,
+							"enc": "1 young blue dragon"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A nest of 1d6 dragon turtle eggs"
+						},
+						{
+							"min": 26,
+							"max": 35,
+							"enc": "1d4 sahuagin barons"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A trident partially buried in the sand"
+						},
+						{
+							"min": 41,
+							"max": 50,
+							"enc": "1 young bronze dragon"
+						},
+						{
+							"min": 51,
+							"max": 55,
+							"enc": "1 marid"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1d6 water elementals"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "2d6 ghasts crawling over 1d6 wrecked ships and feeding on the dead"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1 djinni"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "1d3 young bronze young bronze dragons"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A beached whale, dead and bloated. If it takes any damage, it explodes, and each creature within 30 feet of it must make a DC 15 Dexterity saving throw, taking 5d6 bludgeoning damage on a failed save, or half as much damage on a successful one."
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "2d4 cyclopes"
+						},
+						{
+							"min": 83,
+							"max": 84,
+							"enc": "1 storm giant"
+						},
+						{
+							"min": 85,
+							"max": 86,
+							"enc": "1d3 young blue young blue dragons"
+						},
+						{
+							"min": 87,
+							"max": 88,
+							"enc": "1 adult bronze dragon"
+						},
+						{
+							"min": 89,
+							"max": 90,
+							"enc": "1 adult blue dragon"
+						},
+						{
+							"min": 91,
+							"max": 93,
+							"enc": "1d3 rocs"
+						},
+						{
+							"min": 94,
+							"max": 97,
+							"enc": "1 dragon turtle"
+						},
+						{
+							"min": 98,
+							"max": 99,
+							"enc": "1 ancient bronze dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient blue dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 17,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 10,
+							"enc": "1 roc"
+						},
+						{
+							"min": 11,
+							"max": 20,
+							"enc": "1 storm giant"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "An adult bronze dragon fighting an adult blue dragon to the death"
+						},
+						{
+							"min": 26,
+							"max": 40,
+							"enc": "2d4 cyclopes"
+						},
+						{
+							"min": 41,
+							"max": 50,
+							"enc": "1 adult bronze dragon or 1 adult blue dragon"
+						},
+						{
+							"min": 51,
+							"max": 60,
+							"enc": "1d3 djinni or 1d3 marids"
+						},
+						{
+							"min": 61,
+							"max": 70,
+							"enc": "1 dragon turtle"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "1d3 rocs"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "1d6+2 waterspouts that dance on the water before stopping abruptly"
+						},
+						{
+							"min": 81,
+							"max": 90,
+							"enc": "1d6 young blue young blue dragons"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1 ancient bronze dragon"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1 ancient blue dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1d3+1 storm giants"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Desert",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "3d8 scorpions - https://www.dndbeyond.com/monsters/scorpion"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "2d4 vultures - https://www.dndbeyond.com/monsters/vulture"
+						},
+						{
+							"min": 3,
+							"max": 3,
+							"enc": "\t1 abandoned mule - https://www.dndbeyond.com/monsters/mule"
+						},
+						{
+							"min": 4,
+							"max": 4,
+							"enc": "2d6 commoners with 2d4 camels bound for a distant city - https://www.dndbeyond.com/monsters/commoner - https://www.dndbeyond.com/monsters/camel"
+						},
+						{
+							"min": 5,
+							"max": 5,
+							"enc": "1d6 flying snakes - https://www.dndbeyond.com/monsters/flying-snake"
+						},
+						{
+							"min": 6,
+							"max": 6,
+							"enc": "2d6 hyenas or 2d6 jackals - https://www.dndbeyond.com/monsters/jackal"
+						},
+						{
+							"min": 7,
+							"max": 7,
+							"enc": "1d6 guards escorting a noble to the edge of the desert, all of them astride camels - https://www.dndbeyond.com/monsters/guard - https://www.dndbeyond.com/monsters/noble - https://www.dndbeyond.com/monsters/camel"
+						},
+						{
+							"min": 8,
+							"max": 8,
+							"enc": "1d6 cats - https://www.dndbeyond.com/monsters/cat"
+						},
+						{
+							"min": 9,
+							"max": 9,
+							"enc": "1 pseudodragon - https://www.dndbeyond.com/monsters/pseudodragon"
+						},
+						{
+							"min": 10,
+							"max": 10,
+							"enc": "1d4 poisonous snakes - https://www.dndbeyond.com/monsters/poisonous-snake"
+						},
+						{
+							"min": 11,
+							"max": 13,
+							"enc": "2d4 stirges - https://www.dndbeyond.com/monsters/stirge"
+						},
+						{
+							"min": 14,
+							"max": 15,
+							"enc": "1d6 + 2 giant wolf spiders - https://www.dndbeyond.com/monsters/giant-wolf-spider"
+						},
+						{
+							"min": 16,
+							"max": 17,
+							"enc": "1 scout - https://www.dndbeyond.com/monsters/scout"
+						},
+						{
+							"min": 18,
+							"max": 20,
+							"enc": "2d4 giant poisonous snakes - https://www.dndbeyond.com/monsters/giant-poisonous-snake"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "Single-file tracks marching deeper into the desert"
+						},
+						{
+							"min": 26,
+							"max": 27,
+							"enc": "4d4 kobolds - https://www.dndbeyond.com/monsters/kobold"
+						},
+						{
+							"min": 28,
+							"max": 29,
+							"enc": "1 jackalwere - https://www.dndbeyond.com/monsters/jackal"
+						},
+						{
+							"min": 30,
+							"max": 31,
+							"enc": "3d6 tribal warriors - https://www.dndbeyond.com/monsters/tribal-warrior"
+						},
+						{
+							"min": 32,
+							"max": 33,
+							"enc": "1d6 giant lizards - https://www.dndbeyond.com/monsters/giant-lizard"
+						},
+						{
+							"min": 34,
+							"max": 35,
+							"enc": "1 swarm of insects - https://www.dndbeyond.com/monsters/swarm-of-insects"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "An oasis surrounded by palm trees and containing the remnants of an old camp"
+						},
+						{
+							"min": 41,
+							"max": 44,
+							"enc": "3d6 bandits - https://www.dndbeyond.com/monsters/bandit"
+						},
+						{
+							"min": 45,
+							"max": 46,
+							"enc": "1d4 constrictor snakes - https://www.dndbeyond.com/monsters/constrictor-snake"
+						},
+						{
+							"min": 47,
+							"max": 48,
+							"enc": "2d4 winged kobolds - https://www.dndbeyond.com/monsters/winged-kobold"
+						},
+						{
+							"min": 49,
+							"max": 50,
+							"enc": "1 dust mephit - https://www.dndbeyond.com/monsters/dust-mephit"
+						},
+						{
+							"min": 51,
+							"max": 52,
+							"enc": "1d3 + 1 giant toads - https://www.dndbeyond.com/monsters/giant-toad"
+						},
+						{
+							"min": 53,
+							"max": 54,
+							"enc": "\t1d4 giant spiders - https://www.dndbeyond.com/monsters/giant-spider"
+						},
+						{
+							"min": 55,
+							"max": 55,
+							"enc": "1 druid - https://www.dndbeyond.com/monsters/druid"
+						},
+						{
+							"min": 56,
+							"max": 57,
+							"enc": "2d4 hobgoblins - https://www.dndbeyond.com/monsters/hobgoblin"
+						},
+						{
+							"min": 58,
+							"max": 58,
+							"enc": "1 wight - https://www.dndbeyond.com/monsters/wight"
+						},
+						{
+							"min": 59,
+							"max": 60,
+							"enc": "1 ogre - https://www.dndbeyond.com/monsters/ogre"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A brass lamp lying on the ground"
+						},
+						{
+							"min": 66,
+							"max": 67,
+							"enc": "1d4 giant vultures - https://www.dndbeyond.com/monsters/giant-vulture"
+						},
+						{
+							"min": 68,
+							"max": 68,
+							"enc": "1 phase spider - https://www.dndbeyond.com/monsters/phase-spider"
+						},
+						{
+							"min": 69,
+							"max": 69,
+							"enc": "1 giant constrictor snake - https://www.dndbeyond.com/monsters/giant-constrictor-snake"
+						},
+						{
+							"min": 70,
+							"max": 71,
+							"enc": "1 gnoll pack lord with 1d3 giant hyenas - https://www.dndbeyond.com/monsters/gnoll-pack-lord - https://www.dndbeyond.com/monsters/giant-hyena"
+						},
+						{
+							"min": 72,
+							"max": 72,
+							"enc": "1d6 + 2 gnolls - https://www.dndbeyond.com/monsters/gnoll"
+						},
+						{
+							"min": 73,
+							"max": 74,
+							"enc": "1 mummy - https://www.dndbeyond.com/monsters/mummy"
+						},
+						{
+							"min": 75,
+							"max": 75,
+							"enc": "1d3 half-ogres - https://www.dndbeyond.com/monsters/half-ogre"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A pile of humanoid bones wrapped in rotting cloth"
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "1 lamia - https://www.dndbeyond.com/monsters/lamia"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "1 hobgoblin captain with 2d6 hobgoblins - https://www.dndbeyond.com/monsters/hobgoblin-captain - https://www.dndbeyond.com/monsters/hobgoblin"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "2d4 death dogs - https://www.dndbeyond.com/monsters/death-dog"
+						},
+						{
+							"min": 85,
+							"max": 86,
+							"enc": "1d4 giant scorpions - https://www.dndbeyond.com/monsters/giant-scorpion"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1 yuan-ti malison with 1d4 + 1 yuan-ti purebloods - https://www.dndbeyond.com/monsters/yuan-ti-malison - https://www.dndbeyond.com/monsters/yuan-ti-pureblood"
+						},
+						{
+							"min": 88,
+							"max": 89,
+							"enc": "1 bandit captain with 1 druid and 3d6 bandits - https://www.dndbeyond.com/monsters/bandit-captain - https://www.dndbeyond.com/monsters/druid - https://www.dndbeyond.com/monsters/bandit"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "2d4 thri-kreen - https://www.dndbeyond.com/monsters/thri-kreen"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1 air elemental - https://www.dndbeyond.com/monsters/air-elemental"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1d3 couatls - https://www.dndbeyond.com/monsters/couatl"
+						},
+						{
+							"min": 93,
+							"max": 93,
+							"enc": "1 fire elemental - https://www.dndbeyond.com/monsters/fire-elemental"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1d4 gnoll fangs of Yeenoghu - https://www.dndbeyond.com/monsters/gnoll-fang-of-yeenoghu"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "1 revenant - https://www.dndbeyond.com/monsters/revenant"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1d4 weretigers - https://www.dndbeyond.com/monsters/weretiger"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 cyclops - https://www.dndbeyond.com/monsters/cyclops"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 young brass dragon - https://www.dndbeyond.com/monsters/young-brass-dragon"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 medusa - https://www.dndbeyond.com/monsters/medusa"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 yuan-ti abomination - https://www.dndbeyond.com/monsters/yuan-ti-abomination"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1d6 scouts - https://www.dndbeyond.com/monsters/scout"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "2d4 jackalweres - https://www.dndbeyond.com/monsters/jackal"
+						},
+						{
+							"min": 3,
+							"max": 3,
+							"enc": "2d6 hobgoblins - https://www.dndbeyond.com/monsters/hobgoblin"
+						},
+						{
+							"min": 4,
+							"max": 4,
+							"enc": "1d4 + 3 dust mephits - https://www.dndbeyond.com/monsters/dust-mephit"
+						},
+						{
+							"min": 5,
+							"max": 5,
+							"enc": "1d6 swarms of insects - https://www.dndbeyond.com/monsters/swarm-of-insects"
+						},
+						{
+							"min": 6,
+							"max": 6,
+							"enc": "1 giant constrictor snake - https://www.dndbeyond.com/monsters/swarm-of-insects"
+						},
+						{
+							"min": 7,
+							"max": 8,
+							"enc": "1 lion - https://www.dndbeyond.com/monsters/lion"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "2d4 gnolls - https://www.dndbeyond.com/monsters/gnoll"
+						},
+						{
+							"min": 11,
+							"max": 12,
+							"enc": "2d6 giant toads - https://www.dndbeyond.com/monsters/giant-toad"
+						},
+						{
+							"min": 13,
+							"max": 17,
+							"enc": "1 mummy - https://www.dndbeyond.com/monsters/mummy"
+						},
+						{
+							"min": 18,
+							"max": 20,
+							"enc": "1d8 + 1 giant vultures - https://www.dndbeyond.com/monsters/giant-vulture"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A stone obelisk partly buried in the sand"
+						},
+						{
+							"min": 26,
+							"max": 28,
+							"enc": "1 ogre with 1d3 half-ogres - https://www.dndbeyond.com/monsters/ogre - https://www.dndbeyond.com/monsters/half-ogre"
+						},
+						{
+							"min": 29,
+							"max": 35,
+							"enc": "1d10 giant hyenas - https://www.dndbeyond.com/monsters/giant-hyena"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "1d6+1 empty tents"
+						},
+						{
+							"min": 41,
+							"max": 43,
+							"enc": "1d6 + 2 thri-kreen - https://www.dndbeyond.com/monsters/thri-kreen"
+						},
+						{
+							"min": 44,
+							"max": 46,
+							"enc": "2d4 yuan-ti purebloods - https://www.dndbeyond.com/monsters/yuan-ti-pureblood"
+						},
+						{
+							"min": 47,
+							"max": 50,
+							"enc": "1d6 + 3 death dogs - https://www.dndbeyond.com/monsters/death-dog"
+						},
+						{
+							"min": 51,
+							"max": 52,
+							"enc": "1d4 giant scorpions - https://www.dndbeyond.com/monsters/giant-scorpion"
+						},
+						{
+							"min": 53,
+							"max": 53,
+							"enc": "1 fire elemental - https://www.dndbeyond.com/monsters/fire-elemental"
+						},
+						{
+							"min": 54,
+							"max": 55,
+							"enc": "1 hobgoblin captain with 3d4 hobgoblins - https://www.dndbeyond.com/monsters/hobgoblin-captain - https://www.dndbeyond.com/monsters/hobgoblin"
+						},
+						{
+							"min": 56,
+							"max": 56,
+							"enc": "1d6 + 2 ogres - https://www.dndbeyond.com/monsters/ogre"
+						},
+						{
+							"min": 57,
+							"max": 58,
+							"enc": "1d4 lamias - https://www.dndbeyond.com/monsters/lamia"
+						},
+						{
+							"min": 59,
+							"max": 60,
+							"enc": "1 air elemental - https://www.dndbeyond.com/monsters/air-elemental"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A meteorite resting at the bottom of a glassy crater"
+						},
+						{
+							"min": 66,
+							"max": 66,
+							"enc": "1d4 + 1 wights - https://www.dndbeyond.com/monsters/wight"
+						},
+						{
+							"min": 67,
+							"max": 68,
+							"enc": "1 young brass dragon - https://www.dndbeyond.com/monsters/young-brass-dragon"
+						},
+						{
+							"min": 69,
+							"max": 70,
+							"enc": "1 bandit captain with 1d3 berserkers and 3d6 bandits - https://www.dndbeyond.com/monsters/bandit-captain - https://www.dndbeyond.com/monsters/berserker - https://www.dndbeyond.com/monsters/bandit"
+						},
+						{
+							"min": 71,
+							"max": 72,
+							"enc": "1 cyclops - https://www.dndbeyond.com/monsters/cyclops"
+						},
+						{
+							"min": 73,
+							"max": 73,
+							"enc": "1d4 couatls - https://www.dndbeyond.com/monsters/couatl"
+						},
+						{
+							"min": 74,
+							"max": 75,
+							"enc": "1d4 yuan-ti malisons - https://www.dndbeyond.com/monsters/yuan-ti-malison"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "Strong winds that kick up dust and reduce visibility to 1d6 feet for 1d4 hours"
+						},
+						{
+							"min": 81,
+							"max": 83,
+							"enc": "1 revenant with 1d3 wights - https://www.dndbeyond.com/monsters/revenant  - https://www.dndbeyond.com/monsters/wight"
+						},
+						{
+							"min": 84,
+							"max": 85,
+							"enc": "1d8 + 1 phase spiders - https://www.dndbeyond.com/monsters/phase-spider"
+						},
+						{
+							"min": 86,
+							"max": 87,
+							"enc": "1d6 + 2 weretigers - https://www.dndbeyond.com/monsters/weretiger"
+						},
+						{
+							"min": 88,
+							"max": 90,
+							"enc": "2d4 gnoll fangs of Yeenoghu - https://www.dndbeyond.com/monsters/gnoll-fang-of-yeenoghu"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1 young blue dragon - https://www.dndbeyond.com/monsters/young-blue-dragon"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1d4 cyclopes - https://www.dndbeyond.com/monsters/cyclops"
+						},
+						{
+							"min": 93,
+							"max": 93,
+							"enc": "1d3 yuan-ti abominations - https://www.dndbeyond.com/monsters/yuan-ti-abomination"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1d4 medusas - https://www.dndbeyond.com/monsters/medusa"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "1 guardian naga - https://www.dndbeyond.com/monsters/guardian-naga"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1d3 young brass dragons - https://www.dndbeyond.com/monsters/young-brass-dragon"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 efreeti - https://www.dndbeyond.com/monsters/efreeti"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 roc - https://www.dndbeyond.com/monsters/roc"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 gynosphinx - https://www.dndbeyond.com/monsters/gynosphinx"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 adult brass dragon - https://www.dndbeyond.com/monsters/adult-brass-dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 16,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 young brass dragon - https://www.dndbeyond.com/monsters/young-brass-dragon"
+						},
+						{
+							"min": 2,
+							"max": 5,
+							"enc": "4d6 gnolls - https://www.dndbeyond.com/monsters/gnoll"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "3d10 giant hyenas - https://www.dndbeyond.com/monsters/giant-hyena"
+						},
+						{
+							"min": 11,
+							"max": 12,
+							"enc": "1d8+1 lamias - https://www.dndbeyond.com/monsters/lamia"
+						},
+						{
+							"min": 13,
+							"max": 14,
+							"enc": "2d4 gnoll fangs of Yeenoghu - https://www.dndbeyond.com/monsters/gnoll-fang-of-yeenoghu"
+						},
+						{
+							"min": 15,
+							"max": 17,
+							"enc": "1d6+2 giant scorpions - https://www.dndbeyond.com/monsters/giant-scorpion"
+						},
+						{
+							"min": 18,
+							"max": 20,
+							"enc": "2d4 phase spiders - https://www.dndbeyond.com/monsters/phase-spider"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A desert caravan consisting of 1d6 merchants (noble) with 2d6 guards - https://www.dndbeyond.com/monsters/noble - https://www.dndbeyond.com/monsters/guard"
+						},
+						{
+							"min": 26,
+							"max": 27,
+							"enc": "1d6+1 couatls - https://www.dndbeyond.com/monsters/couatl"
+						},
+						{
+							"min": 28,
+							"max": 30,
+							"enc": "1d4 fire elementals - https://www.dndbeyond.com/monsters/fire-elemental"
+						},
+						{
+							"min": 31,
+							"max": 32,
+							"enc": "1 hobgoblin captain with 3d10+10 hobgoblins - https://www.dndbeyond.com/monsters/hobgoblin-captain - https://www.dndbeyond.com/monsters/hobgoblin"
+						},
+						{
+							"min": 33,
+							"max": 35,
+							"enc": "2d4 wights - https://www.dndbeyond.com/monsters/wight"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "1d6 square miles of desert glass"
+						},
+						{
+							"min": 41,
+							"max": 42,
+							"enc": "1 young blue dragon - https://www.dndbeyond.com/monsters/young-blue-dragon"
+						},
+						{
+							"min": 43,
+							"max": 45,
+							"enc": "1d6+2 weretigers - https://www.dndbeyond.com/monsters/weretiger"
+						},
+						{
+							"min": 46,
+							"max": 48,
+							"enc": "1d4 air elementals - https://www.dndbeyond.com/monsters/air-elemental"
+						},
+						{
+							"min": 49,
+							"max": 50,
+							"enc": "1d6+1 yuan-ti malison - https://www.dndbeyond.com/monsters/yuan-ti-malison"
+						},
+						{
+							"min": 51,
+							"max": 55,
+							"enc": "1d4 medusas - https://www.dndbeyond.com/monsters/medusa"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1d4 revenants with 3d12 skeletons - https://www.dndbeyond.com/monsters/revenant - https://www.dndbeyond.com/monsters/skeleton"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A plundered pyramid"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1d4 young brass young brass dragons - https://www.dndbeyond.com/monsters/young-brass-dragon"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "1d3 yuan-ti abominations - https://www.dndbeyond.com/monsters/yuan-ti-abomination"
+						},
+						{
+							"min": 76,
+							"max": 78,
+							"enc": "1d6+2 cyclopes - https://www.dndbeyond.com/monsters/cyclops"
+						},
+						{
+							"min": 79,
+							"max": 82,
+							"enc": "1 adult brass dragon - https://www.dndbeyond.com/monsters/adult-brass-dragon"
+						},
+						{
+							"min": 83,
+							"max": 85,
+							"enc": "1 purple worm - https://www.dndbeyond.com/monsters/purple-worm"
+						},
+						{
+							"min": 86,
+							"max": 86,
+							"enc": "1d2 young blue dragons - https://www.dndbeyond.com/monsters/young-blue-dragon"
+						},
+						{
+							"min": 87,
+							"max": 88,
+							"enc": "1 mummy lord - https://www.dndbeyond.com/monsters/mummy-lord"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "1d3 guardian nagas - https://www.dndbeyond.com/monsters/guardian-naga"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1 adult blue dragon - https://www.dndbeyond.com/monsters/adult-blue-dragon"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1d2 gynosphinxes - https://www.dndbeyond.com/monsters/gynosphinx"
+						},
+						{
+							"min": 92,
+							"max": 93,
+							"enc": "1d3 efreet - https://www.dndbeyond.com/monsters/efreeti"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1 androsphinx - https://www.dndbeyond.com/monsters/androsphinx"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "1d4 rocs - https://www.dndbeyond.com/monsters/roc"
+						},
+						{
+							"min": 96,
+							"max": 97,
+							"enc": "1 adult blue dracolich - https://www.dndbeyond.com/monsters/adult-blue-dracolich"
+						},
+						{
+							"min": 98,
+							"max": 99,
+							"enc": "1 ancient brass dragon - https://www.dndbeyond.com/monsters/ancient-brass-dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient blue dragon - https://www.dndbeyond.com/monsters/ancient-blue-dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 17,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 5,
+							"enc": "1 adult brass dragon - https://www.dndbeyond.com/monsters/adult-brass-dragon"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "1d2 yuan-ti abominations with 2d10+5 yuan-ti malison and 4d6+6 yuan-ti purebloods - https://www.dndbeyond.com/monsters/yuan-ti-abomination - https://www.dndbeyond.com/monsters/yuan-ti-malison - https://www.dndbeyond.com/monsters/yuan-ti-pureblood"
+						},
+						{
+							"min": 11,
+							"max": 14,
+							"enc": "1d6+2 medusas - https://www.dndbeyond.com/monsters/medusa"
+						},
+						{
+							"min": 15,
+							"max": 18,
+							"enc": "1d2 purple worms - https://www.dndbeyond.com/monsters/purple-worm"
+						},
+						{
+							"min": 19,
+							"max": 22,
+							"enc": "2d4 cyclopes - https://www.dndbeyond.com/monsters/cyclops"
+						},
+						{
+							"min": 23,
+							"max": 25,
+							"enc": "An abandoned city made from white marble, empty during the day. At night, harmless apparitions roam the streets, replaying the final moments of their lives."
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "1d3 young blue dragons - https://www.dndbeyond.com/monsters/young-blue-dragon"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "1 mummy lord - https://www.dndbeyond.com/monsters/mummy-lord"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "1d4 hours of extreme heat (see chapter 5 of the Dungeon Master's Guide) - https://www.dndbeyond.com/compendium/rules/dmg/adventure-environments#ExtremeHeat"
+						},
+						{
+							"min": 41,
+							"max": 50,
+							"enc": "1d3 guardian nagas - https://www.dndbeyond.com/monsters/guardian-naga"
+						},
+						{
+							"min": 51,
+							"max": 60,
+							"enc": "1d4 efreet - https://www.dndbeyond.com/monsters/efreeti"
+						},
+						{
+							"min": 61,
+							"max": 63,
+							"enc": "An old signpost identifying a single destination, called Pazar"
+						},
+						{
+							"min": 64,
+							"max": 72,
+							"enc": "1d4 rocs - https://www.dndbeyond.com/monsters/roc"
+						},
+						{
+							"min": 73,
+							"max": 80,
+							"enc": "1d3 gynosphinxes - https://www.dndbeyond.com/monsters/gynosphinx"
+						},
+						{
+							"min": 81,
+							"max": 85,
+							"enc": "1 adult blue dracolich - https://www.dndbeyond.com/monsters/adult-blue-dracolich"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "1 androsphinx - https://www.dndbeyond.com/monsters/androsphinx"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1 ancient brass dragon - https://www.dndbeyond.com/monsters/ancient-brass-dragon"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1 ancient blue dragon - https://www.dndbeyond.com/monsters/ancient-blue-dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1d4 adult brass dragons - https://www.dndbeyond.com/monsters/adult-brass-dragon"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Forest",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 giant owl - https://www.dndbeyond.com/monsters/giant-owl"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "1d4 cats - https://www.dndbeyond.com/monsters/cat"
+						},
+						{
+							"min": 3,
+							"max": 3,
+							"enc": "2d4 woodcutters (commoners) - https://www.dndbeyond.com/monsters/commoner"
+						},
+						{
+							"min": 4,
+							"max": 4,
+							"enc": "1 badger or 1d4 poisonous snakes - https://www.dndbeyond.com/monsters/badger - https://www.dndbeyond.com/monsters/poisonous-snake"
+						},
+						{
+							"min": 5,
+							"max": 5,
+							"enc": "2d8 baboons - https://www.dndbeyond.com/monsters/baboon"
+						},
+						{
+							"min": 6,
+							"max": 6,
+							"enc": "1d6+3 hyenas - https://www.dndbeyond.com/monsters/hyena"
+						},
+						{
+							"min": 7,
+							"max": 7,
+							"enc": "1 owl - https://www.dndbeyond.com/monsters/owl"
+						},
+						{
+							"min": 8,
+							"max": 8,
+							"enc": "1 pseudodragon - https://www.dndbeyond.com/monsters/pseudodragon"
+						},
+						{
+							"min": 9,
+							"max": 9,
+							"enc": "1 panther - https://www.dndbeyond.com/monsters/panther"
+						},
+						{
+							"min": 10,
+							"max": 10,
+							"enc": "1 giant poisonous snake - https://www.dndbeyond.com/monsters/giant-poisonous-snake"
+						},
+						{
+							"min": 11,
+							"max": 11,
+							"enc": "1d6+2 boars - https://www.dndbeyond.com/monsters/boar"
+						},
+						{
+							"min": 12,
+							"max": 12,
+							"enc": "1d4+1 giant lizards - https://www.dndbeyond.com/monsters/giant-lizard"
+						},
+						{
+							"min": 13,
+							"max": 13,
+							"enc": "1 ape or 1 tiger - https://www.dndbeyond.com/monsters/ape - https://www.dndbeyond.com/monsters/tiger"
+						},
+						{
+							"min": 14,
+							"max": 14,
+							"enc": "2d6 tribal warriors with 1d6 mastiffs - https://www.dndbeyond.com/monsters/tribal-warrior - https://www.dndbeyond.com/monsters/mastiff"
+						},
+						{
+							"min": 15,
+							"max": 15,
+							"enc": "1d6+2 giant bats or 3d6 flying snakes - https://www.dndbeyond.com/monsters/giant-bat - https://www.dndbeyond.com/monsters/flying-snake"
+						},
+						{
+							"min": 16,
+							"max": 16,
+							"enc": "1 scout or 2d4 guards with 1d6 mastiffs - https://www.dndbeyond.com/monsters/scout - https://www.dndbeyond.com/monsters/guard - https://www.dndbeyond.com/monsters/mastiff"
+						},
+						{
+							"min": 17,
+							"max": 17,
+							"enc": "1d8+1 winged kobolds - https://www.dndbeyond.com/monsters/winged-kobold"
+						},
+						{
+							"min": 18,
+							"max": 18,
+							"enc": "1d3 constrictor snakes - https://www.dndbeyond.com/monsters/constrictor-snake"
+						},
+						{
+							"min": 19,
+							"max": 19,
+							"enc": "1d10+5 giant rats or 2d6+3 giant weasels - https://www.dndbeyond.com/monsters/giant-rat - https://www.dndbeyond.com/monsters/giant-weasel"
+						},
+						{
+							"min": 20,
+							"max": 20,
+							"enc": "1d4+1 needle blights with 1d6+3 twig blights - https://www.dndbeyond.com/monsters/needle-blight - https://www.dndbeyond.com/monsters/twig-blight"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A lost, weeping child. If the characters take the child home, the parents reward them with 1d3 potions of healing."
+						},
+						{
+							"min": 26,
+							"max": 26,
+							"enc": "1d8+1 giant frogs - https://www.dndbeyond.com/monsters/giant-frog"
+						},
+						{
+							"min": 27,
+							"max": 27,
+							"enc": "4d4 kobolds - https://www.dndbeyond.com/monsters/kobold"
+						},
+						{
+							"min": 28,
+							"max": 28,
+							"enc": "1d3 black bears - https://www.dndbeyond.com/monsters/black-bear"
+						},
+						{
+							"min": 29,
+							"max": 29,
+							"enc": "3d6 stirges - https://www.dndbeyond.com/monsters/stirge"
+						},
+						{
+							"min": 30,
+							"max": 30,
+							"enc": "1 satyr - https://www.dndbeyond.com/monsters/satyr"
+						},
+						{
+							"min": 31,
+							"max": 31,
+							"enc": "2d4 kenku - https://www.dndbeyond.com/monsters/kenku"
+						},
+						{
+							"min": 32,
+							"max": 32,
+							"enc": "1d3 vine blights with 1d12 awakened shrubs - https://www.dndbeyond.com/monsters/vine-blight - https://www.dndbeyond.com/monsters/awakened-shrub"
+						},
+						{
+							"min": 33,
+							"max": 33,
+							"enc": "1d4 swarms of ravens - https://www.dndbeyond.com/monsters/swarm-of-ravens"
+						},
+						{
+							"min": 34,
+							"max": 34,
+							"enc": "1 faerie dragon (yellow or younger) - https://www.dndbeyond.com/monsters/faerie-dragon-younger"
+						},
+						{
+							"min": 35,
+							"max": 35,
+							"enc": "1d4+2 giant badgers - https://www.dndbeyond.com/monsters/giant-badger"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A young woodcutter (scout) racing through the forest to rescue a lost friend - https://www.dndbeyond.com/monsters/scout"
+						},
+						{
+							"min": 41,
+							"max": 41,
+							"enc": "2d4 blink dogs - https://www.dndbeyond.com/monsters/blink-dog"
+						},
+						{
+							"min": 42,
+							"max": 42,
+							"enc": "1d8+1 sprites - https://www.dndbeyond.com/monsters/sprite"
+						},
+						{
+							"min": 43,
+							"max": 43,
+							"enc": "1d6+2 elk - https://www.dndbeyond.com/monsters/elk"
+						},
+						{
+							"min": 44,
+							"max": 44,
+							"enc": "1d4 lizardfolk or 3d6 bandits - https://www.dndbeyond.com/monsters/lizardfolk - https://www.dndbeyond.com/monsters/bandit"
+						},
+						{
+							"min": 45,
+							"max": 45,
+							"enc": "1d4+4 wolves - https://www.dndbeyond.com/monsters/wolf"
+						},
+						{
+							"min": 46,
+							"max": 46,
+							"enc": "2d4 giant wolf spiders - https://www.dndbeyond.com/monsters/giant-wolf-spider"
+						},
+						{
+							"min": 47,
+							"max": 47,
+							"enc": "1 swarm of insects or 2d8 blood blood hawks - https://www.dndbeyond.com/monsters/swarm-of-insects - https://www.dndbeyond.com/monsters/blood-hawk"
+						},
+						{
+							"min": 48,
+							"max": 48,
+							"enc": "1d6+2 pixies - https://www.dndbeyond.com/monsters/pixie"
+						},
+						{
+							"min": 49,
+							"max": 49,
+							"enc": "1 brown bear - https://www.dndbeyond.com/monsters/brown-bear"
+						},
+						{
+							"min": 50,
+							"max": 50,
+							"enc": "1d4+3 goblins - https://www.dndbeyond.com/monsters/goblin"
+						},
+						{
+							"min": 51,
+							"max": 51,
+							"enc": "1d3 dryads - https://www.dndbeyond.com/monsters/dryad"
+						},
+						{
+							"min": 52,
+							"max": 52,
+							"enc": "1 awakened tree - https://www.dndbeyond.com/monsters/awakened-tree"
+						},
+						{
+							"min": 53,
+							"max": 53,
+							"enc": "1 phase spider - https://www.dndbeyond.com/monsters/phase-spider"
+						},
+						{
+							"min": 54,
+							"max": 54,
+							"enc": "1d6 harpies - https://www.dndbeyond.com/monsters/harpy"
+						},
+						{
+							"min": 55,
+							"max": 55,
+							"enc": "1 ettercap or 1d8+1 orcs - https://www.dndbeyond.com/monsters/ettercap - https://www.dndbeyond.com/monsters/orc"
+						},
+						{
+							"min": 56,
+							"max": 56,
+							"enc": "1 goblin boss with 2d6+1 goblins - https://www.dndbeyond.com/monsters/goblin-boss - https://www.dndbeyond.com/monsters/goblin"
+						},
+						{
+							"min": 57,
+							"max": 57,
+							"enc": "1 ankheg - https://www.dndbeyond.com/monsters/ankheg"
+						},
+						{
+							"min": 58,
+							"max": 58,
+							"enc": "1 giant constrictor snake - https://www.dndbeyond.com/monsters/giant-constrictor-snake"
+						},
+						{
+							"min": 59,
+							"max": 59,
+							"enc": "1d4 bugbears or 2d4 hobgoblins - https://www.dndbeyond.com/monsters/bugbear"
+						},
+						{
+							"min": 60,
+							"max": 60,
+							"enc": "1 pegasus - https://www.dndbeyond.com/monsters/pegasus"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A stream of cool, clean water flowing between the trees"
+						},
+						{
+							"min": 66,
+							"max": 66,
+							"enc": "1d4 half-ogre or 1 ogre - https://www.dndbeyond.com/monsters/half-ogre - https://www.dndbeyond.com/monsters/ogre"
+						},
+						{
+							"min": 67,
+							"max": 67,
+							"enc": "1 faerie dragon (green or older) - https://www.dndbeyond.com/monsters/faerie-dragon-older"
+						},
+						{
+							"min": 68,
+							"max": 68,
+							"enc": "1 werewolf or 1d8+1 worgs - https://www.dndbeyond.com/monsters/werewolf - https://www.dndbeyond.com/monsters/worg"
+						},
+						{
+							"min": 69,
+							"max": 69,
+							"enc": "1 druid harvesting mistletoe - https://www.dndbeyond.com/monsters/druid"
+						},
+						{
+							"min": 70,
+							"max": 70,
+							"enc": "1 will-o'-wisp - https://www.dndbeyond.com/monsters/will-o-wisp"
+						},
+						{
+							"min": 71,
+							"max": 71,
+							"enc": "1d4 dire wolves or 1 giant boar - https://www.dndbeyond.com/monsters/dire-wolf - https://www.dndbeyond.com/monsters/giant-boar"
+						},
+						{
+							"min": 72,
+							"max": 72,
+							"enc": "1d10 giant wasps - https://www.dndbeyond.com/monsters/giant-wasp"
+						},
+						{
+							"min": 73,
+							"max": 73,
+							"enc": "1 owlbear or 1 giant elk - https://www.dndbeyond.com/monsters/owlbear - https://www.dndbeyond.com/monsters/giant-elk"
+						},
+						{
+							"min": 74,
+							"max": 74,
+							"enc": "2d6 gnolls - https://www.dndbeyond.com/monsters/gnoll"
+						},
+						{
+							"min": 75,
+							"max": 75,
+							"enc": "1d6 giant toads - https://www.dndbeyond.com/monsters/giant-toad"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "1d6 web cocoons hanging from the branches, holding withered carcasses"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1 wereboar or 1d4 giant boars - https://www.dndbeyond.com/monsters/wereboar - https://www.dndbeyond.com/monsters/giant-boar"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "1d6+2 giant spiders - https://www.dndbeyond.com/monsters/giant-spider"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "1d4 centaurs or 1d4 giant elk - https://www.dndbeyond.com/monsters/centaur - https://www.dndbeyond.com/monsters/giant-elk"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "1 orc Eye of Gruumsh with 2d4+2 orcs - https://www.dndbeyond.com/monsters/orc-eye-of-gruumsh - https://www.dndbeyond.com/monsters/orc"
+						},
+						{
+							"min": 85,
+							"max": 85,
+							"enc": "1 gnoll fang of Yeenoghu - https://www.dndbeyond.com/monsters/gnoll-fang-of-yeenoghu"
+						},
+						{
+							"min": 86,
+							"max": 86,
+							"enc": "1d4 gricks - https://www.dndbeyond.com/monsters/grick"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1 bandit captain with 2d6+3 bandits - https://www.dndbeyond.com/monsters/bandit-captain - https://www.dndbeyond.com/monsters/bandit"
+						},
+						{
+							"min": 88,
+							"max": 88,
+							"enc": "1d4 wererats - https://www.dndbeyond.com/monsters/wererat"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "1 couatl (day) or 1 banshee (night) - https://www.dndbeyond.com/monsters/couatl - https://www.dndbeyond.com/monsters/banshee"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1 gnoll pack lord with 1d4 giant hyenas - https://www.dndbeyond.com/monsters/gnoll-pack-lord - https://www.dndbeyond.com/monsters/giant-hyena"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "2d4 berserkers or 1d4 veterans - https://www.dndbeyond.com/monsters/berserker - https://www.dndbeyond.com/monsters/veteran"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1 lizardfolk shaman with 1d3 swarm of poisonous snakes and 1d10+2 lizardfolk - https://www.dndbeyond.com/monsters/lizardfolk-shaman - https://www.dndbeyond.com/monsters/swarm-of-poisonous-snakes - https://www.dndbeyond.com/monsters/lizardfolk"
+						},
+						{
+							"min": 93,
+							"max": 93,
+							"enc": "1d4 displacer displacer beasts - https://www.dndbeyond.com/monsters/displacer-beast"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1d3 green green hags - https://www.dndbeyond.com/monsters/green-hag"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "1 hobgoblin captain with 2d6 hobgoblins and 1d4 giant boars - https://www.dndbeyond.com/monsters/hobgoblin-captain - https://www.dndbeyond.com/monsters/hobgoblin - https://www.dndbeyond.com/monsters/giant-boar"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1 yuan-ti malison with 1d6+1 yuan-ti yuan-ti purebloods - https://www.dndbeyond.com/monsters/yuan-ti-malison - https://www.dndbeyond.com/monsters/yuan-ti-pureblood"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1d3 weretigers - https://www.dndbeyond.com/monsters/weretiger"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 gorgon or 1 unicorn - https://www.dndbeyond.com/monsters/gorgon - https://www.dndbeyond.com/monsters/gorgon"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 shambling mound - https://www.dndbeyond.com/monsters/shambling-mound"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 yuan-ti abomination - https://www.dndbeyond.com/monsters/yuan-ti-abomination"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "2d4 vine vine blights - https://www.dndbeyond.com/monsters/vine-blight"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "2d6 hobgoblins or 2d6 orcs - https://www.dndbeyond.com/monsters/hobgoblin - https://www.dndbeyond.com/monsters/orc"
+						},
+						{
+							"min": 3,
+							"max": 3,
+							"enc": "2d4 apes or 2d4 satyrs - https://www.dndbeyond.com/monsters/ape - https://www.dndbeyond.com/monsters/satyr"
+						},
+						{
+							"min": 4,
+							"max": 4,
+							"enc": "1d3 will-o'-will-o'-wisps - https://www.dndbeyond.com/monsters/will-o-wisp"
+						},
+						{
+							"min": 5,
+							"max": 5,
+							"enc": "1d4 swarm of poisonous snakes - https://www.dndbeyond.com/monsters/swarm-of-poisonous-snakes"
+						},
+						{
+							"min": 6,
+							"max": 6,
+							"enc": "1 orc Eye of Gruumsh with 1d3 orogs and 1d8+2 orcs - https://www.dndbeyond.com/monsters/orc-eye-of-gruumsh - https://www.dndbeyond.com/monsters/orog - https://www.dndbeyond.com/monsters/orc"
+						},
+						{
+							"min": 7,
+							"max": 7,
+							"enc": "1d3 constrictor snakes or 1d4 tigers - https://www.dndbeyond.com/monsters/constrictor-snake - https://www.dndbeyond.com/monsters/tiger"
+						},
+						{
+							"min": 8,
+							"max": 8,
+							"enc": "1 goblin boss with 3d6 goblins - https://www.dndbeyond.com/monsters/goblin-boss - https://www.dndbeyond.com/monsters/goblin"
+						},
+						{
+							"min": 9,
+							"max": 9,
+							"enc": "1 faerie dragon (any age) - https://www.dndbeyond.com/monsters/faerie-dragon-older"
+						},
+						{
+							"min": 10,
+							"max": 10,
+							"enc": "1 brown bear or 1d6+2 black black bears - https://www.dndbeyond.com/monsters/brown-bear - https://www.dndbeyond.com/monsters/black-bear"
+						},
+						{
+							"min": 11,
+							"max": 13,
+							"enc": "1d4 giant boars - https://www.dndbeyond.com/monsters/giant-boar"
+						},
+						{
+							"min": 14,
+							"max": 15,
+							"enc": "1d8+1 giant spiders - https://www.dndbeyond.com/monsters/giant-spider"
+						},
+						{
+							"min": 16,
+							"max": 17,
+							"enc": "1 lizardfolk shaman with 2d4 lizardfolk - https://www.dndbeyond.com/monsters/lizardfolk-shaman - https://www.dndbeyond.com/monsters/lizardfolk"
+						},
+						{
+							"min": 18,
+							"max": 18,
+							"enc": "1d10 giant toads - https://www.dndbeyond.com/monsters/giant-toad"
+						},
+						{
+							"min": 19,
+							"max": 19,
+							"enc": "1d4 ankhegs - https://www.dndbeyond.com/monsters/ankheg"
+						},
+						{
+							"min": 20,
+							"max": 20,
+							"enc": "1d3 awakened awakened trees (day) or 1 banshee (night) - https://www.dndbeyond.com/monsters/awakened-tree - https://www.dndbeyond.com/monsters/banshee"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A small shack almost hidden by the deep forest. The interior is empty aside from a large cast-iron oven."
+						},
+						{
+							"min": 26,
+							"max": 26,
+							"enc": "1 couatl - https://www.dndbeyond.com/monsters/couatl"
+						},
+						{
+							"min": 27,
+							"max": 28,
+							"enc": "1d4 ogres or 1d6+2 half-ogre - https://www.dndbeyond.com/monsters/ogre - https://www.dndbeyond.com/monsters/half-ogre"
+						},
+						{
+							"min": 29,
+							"max": 30,
+							"enc": "1 gnoll pack lord with 1d4+1 giant hyenas - https://www.dndbeyond.com/monsters/gnoll-pack-lord - https://www.dndbeyond.com/monsters/giant-hyena"
+						},
+						{
+							"min": 31,
+							"max": 32,
+							"enc": "1d6 wererats - https://www.dndbeyond.com/monsters/wererat"
+						},
+						{
+							"min": 33,
+							"max": 33,
+							"enc": "1d4 gricks - https://www.dndbeyond.com/monsters/grick"
+						},
+						{
+							"min": 34,
+							"max": 34,
+							"enc": "1d8+1 yuan-ti yuan-ti purebloods - https://www.dndbeyond.com/monsters/yuan-ti-pureblood"
+						},
+						{
+							"min": 35,
+							"max": 35,
+							"enc": "1d6 pegasi - https://www.dndbeyond.com/monsters/pegasus"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "An old stone archway of obvious elven design. Any character who passes under it makes Wisdom (Perception) checks with advantage for 1 hour."
+						},
+						{
+							"min": 41,
+							"max": 42,
+							"enc": "1d6+2 dryads - https://www.dndbeyond.com/monsters/dryad"
+						},
+						{
+							"min": 43,
+							"max": 43,
+							"enc": "1d4 giant elk - https://www.dndbeyond.com/monsters/giant-elk"
+						},
+						{
+							"min": 44,
+							"max": 44,
+							"enc": "1d8+1 harpies - https://www.dndbeyond.com/monsters/harpy"
+						},
+						{
+							"min": 45,
+							"max": 46,
+							"enc": "1 bandit captain with 1 druid and 1d6+5 bandits - https://www.dndbeyond.com/monsters/bandit-captain - https://www.dndbeyond.com/monsters/druid - https://www.dndbeyond.com/monsters/bandit"
+						},
+						{
+							"min": 47,
+							"max": 48,
+							"enc": "2d4 dire wolves - https://www.dndbeyond.com/monsters/dire-wolf"
+						},
+						{
+							"min": 49,
+							"max": 50,
+							"enc": "2d4 bugbears - https://www.dndbeyond.com/monsters/bugbear"
+						},
+						{
+							"min": 51,
+							"max": 52,
+							"enc": "2d4 centaurs - https://www.dndbeyond.com/monsters/centaur"
+						},
+						{
+							"min": 53,
+							"max": 54,
+							"enc": "3d10 blink dogs - https://www.dndbeyond.com/monsters/blink-dog"
+						},
+						{
+							"min": 55,
+							"max": 56,
+							"enc": "1d4 owlbears - https://www.dndbeyond.com/monsters/owlbear"
+						},
+						{
+							"min": 57,
+							"max": 58,
+							"enc": "1d8+1 berserkers - https://www.dndbeyond.com/monsters/berserker"
+						},
+						{
+							"min": 59,
+							"max": 60,
+							"enc": "1d3 green hags - https://www.dndbeyond.com/monsters/green-hag"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A clear pool of water with 1d6 sleeping animals lying around its edge"
+						},
+						{
+							"min": 66,
+							"max": 67,
+							"enc": "1d4 werewolves - https://www.dndbeyond.com/monsters/werewolf"
+						},
+						{
+							"min": 68,
+							"max": 69,
+							"enc": "1 werebear - https://www.dndbeyond.com/monsters/werebear"
+						},
+						{
+							"min": 70,
+							"max": 71,
+							"enc": "1d8+1 ettercaps - https://www.dndbeyond.com/monsters/ettercap"
+						},
+						{
+							"min": 72,
+							"max": 73,
+							"enc": "2d10 elk - https://www.dndbeyond.com/monsters/elk"
+						},
+						{
+							"min": 74,
+							"max": 75,
+							"enc": "1d4 veterans - https://www.dndbeyond.com/monsters/veteran"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "An old tree with a wizened face carved into the trunk"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1d4 wereboars - https://www.dndbeyond.com/monsters/wereboar"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "2d4 displacer displacer beasts - https://www.dndbeyond.com/monsters/displacer-beast"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "1d4 shambling shambling mounds - https://www.dndbeyond.com/monsters/shambling-mound"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "1 hobgoblin captain with 3d10 hobgoblins and 4d12 goblins - https://www.dndbeyond.com/monsters/hobgoblin-captain - https://www.dndbeyond.com/monsters/hobgoblin - https://www.dndbeyond.com/monsters/goblin"
+						},
+						{
+							"min": 85,
+							"max": 85,
+							"enc": "1 yuan-ti abomination - https://www.dndbeyond.com/monsters/yuan-ti-abomination"
+						},
+						{
+							"min": 86,
+							"max": 86,
+							"enc": "1d8+1 phase phase spiders - https://www.dndbeyond.com/monsters/phase-spider"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1d4 trolls - https://www.dndbeyond.com/monsters/troll"
+						},
+						{
+							"min": 88,
+							"max": 88,
+							"enc": "2d4 yuan-ti malison - https://www.dndbeyond.com/monsters/yuan-ti-malison"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "1 oni - https://www.dndbeyond.com/monsters/oni"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1d4 unicorns - https://www.dndbeyond.com/monsters/unicorn"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1d6+2 weretigers - https://www.dndbeyond.com/monsters/weretiger"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1 young green dragon - https://www.dndbeyond.com/monsters/young-green-dragon"
+						},
+						{
+							"min": 93,
+							"max": 93,
+							"enc": "1d4 gorgons - https://www.dndbeyond.com/monsters/gorgon"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1d6+2 gnoll fangs of Yeenoghu - https://www.dndbeyond.com/monsters/gnoll-fang-of-yeenoghu"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "1 treant - https://www.dndbeyond.com/monsters/treant"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1d4 revenants - https://www.dndbeyond.com/monsters/revenant"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 grick alpha with 1d6+1 gricks - https://www.dndbeyond.com/monsters/grick-alpha - https://www.dndbeyond.com/monsters/grick"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1d4 giant apes - https://www.dndbeyond.com/monsters/giant-ape"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 guardian naga - https://www.dndbeyond.com/monsters/guardian-naga"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 adult gold dragon - https://www.dndbeyond.com/monsters/adult-gold-dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 16,
+					"table": [
+						{
+							"min": 1,
+							"max": 3,
+							"enc": "1 werebear - https://www.dndbeyond.com/monsters/werebear"
+						},
+						{
+							"min": 4,
+							"max": 5,
+							"enc": "1d4 druids performing a ritual for the dead (day only) or 1d4 banshees (night only) - https://www.dndbeyond.com/monsters/druid - https://www.dndbeyond.com/monsters/banshee"
+						},
+						{
+							"min": 6,
+							"max": 7,
+							"enc": "1d3 couatls - https://www.dndbeyond.com/monsters/couatl"
+						},
+						{
+							"min": 8,
+							"max": 10,
+							"enc": "1d3 gnoll fang of gnoll fangs of Yeenoghu with 2d6+3 gnolls - https://www.dndbeyond.com/monsters/gnoll-fang-of-yeenoghu - https://www.dndbeyond.com/monsters/gnoll"
+						},
+						{
+							"min": 11,
+							"max": 15,
+							"enc": "2d4 displacer displacer beasts - https://www.dndbeyond.com/monsters/displacer-beast"
+						},
+						{
+							"min": 16,
+							"max": 20,
+							"enc": "1d6+2 veterans - https://www.dndbeyond.com/monsters/veteran"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A pool of clear, still water. Gold coins litter the bottom, but they disappear if removed from the pool."
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "1d4+1 green green hags with 1d3 owlbears - https://www.dndbeyond.com/monsters/green-hag - https://www.dndbeyond.com/monsters/owlbear"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "1d6+2 werewolves - https://www.dndbeyond.com/monsters/werewolf"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A small woodland shrine dedicated to a mysterious cult named the Siswa"
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "1d6+2 phase phase spiders - https://www.dndbeyond.com/monsters/phase-spider"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "2d4 yuan-ti malison - https://www.dndbeyond.com/monsters/yuan-ti-malison"
+						},
+						{
+							"min": 51,
+							"max": 52,
+							"enc": "1d3 werebears - https://www.dndbeyond.com/monsters/werebear"
+						},
+						{
+							"min": 53,
+							"max": 54,
+							"enc": "1d4 revenants - https://www.dndbeyond.com/monsters/revenant"
+						},
+						{
+							"min": 55,
+							"max": 56,
+							"enc": "1 young green dragon - https://www.dndbeyond.com/monsters/young-green-dragon"
+						},
+						{
+							"min": 57,
+							"max": 58,
+							"enc": "1d4 trolls - https://www.dndbeyond.com/monsters/troll"
+						},
+						{
+							"min": 59,
+							"max": 60,
+							"enc": "1d6+2 wereboars - https://www.dndbeyond.com/monsters/wereboar"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A group of seven people (commoners) wearing animal masks and ambling through the woods - https://www.dndbeyond.com/monsters/commoner"
+						},
+						{
+							"min": 66,
+							"max": 67,
+							"enc": "1d4 gorgons - https://www.dndbeyond.com/monsters/gorgon"
+						},
+						{
+							"min": 68,
+							"max": 69,
+							"enc": "1d3 shambling shambling mounds - https://www.dndbeyond.com/monsters/shambling-mound"
+						},
+						{
+							"min": 70,
+							"max": 71,
+							"enc": "1 treant - https://www.dndbeyond.com/monsters/treant"
+						},
+						{
+							"min": 72,
+							"max": 73,
+							"enc": "1d4 unicorns - https://www.dndbeyond.com/monsters/unicorn"
+						},
+						{
+							"min": 74,
+							"max": 75,
+							"enc": "1d6+2 weretigers - https://www.dndbeyond.com/monsters/weretiger"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "Peals of silvery laughter that echo from a distance"
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "1 guardian nag - https://www.dndbeyond.com/monsters/guardian-naga"
+						},
+						{
+							"min": 83,
+							"max": 84,
+							"enc": "1 young gold dragon - https://www.dndbeyond.com/monsters/young-gold-dragon"
+						},
+						{
+							"min": 85,
+							"max": 86,
+							"enc": "1 grick alpha with 2d4 gricks"
+						},
+						{
+							"min": 87,
+							"max": 88,
+							"enc": "1d3 yuan-ti yuan-ti abominations - https://www.dndbeyond.com/monsters/grick-alpha - https://www.dndbeyond.com/monsters/grick"
+						},
+						{
+							"min": 89,
+							"max": 90,
+							"enc": "1 adult green dragon - https://www.dndbeyond.com/monsters/adult-green-dragon"
+						},
+						{
+							"min": 91,
+							"max": 93,
+							"enc": "1d8+1 giant apes - https://www.dndbeyond.com/monsters/giant-ape"
+						},
+						{
+							"min": 94,
+							"max": 96,
+							"enc": "2d4 oni - https://www.dndbeyond.com/monsters/oni"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1d3 treants - https://www.dndbeyond.com/monsters/treant"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient green dragon - https://www.dndbeyond.com/monsters/ancient-green-dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 17,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 5,
+							"enc": "1 young green dragon - https://www.dndbeyond.com/monsters/young-green-dragon"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "1 treant - https://www.dndbeyond.com/monsters/treant"
+						},
+						{
+							"min": 11,
+							"max": 13,
+							"enc": "1 guardian naga - https://www.dndbeyond.com/monsters/guardian-naga"
+						},
+						{
+							"min": 14,
+							"max": 16,
+							"enc": "1d10 revenants - https://www.dndbeyond.com/monsters/revenant"
+						},
+						{
+							"min": 17,
+							"max": 19,
+							"enc": "1d8+1 unicorns - https://www.dndbeyond.com/monsters/unicorn"
+						},
+						{
+							"min": 20,
+							"max": 22,
+							"enc": "1d3 grick alphas - https://www.dndbeyond.com/monsters/grick-alpha"
+						},
+						{
+							"min": 23,
+							"max": 25,
+							"enc": "For a few hundred feet, wherever the characters step, flowers bloom and emit soft light."
+						},
+						{
+							"min": 26,
+							"max": 28,
+							"enc": "1 young gold dragon - https://www.dndbeyond.com/monsters/young-gold-dragon"
+						},
+						{
+							"min": 29,
+							"max": 31,
+							"enc": "1d6+2 shambling mounds - https://www.dndbeyond.com/monsters/shambling-mound"
+						},
+						{
+							"min": 32,
+							"max": 34,
+							"enc": "2d4 werebears - https://www.dndbeyond.com/monsters/werebear"
+						},
+						{
+							"min": 35,
+							"max": 37,
+							"enc": "1d4 oni - https://www.dndbeyond.com/monsters/oni"
+						},
+						{
+							"min": 38,
+							"max": 40,
+							"enc": "4d6+10 elves living in a small community in the treetop"
+						},
+						{
+							"min": 41,
+							"max": 43,
+							"enc": "1d6+2 gorgons - https://www.dndbeyond.com/monsters/gorgon"
+						},
+						{
+							"min": 44,
+							"max": 46,
+							"enc": "2d4 trolls - https://www.dndbeyond.com/monsters/troll"
+						},
+						{
+							"min": 47,
+							"max": 49,
+							"enc": "1d4 giant apes - https://www.dndbeyond.com/monsters/giant-ape"
+						},
+						{
+							"min": 50,
+							"max": 52,
+							"enc": "1d3 yuan-ti abominations - https://www.dndbeyond.com/monsters/yuan-ti-abomination"
+						},
+						{
+							"min": 53,
+							"max": 62,
+							"enc": "1d3 young green dragons - https://www.dndbeyond.com/monsters/young-green-dragon"
+						},
+						{
+							"min": 63,
+							"max": 65,
+							"enc": "A 50-foot-tall stone statue of an elf warrior with hand raised, palm out, as if to forbid travelers from coming this way"
+						},
+						{
+							"min": 66,
+							"max": 75,
+							"enc": "1d4 treants - https://www.dndbeyond.com/monsters/treant"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A cairn set atop a low hill"
+						},
+						{
+							"min": 81,
+							"max": 90,
+							"enc": "1 adult gold dragon - https://www.dndbeyond.com/monsters/adult-gold-dragon"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1 ancient green dragon - https://www.dndbeyond.com/monsters/ancient-green-dragon"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "2d4+1 treants - https://www.dndbeyond.com/monsters/treant"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient gold dragon - https://www.dndbeyond.com/monsters/ancient-gold-dragon"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Grassland",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 5,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 hobgoblin captain with 1d4+1 hobgoblins"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "1 chimera"
+						},
+						{
+							"min": 3,
+							"max": 3,
+							"enc": "1 gorgon"
+						},
+						{
+							"min": 4,
+							"max": 4,
+							"enc": "1d2 couatls"
+						},
+						{
+							"min": 5,
+							"max": 5,
+							"enc": "1 ankylosaurus"
+						},
+						{
+							"min": 6,
+							"max": 6,
+							"enc": "1 weretiger"
+						},
+						{
+							"min": 7,
+							"max": 7,
+							"enc": "1d3 allosauruses"
+						},
+						{
+							"min": 8,
+							"max": 9,
+							"enc": "1d3 elephants"
+						},
+						{
+							"min": 10,
+							"max": 14,
+							"enc": "A circle of standing stones within which the air is utterly still, no matter how hard the wind blows outside"
+						},
+						{
+							"min": 15,
+							"max": 16,
+							"enc": "1 phase spider"
+						},
+						{
+							"min": 17,
+							"max": 18,
+							"enc": "1 gnoll pack lord with 1d4 giant hyenas"
+						},
+						{
+							"min": 19,
+							"max": 20,
+							"enc": "1 pegasus"
+						},
+						{
+							"min": 21,
+							"max": 22,
+							"enc": "1 ankheg"
+						},
+						{
+							"min": 23,
+							"max": 24,
+							"enc": "1d3 rhinoceroses"
+						},
+						{
+							"min": 25,
+							"max": 28,
+							"enc": "1d3 cockatrices"
+						},
+						{
+							"min": 29,
+							"max": 32,
+							"enc": "1d6+2 giant wasps or 1d4+3 swarm of swarms of insects"
+						},
+						{
+							"min": 33,
+							"max": 36,
+							"enc": "1d4 jackalweres or 1d4 scouts"
+						},
+						{
+							"min": 37,
+							"max": 40,
+							"enc": "1d8 giant goats or 1d8 worgs"
+						},
+						{
+							"min": 41,
+							"max": 44,
+							"enc": "2d4 hobgoblins, 2d4 orcs, or 2d4 gnolls"
+						},
+						{
+							"min": 45,
+							"max": 46,
+							"enc": "1d2 poisonous giant snakes"
+						},
+						{
+							"min": 47,
+							"max": 48,
+							"enc": "1d6+2 elves or 1d6+2 riding riding horses"
+						},
+						{
+							"min": 49,
+							"max": 50,
+							"enc": "2d4 goblins"
+						},
+						{
+							"min": 51,
+							"max": 52,
+							"enc": "1d3 boars"
+						},
+						{
+							"min": 53,
+							"max": 54,
+							"enc": "1 leopard  panther) 1 lion"
+						},
+						{
+							"min": 55,
+							"max": 58,
+							"enc": "1d6+3 goblins riding wolves"
+						},
+						{
+							"min": 59,
+							"max": 62,
+							"enc": "2d6 wolf giant wolf spiders or 1 giant eagle"
+						},
+						{
+							"min": 63,
+							"max": 65,
+							"enc": "1d8+4 pteranodons"
+						},
+						{
+							"min": 66,
+							"max": 69,
+							"enc": "3d6 wolves"
+						},
+						{
+							"min": 70,
+							"max": 74,
+							"enc": "2d4+2 axe axe beaks"
+						},
+						{
+							"min": 75,
+							"max": 76,
+							"enc": "1 giant boar or 1d2 tigers"
+						},
+						{
+							"min": 77,
+							"max": 78,
+							"enc": "1 ogre or 1d3 bugbears"
+						},
+						{
+							"min": 79,
+							"max": 80,
+							"enc":  "1 giant elk or 1 gnoll pack lord or 1d3 giant hyenas"
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "1d3 giant vultures or 1d3 hippogriffs"
+						},
+						{
+							"min": 83,
+							"max": 84,
+							"enc": "1 goblin boss with 1d6+2 goblins and 1d4+3 wolves, or 1d3 thri-kreen"
+						},
+						{
+							"min": 85,
+							"max": 89,
+							"enc": "1d3 druids patrolling the wilds"
+						},
+						{
+							"min": 90,
+							"max": 91,
+							"enc": "1d6 scarecrows or 1 wereboar"
+						},
+						{
+							"min": 92,
+							"max": 93,
+							"enc": "1d3 centaurs or 1d3 griffons"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1d3 gnoll fang of gnoll fangs of Yeenoghu, or 1 orc Eye of Gruumsh with 2d4+1 orcs"
+						},
+						{
+							"min": 95,
+							"max": 96,
+							"enc": "1 triceratops"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 cyclops or 1 bulette"
+						},
+						{
+							"min": 98,
+							"max": 99,
+							"enc": "1d4 manticores"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 tyrannosaurus rex"
+						}
+					]
+				},
+				{
+					"minlvl": 6,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1d3 gorgons"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "1d4 cyclopes"
+						},
+						{
+							"min": 3,
+							"max": 4,
+							"enc": "1d3 gnoll fang of gnoll fangs of Yeenoghu"
+						},
+						{
+							"min": 5,
+							"max": 6,
+							"enc": "1 chimera"
+						},
+						{
+							"min": 7,
+							"max": 9,
+							"enc": "1d4+1 veterans on riding riding horses"
+						},
+						{
+							"min": 10,
+							"max": 11,
+							"enc": "A tornado that touches down 1d6 miles away, tearing up the land for 1 mile before it dissipates"
+						},
+						{
+							"min": 12,
+							"max": 13,
+							"enc": "1d3 manticores"
+						},
+						{
+							"min": 14,
+							"max": 15,
+							"enc": "2d4 ankhegs"
+						},
+						{
+							"min": 16,
+							"max": 17,
+							"enc": "1d8+1 centaurs"
+						},
+						{
+							"min": 18,
+							"max": 19,
+							"enc": "1d6+2 griffons"
+						},
+						{
+							"min": 20,
+							"max": 21,
+							"enc": "1d6 elephants"
+						},
+						{
+							"min": 22,
+							"max": 24,
+							"enc": "A stretch of land littered with rotting war machines, bones, and banners of forgotten armies"
+						},
+						{
+							"min": 25,
+							"max": 28,
+							"enc": "1d8+1 bugbears"
+						},
+						{
+							"min": 29,
+							"max": 32,
+							"enc": "1 gnoll pack lord with 1d4+1 giant hyenas"
+						},
+						{
+							"min": 33,
+							"max": 36,
+							"enc": "2d4 scarecrows"
+						},
+						{
+							"min": 37,
+							"max": 40,
+							"enc": "1d12 lions"
+						},
+						{
+							"min": 41,
+							"max": 44,
+							"enc": "1d10 thri-thri-kreen"
+						},
+						{
+							"min": 45,
+							"max": 46,
+							"enc": "1 allosaurus"
+						},
+						{
+							"min": 47,
+							"max": 48,
+							"enc": "1 tiger"
+						},
+						{
+							"min": 49,
+							"max": 50,
+							"enc": "1d2 giant eagles or 1d2 giant vultures"
+						},
+						{
+							"min": 51,
+							"max": 52,
+							"enc": "1 goblin boss with 2d4 goblins"
+						},
+						{
+							"min": 53,
+							"max": 54,
+							"enc": "1d2 pegasi"
+						},
+						{
+							"min": 55,
+							"max": 58,
+							"enc": "1 ankylosaurus"
+						},
+						{
+							"min": 59,
+							"max": 62,
+							"enc": "1d2 couatls"
+						},
+						{
+							"min": 63,
+							"max": 66,
+							"enc": "1 orc Eye of Gruumsh with 1d8+1 orcs"
+						},
+						{
+							"min": 67,
+							"max": 70,
+							"enc": "2d4 hippogriffs"
+						},
+						{
+							"min": 71,
+							"max": 74,
+							"enc": "1d4+1 rhinoceroses"
+						},
+						{
+							"min": 75,
+							"max": 76,
+							"enc": "1 hobgoblin captain with 2d6 hobgoblins"
+						},
+						{
+							"min": 77,
+							"max": 78,
+							"enc": "1d3 phase phase spiders"
+						},
+						{
+							"min": 79,
+							"max": 80,
+							"enc": "1d6+2 giant boars"
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "2d4 giant elk"
+						},
+						{
+							"min": 83,
+							"max": 84,
+							"enc": "1d4 ogres with 1d4 orogs"
+						},
+						{
+							"min": 85,
+							"max": 87,
+							"enc": "A hot wind that carries the stench of rot"
+						},
+						{
+							"min": 88,
+							"max": 90,
+							"enc": "1d3 weretigers"
+						},
+						{
+							"min": 91,
+							"max": 92,
+							"enc": "1 bulette"
+						},
+						{
+							"min": 93,
+							"max": 94,
+							"enc": "A tribe of 2d20 + 20 nomads  tribal tribal warriors) on riding riding horses following a herd of antelope  deer). The nomads are willing to trade food, leather, and information for weapons."
+						},
+						{
+							"min": 95,
+							"max": 96,
+							"enc": "1d6+2 wereboars"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 young gold dragon"
+						},
+						{
+							"min": 98,
+							"max": 99,
+							"enc": "1d4 triceratopses"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1d3 tyrannosaurus tyrannosaurus rexes"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 16,
+					"table": [
+						{
+							"min": 1,
+							"max": 5,
+							"enc": "3d6 wereboars"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "2d10 gnoll fang of gnoll fangs of Yeenoghu"
+						},
+						{
+							"min": 11,
+							"max": 15,
+							"enc": "1d4 bulettes"
+						},
+						{
+							"min": 16,
+							"max": 17,
+							"enc": "An old road of paved stones, partly reclaimed by wilderness, that travels for 1d8 miles in either direction before ending"
+						},
+						{
+							"min": 18,
+							"max": 27,
+							"enc": "1d12 couatls"
+						},
+						{
+							"min": 28,
+							"max": 30,
+							"enc": "A witch  mage) dwelling in a crude hut. She offers potions of healing, antitoxins, and other consumable items for sale in exchange for food and news."
+						},
+						{
+							"min": 31,
+							"max": 40,
+							"enc": "2d10 elephants"
+						},
+						{
+							"min": 41,
+							"max": 46,
+							"enc": "2d4 weretigers"
+						},
+						{
+							"min": 47,
+							"max": 56,
+							"enc": "1d8+1 cyclopes"
+						},
+						{
+							"min": 57,
+							"max": 61,
+							"enc": "1d3 chimeras"
+						},
+						{
+							"min": 62,
+							"max": 66,
+							"enc": "5 triceratopses"
+						},
+						{
+							"min": 67,
+							"max": 69,
+							"enc": "A giant hole 50 feet across that descends nearly 500 feet before opening into an empty cave"
+						},
+						{
+							"min": 70,
+							"max": 79,
+							"enc": "1d4+3 gorgons"
+						},
+						{
+							"min": 80,
+							"max": 88,
+							"enc": "1d3 young gold young gold dragons"
+						},
+						{
+							"min": 89,
+							"max": 90,
+							"enc": "A circular section of grass nearly a quarter-mile across that appears to have been pressed down; 1d4 more such circles connected by lines can be seen from overhead."
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "2d4 tyrannosaurus tyrannosaurus rexes"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1 adult gold dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient gold dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 17,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 10,
+							"enc": "2d6 triceratopses"
+						},
+						{
+							"min": 11,
+							"max": 20,
+							"enc": "1d10 gorgons"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "2d6 hyenas feeding on the carcass of a dead dinosaur"
+						},
+						{
+							"min": 26,
+							"max": 35,
+							"enc": "3d6 bulettes"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A fiery chariot that races across the sky"
+						},
+						{
+							"min": 41,
+							"max": 50,
+							"enc": "1d3 young gold young gold dragons"
+						},
+						{
+							"min": 51,
+							"max": 60,
+							"enc": "2d4 cyclopes"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A valley where all the grass has died and the ground is littered with stumps and fallen tree trunks, all petrified"
+						},
+						{
+							"min": 66,
+							"max": 75,
+							"enc": "2d10 wolves"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A friendly adventuring party of 1d6 + 1 characters of varying races, classes, and levels (average level 1d6+2). They share information about their recent travels."
+						},
+						{
+							"min": 81,
+							"max": 90,
+							"enc": "1d12 chimeras"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1d6+2 tyrannosaurus tyrannosaurus rexes"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1 adult gold dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient gold dragon"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Hill",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 eagle"
+						},
+						{
+							"min": 2,
+							"max": 3,
+							"enc": "2d4 baboons"
+						},
+						{
+							"min": 4,
+							"max": 6,
+							"enc": "1d6 bandits"
+						},
+						{
+							"min": 7,
+							"max": 7,
+							"enc": "1d4 vultures"
+						},
+						{
+							"min": 8,
+							"max": 8,
+							"enc": "1d10 commoners"
+						},
+						{
+							"min": 9,
+							"max": 9,
+							"enc": "1 raven"
+						},
+						{
+							"min": 10,
+							"max": 10,
+							"enc": "1 poisonous snake"
+						},
+						{
+							"min": 11,
+							"max": 13,
+							"enc": "2d6 bandits 2d6 tribal tribal warriors"
+						},
+						{
+							"min": 14,
+							"max": 14,
+							"enc": "2d8 goats"
+						},
+						{
+							"min": 15,
+							"max": 15,
+							"enc": "1d6+4 blood blood hawks"
+						},
+						{
+							"min": 16,
+							"max": 16,
+							"enc": "1d4+3 giant weasels"
+						},
+						{
+							"min": 17,
+							"max": 18,
+							"enc": "1d3 guards with 1d2 mastiffs and 1 mule"
+						},
+						{
+							"min": 19,
+							"max": 20,
+							"enc": "1d6+5 hyenas"
+						},
+						{
+							"min": 21,
+							"max": 22,
+							"enc": "2d4 stirges"
+						},
+						{
+							"min": 23,
+							"max": 25,
+							"enc": "An empty cave littered with bones"
+						},
+						{
+							"min": 26,
+							"max": 26,
+							"enc": "1 pseudodragon or 1d3 giant owls"
+						},
+						{
+							"min": 27,
+							"max": 27,
+							"enc": "1 lion or 1 cougar  panther)"
+						},
+						{
+							"min": 28,
+							"max": 30,
+							"enc": "2d8 kobolds"
+						},
+						{
+							"min": 31,
+							"max": 31,
+							"enc": "1 hippogriff"
+						},
+						{
+							"min": 32,
+							"max": 34,
+							"enc": "2d4 goblins"
+						},
+						{
+							"min": 35,
+							"max": 35,
+							"enc": "1 worg"
+						},
+						{
+							"min": 36,
+							"max": 36,
+							"enc": "1d3 swarm of swarms of bats or 1d3 swarm of swarms of ravens"
+						},
+						{
+							"min": 37,
+							"max": 37,
+							"enc": "1 giant eagle"
+						},
+						{
+							"min": 38,
+							"max": 40,
+							"enc": "An old dwarf sitting on a stump, whittling a piece of wood"
+						},
+						{
+							"min": 41,
+							"max": 41,
+							"enc": "1d4 elk"
+						},
+						{
+							"min": 42,
+							"max": 42,
+							"enc": "1d4 winged winged kobolds with 1d6 kobolds"
+						},
+						{
+							"min": 43,
+							"max": 43,
+							"enc": "1d6+2 giant wolf spiders"
+						},
+						{
+							"min": 44,
+							"max": 45,
+							"enc": "2d4 wolves"
+						},
+						{
+							"min": 46,
+							"max": 46,
+							"enc": "1 swarm of insects"
+						},
+						{
+							"min": 47,
+							"max": 47,
+							"enc": "1d8+1 axe axe beaks"
+						},
+						{
+							"min": 48,
+							"max": 49,
+							"enc": "1 brown bear or 1d3 boars"
+						},
+						{
+							"min": 50,
+							"max": 50,
+							"enc": "1 scout"
+						},
+						{
+							"min": 51,
+							"max": 51,
+							"enc": "1 ogre"
+						},
+						{
+							"min": 52,
+							"max": 53,
+							"enc": "2d4 gnolls"
+						},
+						{
+							"min": 54,
+							"max": 54,
+							"enc": "1 giant elk"
+						},
+						{
+							"min": 55,
+							"max": 55,
+							"enc": "1d3+1 harpies"
+						},
+						{
+							"min": 56,
+							"max": 56,
+							"enc": "1 werewolf"
+						},
+						{
+							"min": 57,
+							"max": 58,
+							"enc": "2d4 orcs"
+						},
+						{
+							"min": 59,
+							"max": 59,
+							"enc": "1d4 half-ogre (half-ogres"
+						},
+						{
+							"min": 60,
+							"max": 60,
+							"enc": "1 druid or 1 veteran"
+						},
+						{
+							"min": 61,
+							"max": 63,
+							"enc": "The corpse of an adventurer that carries an intact @item explorer's pack|phb and lies atop a longsword"
+						},
+						{
+							"min": 64,
+							"max": 64,
+							"enc": "1 green hag"
+						},
+						{
+							"min": 65,
+							"max": 66,
+							"enc": "1d3 dire dire wolves"
+						},
+						{
+							"min": 67,
+							"max": 68,
+							"enc": "A small cemetery containing 2d6 graves"
+						},
+						{
+							"min": 69,
+							"max": 70,
+							"enc": "1 hobgoblin captain with 2d4 hobgoblins"
+						},
+						{
+							"min": 71,
+							"max": 71,
+							"enc": "2d4 giant goats"
+						},
+						{
+							"min": 72,
+							"max": 72,
+							"enc": "1 manticore"
+						},
+						{
+							"min": 73,
+							"max": 74,
+							"enc": "1d6+2 hobgoblins"
+						},
+						{
+							"min": 75,
+							"max": 75,
+							"enc": "1 phase spider"
+						},
+						{
+							"min": 76,
+							"max": 78,
+							"enc": "A pile of droppings from a very large bird"
+						},
+						{
+							"min": 79,
+							"max": 79,
+							"enc": "1 gnoll fang of Yeenoghu"
+						},
+						{
+							"min": 80,
+							"max": 80,
+							"enc": "1d3 giant boars"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1 gnoll pack lord with 1d3 giant hyenas"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "1 bandit captain with 2d4 bandits"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "1 orc Eye of Gruumsh with 1d8+2 orcs"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "1d3 orogs or 1d4 berserkers"
+						},
+						{
+							"min": 85,
+							"max": 86,
+							"enc": "1 ettin or 1 wereboar"
+						},
+						{
+							"min": 87,
+							"max": 88,
+							"enc": "1 goblin boss with 2d6 goblins"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "1d3 griffons"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1d3 perytons or 1d4 pegasi"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1d3 trolls"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1 cyclops"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 stone giant"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1d4 pegasi or 1d3 perytons"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "1d6+2 giant goats"
+						},
+						{
+							"min": 3,
+							"max": 3,
+							"enc": "1 manticore"
+						},
+						{
+							"min": 4,
+							"max": 4,
+							"enc": "1d8+1 gnolls or 1d8+1 hobgoblins"
+						},
+						{
+							"min": 5,
+							"max": 5,
+							"enc": "1d4 lions"
+						},
+						{
+							"min": 6,
+							"max": 6,
+							"enc": "1d6+2 worgs"
+						},
+						{
+							"min": 7,
+							"max": 7,
+							"enc": "1d4 brown brown bears"
+						},
+						{
+							"min": 8,
+							"max": 8,
+							"enc": "3d6 axe axe beaks"
+						},
+						{
+							"min": 9,
+							"max": 9,
+							"enc": "1 half-ogre (half-ogre with 2d6 orcs"
+						},
+						{
+							"min": 10,
+							"max": 10,
+							"enc": "2d10 winged winged kobolds"
+						},
+						{
+							"min": 11,
+							"max": 12,
+							"enc": "1 goblin boss with 1d4 dire dire wolves and 2d6 goblins"
+						},
+						{
+							"min": 13,
+							"max": 13,
+							"enc": "1d6 giant elk"
+						},
+						{
+							"min": 14,
+							"max": 15,
+							"enc": "1d8+1 giant eagles"
+						},
+						{
+							"min": 16,
+							"max": 17,
+							"enc": "1d4 phase phase spiders"
+						},
+						{
+							"min": 18,
+							"max": 19,
+							"enc": "1 gnoll pack lord with 2d4 giant hyenas"
+						},
+						{
+							"min": 20,
+							"max": 20,
+							"enc": "2d4 hippogriffs"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A 15-foot-tall stone statue of a dwarf warrior that has been tipped over on its side"
+						},
+						{
+							"min": 26,
+							"max": 27,
+							"enc": "2d4 orogs"
+						},
+						{
+							"min": 28,
+							"max": 29,
+							"enc": "1d4+1 griffons"
+						},
+						{
+							"min": 30,
+							"max": 31,
+							"enc": "1d6+2 harpies"
+						},
+						{
+							"min": 32,
+							"max": 33,
+							"enc": "1 orc Eye of Gruumsh with 2d6+3 orcs"
+						},
+						{
+							"min": 34,
+							"max": 35,
+							"enc": "1d4+3 giant boars"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A stone door set into the side of a steep hill, opening onto 15 feet of descending stairs that end at a cave-in"
+						},
+						{
+							"min": 41,
+							"max": 42,
+							"enc": "1d3 green green hags"
+						},
+						{
+							"min": 43,
+							"max": 44,
+							"enc": "1d4 werewolves"
+						},
+						{
+							"min": 45,
+							"max": 46,
+							"enc": "1d6+2 ogres"
+						},
+						{
+							"min": 47,
+							"max": 48,
+							"enc": "1 hobgoblin captain with 2d8 hobgoblins"
+						},
+						{
+							"min": 49,
+							"max": 50,
+							"enc": "1 bandit captain with 3d6 bandits"
+						},
+						{
+							"min": 51,
+							"max": 54,
+							"enc": "1 chimera"
+						},
+						{
+							"min": 55,
+							"max": 58,
+							"enc": "1d4 ettins"
+						},
+						{
+							"min": 59,
+							"max": 62,
+							"enc": "1d6+2 veterans with 2d6 berserkers"
+						},
+						{
+							"min": 63,
+							"max": 65,
+							"enc": "An abandoned wooden hut"
+						},
+						{
+							"min": 66,
+							"max": 69,
+							"enc": "1 galeb duhr"
+						},
+						{
+							"min": 70,
+							"max": 73,
+							"enc": "1 bulette"
+						},
+						{
+							"min": 74,
+							"max": 77,
+							"enc": "1 wyvern"
+						},
+						{
+							"min": 78,
+							"max": 80,
+							"enc": "2d6+10 goats with 1 herder  tribal tribal warrior)"
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "1d3 hill giants"
+						},
+						{
+							"min": 83,
+							"max": 84,
+							"enc": "2d4 wereboars"
+						},
+						{
+							"min": 85,
+							"max": 86,
+							"enc": "1d4 revenants"
+						},
+						{
+							"min": 87,
+							"max": 88,
+							"enc": "1d2 gorgons"
+						},
+						{
+							"min": 89,
+							"max": 90,
+							"enc": "1d8+1 gnoll fang of gnoll fangs of Yeenoghu"
+						},
+						{
+							"min": 91,
+							"max": 93,
+							"enc": "1d4 cyclopes"
+						},
+						{
+							"min": 94,
+							"max": 96,
+							"enc": "1 young red dragon"
+						},
+						{
+							"min": 97,
+							"max": 98,
+							"enc": "1d4 stone giants"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1d3 young copper young copper dragons"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 roc"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 16,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "2d8 manticores or 2d8 phase phase spiders"
+						},
+						{
+							"min": 2,
+							"max": 4,
+							"enc": "1d6 green green hags with 1d6 wyverns"
+						},
+						{
+							"min": 5,
+							"max": 7,
+							"enc": "1 hobgoblin captain with 1 hill giant and 4d10 hobgoblins"
+						},
+						{
+							"min": 8,
+							"max": 10,
+							"enc": "2d6+3 werewolves"
+						},
+						{
+							"min": 11,
+							"max": 14,
+							"enc": "1d6+2 ettins"
+						},
+						{
+							"min": 15,
+							"max": 18,
+							"enc": "1d3 bulettes"
+						},
+						{
+							"min": 19,
+							"max": 22,
+							"enc": "1d4 werebears"
+						},
+						{
+							"min": 23,
+							"max": 24,
+							"enc": "A stream of smoke emerging from a small chimney in the hillside"
+						},
+						{
+							"min": 25,
+							"max": 28,
+							"enc": "1d4 wyverns"
+						},
+						{
+							"min": 29,
+							"max": 32,
+							"enc": "1d8+1 wereboars"
+						},
+						{
+							"min": 33,
+							"max": 36,
+							"enc": "1d3 revenants"
+						},
+						{
+							"min": 37,
+							"max": 38,
+							"enc": "A mild earthquake that shakes the region for 1d20 seconds"
+						},
+						{
+							"min": 39,
+							"max": 42,
+							"enc": "1d3 chimeras"
+						},
+						{
+							"min": 43,
+							"max": 46,
+							"enc": "1d4 gorgons"
+						},
+						{
+							"min": 47,
+							"max": 50,
+							"enc": "1d6+2 gnoll fang of gnoll fangs of Yeenoghu"
+						},
+						{
+							"min": 51,
+							"max": 54,
+							"enc": "1d4 hill giants"
+						},
+						{
+							"min": 55,
+							"max": 58,
+							"enc": "1 young red dragon"
+						},
+						{
+							"min": 59,
+							"max": 62,
+							"enc": "1d3+1 galeb galeb duhr"
+						},
+						{
+							"min": 63,
+							"max": 65,
+							"enc": "2d10 dwarf miners  commoners), whistling as they march toward their mine"
+						},
+						{
+							"min": 66,
+							"max": 69,
+							"enc": "1d3 young copper young copper dragons"
+						},
+						{
+							"min": 70,
+							"max": 73,
+							"enc": "1d4 trolls"
+						},
+						{
+							"min": 74,
+							"max": 77,
+							"enc": "1d3 cyclopes"
+						},
+						{
+							"min": 78,
+							"max": 80,
+							"enc": "1d3 nobles with 1d4 scouts prospecting for gold"
+						},
+						{
+							"min": 81,
+							"max": 85,
+							"enc": "1 adult copper dragon"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "2d4 stone giants"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1d4 rocs"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1 adult red dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient copper dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 17,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1d2 rocs"
+						},
+						{
+							"min": 2,
+							"max": 5,
+							"enc": "1 young red dragon"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "2d6 ettins"
+						},
+						{
+							"min": 11,
+							"max": 15,
+							"enc": "1d4 bulettes"
+						},
+						{
+							"min": 16,
+							"max": 20,
+							"enc": "1d10 revenants"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "The white outline of an enormous horse carved into the side of a high hill"
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "1d6+1 gorgons"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "2d4+1 trolls"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "The scorched remains of 2d10 humanoids littering a hillside"
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "2d4 hill giants"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "1d6+2 werebears"
+						},
+						{
+							"min": 51,
+							"max": 55,
+							"enc": "2d4 galeb galeb duhr"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1d4+2 wyverns"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A massive boulder partly buried in the earth as if it fell or was thrown there"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1 adult copper dragon"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "1d6+3 cyclopes"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "The stub of an old stone tower jutting from the top of a hill"
+						},
+						{
+							"min": 81,
+							"max": 85,
+							"enc": "2d4 stone giants"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "1 adult red dragon"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1 ancient copper dragon"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1 ancient red dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1d2 adult red adult red dragons with 1d3 young red young red dragons"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Mountain",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 2,
+							"enc": "1 eagle"
+						},
+						{
+							"min": 3,
+							"max": 5,
+							"enc": "1d3 swarm of swarms of bats"
+						},
+						{
+							"min": 6,
+							"max": 8,
+							"enc": "1d6 goats"
+						},
+						{
+							"min": 9,
+							"max": 11,
+							"enc": "1d10+5 tribal tribal warriors"
+						},
+						{
+							"min": 12,
+							"max": 14,
+							"enc": "1d6+3 pteranodons"
+						},
+						{
+							"min": 15,
+							"max": 17,
+							"enc": "1d8+1 winged winged kobolds"
+						},
+						{
+							"min": 18,
+							"max": 20,
+							"enc": "1 lion"
+						},
+						{
+							"min": 21,
+							"max": 24,
+							"enc": "Stairs chiseled into the side of the mountain that climb 3d20 + 40 feet before ending abruptly"
+						},
+						{
+							"min": 25,
+							"max": 27,
+							"enc": "2d10 stirges"
+						},
+						{
+							"min": 28,
+							"max": 30,
+							"enc": "2d4 aarakocra"
+						},
+						{
+							"min": 31,
+							"max": 33,
+							"enc": "2d6 dwarf soldiers  guards) with 1d6 mules laden with iron ore"
+						},
+						{
+							"min": 34,
+							"max": 36,
+							"enc": "1 giant eagle"
+						},
+						{
+							"min": 37,
+							"max": 38,
+							"enc": "A small shrine dedicated to a lawful neutral god, perched on a stone outcropping"
+						},
+						{
+							"min": 39,
+							"max": 41,
+							"enc": "2d8+1 blood blood hawks"
+						},
+						{
+							"min": 42,
+							"max": 44,
+							"enc": "1 giant goat"
+						},
+						{
+							"min": 45,
+							"max": 47,
+							"enc": "3d4 kobolds"
+						},
+						{
+							"min": 48,
+							"max": 50,
+							"enc": "1 half-ogre (half-ogre"
+						},
+						{
+							"min": 51,
+							"max": 53,
+							"enc": "1 berserker"
+						},
+						{
+							"min": 54,
+							"max": 55,
+							"enc": "1 orog"
+						},
+						{
+							"min": 56,
+							"max": 56,
+							"enc": "1 hell hound"
+						},
+						{
+							"min": 57,
+							"max": 57,
+							"enc": "1 druid"
+						},
+						{
+							"min": 58,
+							"max": 59,
+							"enc": "1 peryton"
+						},
+						{
+							"min": 60,
+							"max": 61,
+							"enc": "1d2 hippogriffs"
+						},
+						{
+							"min": 62,
+							"max": 62,
+							"enc": "1 manticore"
+						},
+						{
+							"min": 63,
+							"max": 64,
+							"enc": "1d6+2 scouts"
+						},
+						{
+							"min": 65,
+							"max": 67,
+							"enc": "Enormous footprints left by a giant, which head into the mountain peaks"
+						},
+						{
+							"min": 68,
+							"max": 73,
+							"enc": "2d4 orcs"
+						},
+						{
+							"min": 74,
+							"max": 75,
+							"enc": "1 giant elk"
+						},
+						{
+							"min": 76,
+							"max": 77,
+							"enc": "1 veteran"
+						},
+						{
+							"min": 78,
+							"max": 79,
+							"enc": "1 orc Eye of Gruumsh"
+						},
+						{
+							"min": 80,
+							"max": 80,
+							"enc": "1d4 harpies"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1 ogre"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "1 griffon"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "1 basilisk"
+						},
+						{
+							"min": 84,
+							"max": 85,
+							"enc": "1 saber-toothed tiger"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "A sparkling stream of water spilling from a crevice"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1d2 ettins"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1 cyclops"
+						},
+						{
+							"min": 93,
+							"max": 93,
+							"enc": "1 troll"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1 galeb duhr"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "1 air elemental"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1 bulette"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 chimera"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 wyvern"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 stone giant"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 frost giant"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 2,
+							"enc": "2d8+1 aarakocra"
+						},
+						{
+							"min": 3,
+							"max": 4,
+							"enc": "1 lion or 1 saber-toothed tiger"
+						},
+						{
+							"min": 5,
+							"max": 6,
+							"enc": "1d8+1 giant goats"
+						},
+						{
+							"min": 7,
+							"max": 8,
+							"enc": "1d4+3 dwarf trailblazers  scouts)"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "1d6+2 orcs"
+						},
+						{
+							"min": 11,
+							"max": 15,
+							"enc": "1d10 giant eagles"
+						},
+						{
+							"min": 16,
+							"max": 20,
+							"enc": "1d8+1 hippogriffs"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "1d8 fissures venting steam that partially obscures a 20-foot cube above each fissure"
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "1 basilisk"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "1d12 half-ogre (half-ogres"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A ravine blocked by a 100-foot-high wall, which has an opening in the center where a gate used to be"
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "1 manticore"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "2d4 harpies"
+						},
+						{
+							"min": 51,
+							"max": 52,
+							"enc": "1 galeb duhr"
+						},
+						{
+							"min": 53,
+							"max": 54,
+							"enc": "1 bulette"
+						},
+						{
+							"min": 55,
+							"max": 56,
+							"enc": "1d10 berserkers"
+						},
+						{
+							"min": 57,
+							"max": 58,
+							"enc": "1d3 hell hell hounds"
+						},
+						{
+							"min": 59,
+							"max": 60,
+							"enc": "1d8+1 veterans"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A distant mountain whose peak resembles a tooth"
+						},
+						{
+							"min": 66,
+							"max": 69,
+							"enc": "1d4 ettins"
+						},
+						{
+							"min": 70,
+							"max": 73,
+							"enc": "1 wyvern"
+						},
+						{
+							"min": 74,
+							"max": 75,
+							"enc": "1 orc Eye of Gruumsh with 1d6 orogs and 3d6+10 orcs"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A row of 1d10 + 40 stakes upon which the bodies of kobolds, dwarves, or orcs are impaled"
+						},
+						{
+							"min": 81,
+							"max": 83,
+							"enc": "1 fire giant"
+						},
+						{
+							"min": 84,
+							"max": 85,
+							"enc": "1 young silver dragon"
+						},
+						{
+							"min": 86,
+							"max": 87,
+							"enc": "1d4 air air elementals"
+						},
+						{
+							"min": 88,
+							"max": 90,
+							"enc": "1d4 trolls"
+						},
+						{
+							"min": 91,
+							"max": 92,
+							"enc": "1d3+1 cyclopes"
+						},
+						{
+							"min": 93,
+							"max": 94,
+							"enc": "1d4 chimeras"
+						},
+						{
+							"min": 95,
+							"max": 96,
+							"enc": "1 cloud giant"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 roc"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1d4 stone giants"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 young red dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1d4 frost giants"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 16,
+					"table": [
+						{
+							"min": 1,
+							"max": 2,
+							"enc": "1d8+1 basilisks"
+						},
+						{
+							"min": 3,
+							"max": 4,
+							"enc": "2d4 hell hell hounds"
+						},
+						{
+							"min": 5,
+							"max": 6,
+							"enc": "1d3 chimeras"
+						},
+						{
+							"min": 7,
+							"max": 8,
+							"enc": "1 galeb duhr"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "2d6 veterans"
+						},
+						{
+							"min": 11,
+							"max": 15,
+							"enc": "1 young silver dragon"
+						},
+						{
+							"min": 16,
+							"max": 20,
+							"enc": "2d4 trolls"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "1 red dragon gliding through the sky above the highest mountaintops"
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "1d8+1 manticores"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "1d4 cyclopes"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "Heavy snowfall that lasts for 1d6 hours"
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "1d10 air air elementals"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "1d6+2 bulettes"
+						},
+						{
+							"min": 51,
+							"max": 55,
+							"enc": "1d4 stone giants"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1 fire giant"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "2 stone giants playing catch with a boulder a few hundred feet away"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1d8+1 ettins"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "1d3 frost giants"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A wide crevasse, its depths shrouded in mist"
+						},
+						{
+							"min": 81,
+							"max": 85,
+							"enc": "1d4 cloud giants"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "1 adult silver dragon"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1 adult red dragon"
+						},
+						{
+							"min": 97,
+							"max": 98,
+							"enc": "1d4 rocs"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 ancient silver dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 ancient red dragon"
+						}
+					]
+				},
+				{
+					"minlvl": 17,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 5,
+							"enc": "1d10 bulettes"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "1d8+1 chimeras"
+						},
+						{
+							"min": 11,
+							"max": 15,
+							"enc": "1 adult silver dragon"
+						},
+						{
+							"min": 16,
+							"max": 20,
+							"enc": "1d8+1 wyverns"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A massive boat perched atop a mountain"
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "2d4 galeb galeb duhr"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "1d4 frost giants"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A wooded valley haunted by secretive and reclusive elves who tell warily of their master: a mad wizard who lives in the heart of the valley"
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "1d10 air air elementals"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "1d6+3 trolls"
+						},
+						{
+							"min": 51,
+							"max": 55,
+							"enc": "1 adult red dragon"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1d4 cloud giants"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A waterfall hundreds of feet high that drops into a clear pool"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1d3 fire giants"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "2d4 stone giants"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A force of 100 dwarves  veterans) standing guard at a mountain pass, permitting no passage until a traveler pays 100 gp (if on foot) or 200 gp (if mounted)"
+						},
+						{
+							"min": 81,
+							"max": 85,
+							"enc": "1d4 rocs"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "1d4 young red young red dragons"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1 ancient silver dragon"
+						},
+						{
+							"min": 97,
+							"max": 0,
+							"enc": "1 ancient red dragon"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Swamp",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1d4 poisonous snakes"
+						},
+						{
+							"min": 2,
+							"max": 5,
+							"enc": "3d6 rats"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "2d8 ravens"
+						},
+						{
+							"min": 11,
+							"max": 12,
+							"enc": "3d6 giant rats"
+						},
+						{
+							"min": 13,
+							"max": 13,
+							"enc": "1d10+5 tribal tribal warriors"
+						},
+						{
+							"min": 14,
+							"max": 15,
+							"enc": "1d8+1 giant lizards"
+						},
+						{
+							"min": 16,
+							"max": 17,
+							"enc": "1 crocodile"
+						},
+						{
+							"min": 18,
+							"max": 19,
+							"enc": "1 swarm of insects"
+						},
+						{
+							"min": 20,
+							"max": 20,
+							"enc": "1 giant spider"
+						},
+						{
+							"min": 21,
+							"max": 22,
+							"enc": "1d4+1 mud huts partially sunken in murky water"
+						},
+						{
+							"min": 23,
+							"max": 25,
+							"enc": "2d8+1 kobolds"
+						},
+						{
+							"min": 26,
+							"max": 26,
+							"enc": "2d4 mud mud mephits"
+						},
+						{
+							"min": 27,
+							"max": 29,
+							"enc": "1d6+2 giant poisonous snakes"
+						},
+						{
+							"min": 30,
+							"max": 30,
+							"enc": "2d4 winged winged kobolds"
+						},
+						{
+							"min": 31,
+							"max": 32,
+							"enc": "1 scout"
+						},
+						{
+							"min": 33,
+							"max": 34,
+							"enc": "The corpse of an adventurer tangled in the weeds. Looting the body turns up an @item explorer's pack|phb and perhaps (50% chance) a random common magic item."
+						},
+						{
+							"min": 35,
+							"max": 38,
+							"enc": "1 giant toad"
+						},
+						{
+							"min": 39,
+							"max": 41,
+							"enc": "1d6+2 constrictor snakes"
+						},
+						{
+							"min": 42,
+							"max": 44,
+							"enc": "2d4 giant frogs"
+						},
+						{
+							"min": 45,
+							"max": 45,
+							"enc": "1d8+1 swarm of swarms of rats or 1d6+2 swarm of swarms of ravens"
+						},
+						{
+							"min": 46,
+							"max": 48,
+							"enc": "2d10 stirges"
+						},
+						{
+							"min": 49,
+							"max": 52,
+							"enc": "2d6+3 bullywugs"
+						},
+						{
+							"min": 53,
+							"max": 54,
+							"enc": "1d8+1 orcs"
+						},
+						{
+							"min": 55,
+							"max": 56,
+							"enc": "1d4 yuan-ti yuan-ti purebloods"
+						},
+						{
+							"min": 57,
+							"max": 57,
+							"enc": "1 druid"
+						},
+						{
+							"min": 58,
+							"max": 59,
+							"enc": "1 yuan-ti malison: yuan-ti malison (type type 1, yuan-ti malison (type type 2, yuan-ti malison (type type 3"
+						},
+						{
+							"min": 60,
+							"max": 62,
+							"enc": "1 giant constrictor snake"
+						},
+						{
+							"min": 63,
+							"max": 64,
+							"enc": "A high-pitched shriek that lasts for 1d4 minutes"
+						},
+						{
+							"min": 65,
+							"max": 67,
+							"enc": "2d4 lizardfolk"
+						},
+						{
+							"min": 68,
+							"max": 69,
+							"enc": "1d4 ghouls"
+						},
+						{
+							"min": 70,
+							"max": 71,
+							"enc": "1 will-o'-wisp"
+						},
+						{
+							"min": 72,
+							"max": 72,
+							"enc": "1 wight"
+						},
+						{
+							"min": 73,
+							"max": 73,
+							"enc": "1 ghast"
+						},
+						{
+							"min": 74,
+							"max": 75,
+							"enc": "1 swarm of poisonous snakes"
+						},
+						{
+							"min": 76,
+							"max": 77,
+							"enc": "A foul stench bubbling up from brackish waters"
+						},
+						{
+							"min": 78,
+							"max": 80,
+							"enc": "1d4+2 ogres"
+						},
+						{
+							"min": 81,
+							"max": 83,
+							"enc": "1 shambling mound"
+						},
+						{
+							"min": 84,
+							"max": 86,
+							"enc": "1 lizardfolk shaman with 1d6 giant lizards and 2d10 lizardfolk"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1 troll"
+						},
+						{
+							"min": 88,
+							"max": 89,
+							"enc": "1d4 green green hags"
+						},
+						{
+							"min": 90,
+							"max": 91,
+							"enc": "1 revenant"
+						},
+						{
+							"min": 92,
+							"max": 93,
+							"enc": "1 giant crocodile"
+						},
+						{
+							"min": 94,
+							"max": 95,
+							"enc": "1 orc Eye of Gruumsh with 1d3 orogs and 2d6+3 orcs"
+						},
+						{
+							"min": 96,
+							"max": 97,
+							"enc": "1 young black dragon"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 yuan-ti abomination"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1d4 water elementals"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 hydra"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 green hag"
+						},
+						{
+							"min": 2,
+							"max": 3,
+							"enc": "2d4 giant lizards or 2d4 giant poisonous snakes"
+						},
+						{
+							"min": 4,
+							"max": 5,
+							"enc": "2d8 winged winged kobolds"
+						},
+						{
+							"min": 6,
+							"max": 7,
+							"enc": "1d10+1 bullywugs with 1d8+1 giant frogs"
+						},
+						{
+							"min": 8,
+							"max": 9,
+							"enc": "1 druid"
+						},
+						{
+							"min": 10,
+							"max": 10,
+							"enc": "1d8+1 swarm of swarms of insects"
+						},
+						{
+							"min": 11,
+							"max": 13,
+							"enc": "1d12 ghouls"
+						},
+						{
+							"min": 14,
+							"max": 16,
+							"enc": "2d8 scouts"
+						},
+						{
+							"min": 17,
+							"max": 19,
+							"enc": "2d10 orcs"
+						},
+						{
+							"min": 20,
+							"max": 22,
+							"enc": "2d4 giant spiders"
+						},
+						{
+							"min": 23,
+							"max": 24,
+							"enc": "Tainted water that exposes creatures that move through it to sight rot (see \"Diseases\" in chapter 8 of the @italic Dungeon Master's Guide)"
+						},
+						{
+							"min": 25,
+							"max": 27,
+							"enc": "1d6+2 giant toads"
+						},
+						{
+							"min": 28,
+							"max": 30,
+							"enc": "3d6 lizardfolk"
+						},
+						{
+							"min": 31,
+							"max": 33,
+							"enc": "1d8+1 yuan-ti yuan-ti purebloods"
+						},
+						{
+							"min": 34,
+							"max": 36,
+							"enc": "1d4+1 swarm of poisonous snakes"
+						},
+						{
+							"min": 37,
+							"max": 38,
+							"enc": "A bloated humanoid corpse floating facedown in the water"
+						},
+						{
+							"min": 39,
+							"max": 41,
+							"enc": "1 shambling mound"
+						},
+						{
+							"min": 42,
+							"max": 44,
+							"enc": "1d4+1 will-o'-will-o'-wisps"
+						},
+						{
+							"min": 45,
+							"max": 47,
+							"enc": "2d6 crocodiles"
+						},
+						{
+							"min": 48,
+							"max": 50,
+							"enc": "1d4+1 giant constrictor snakes"
+						},
+						{
+							"min": 51,
+							"max": 54,
+							"enc": "1 lizardfolk shaman with 1d3 swarm of poisonous snakes and 1d8+2 lizardfolk"
+						},
+						{
+							"min": 55,
+							"max": 58,
+							"enc": "1d8+1 ogres"
+						},
+						{
+							"min": 59,
+							"max": 62,
+							"enc": "2d4 ghasts"
+						},
+						{
+							"min": 63,
+							"max": 65,
+							"enc": "An altar partially sunk into the mud, devoted to a god that is part human and part frog"
+						},
+						{
+							"min": 66,
+							"max": 69,
+							"enc": "1 giant crocodile"
+						},
+						{
+							"min": 70,
+							"max": 73,
+							"enc": "1 shambling mound"
+						},
+						{
+							"min": 74,
+							"max": 77,
+							"enc": "1 orc Eye of Gruumsh with 1d3 ogres and 2d10+5 orcs"
+						},
+						{
+							"min": 78,
+							"max": 80,
+							"enc": "A torrential rain that lasts 1d6 minutes and puts out all unprotected flames within 1 mile"
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "1 young black dragon"
+						},
+						{
+							"min": 83,
+							"max": 84,
+							"enc": "1d4 green green hags with 1d6+1 ogres"
+						},
+						{
+							"min": 85,
+							"max": 86,
+							"enc": "1 yuan-ti abomination"
+						},
+						{
+							"min": 87,
+							"max": 88,
+							"enc": "1d4+1 wights"
+						},
+						{
+							"min": 89,
+							"max": 90,
+							"enc": "1d6+1 yuan-ti malisons: yuan-ti malison (type type 1, yuan-ti malison (type type 2, yuan-ti malison (type type 3"
+						},
+						{
+							"min": 91,
+							"max": 93,
+							"enc": "1d4+1 trolls"
+						},
+						{
+							"min": 94,
+							"max": 96,
+							"enc": "1d10 revenants"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1d8+1 water elementals"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1d3 hydras"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 10,
+							"enc": "1d4 giant crocodiles"
+						},
+						{
+							"min": 11,
+							"max": 15,
+							"enc": "1d3 yuan-ti yuan-ti abominations"
+						},
+						{
+							"min": 16,
+							"max": 20,
+							"enc": "1d6+1 green green hags"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A large, spreading tree from which 2d6 armored knights hang by the neck"
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "2d4 wights"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "1d8+1 yuan-ti malisons: yuan-ti malison (type type 1, yuan-ti malison (type type 2, yuan-ti malison (type type 3"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "Fog that rolls across the terrain, making the area within 1d3 miles heavily obscured for 1d4 hours"
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "1d4 revenants"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "1d6 shambling shambling mounds"
+						},
+						{
+							"min": 51,
+							"max": 55,
+							"enc": "1d10 water elementals"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1d4 young black young black dragons"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "An eerie, bat-headed idol almost completely covered by vines"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1d8+2 trolls"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "1d3 hydras"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "The sound of drums beating several miles away"
+						},
+						{
+							"min": 81,
+							"max": 96,
+							"enc": "1 adult black dragon"
+						},
+						{
+							"min": 97,
+							"max": 0,
+							"enc": "1 ancient black dragon"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Underdark",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 mind flayer arcanist"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "1d3+1 giant poisonous snakes"
+						},
+						{
+							"min": 3,
+							"max": 3,
+							"enc": "1d3 giant lizards"
+						},
+						{
+							"min": 4,
+							"max": 4,
+							"enc": "2d4 giant fire beetles"
+						},
+						{
+							"min": 5,
+							"max": 5,
+							"enc": "1d8+1 flumphs"
+						},
+						{
+							"min": 6,
+							"max": 6,
+							"enc": "1 shrieker"
+						},
+						{
+							"min": 7,
+							"max": 7,
+							"enc": "1d12 giant  rats"
+						},
+						{
+							"min": 8,
+							"max": 8,
+							"enc": "2d4 kobolds"
+						},
+						{
+							"min": 9,
+							"max": 9,
+							"enc": "1d8+1 stirges"
+						},
+						{
+							"min": 10,
+							"max": 10,
+							"enc": "2d4 humans  tribal tribal warriors) seeking the way to the surface, fleeing their Underdark oppressors"
+						},
+						{
+							"min": 11,
+							"max": 12,
+							"enc": "1d10 troglodytes"
+						},
+						{
+							"min": 13,
+							"max": 14,
+							"enc": "1d2 gray gray oozes"
+						},
+						{
+							"min": 15,
+							"max": 16,
+							"enc": "3d6 stirges"
+						},
+						{
+							"min": 17,
+							"max": 18,
+							"enc": "1d3 magma magma mephits"
+						},
+						{
+							"min": 19,
+							"max": 20,
+							"enc": "1d10 goblins"
+						},
+						{
+							"min": 21,
+							"max": 22,
+							"enc": "Orc graffiti on the walls, suggesting something rude about the mother of someone named Krusk"
+						},
+						{
+							"min": 23,
+							"max": 24,
+							"enc": "1 swarm of insects"
+						},
+						{
+							"min": 25,
+							"max": 25,
+							"enc": "1 deep gnome"
+						},
+						{
+							"min": 26,
+							"max": 28,
+							"enc": "1d8+1 drow"
+						},
+						{
+							"min": 29,
+							"max": 30,
+							"enc": "1d4 violet violet fungi"
+						},
+						{
+							"min": 31,
+							"max": 32,
+							"enc": "1d12 kuo-toa"
+						},
+						{
+							"min": 33,
+							"max": 33,
+							"enc": "1 rust monster"
+						},
+						{
+							"min": 34,
+							"max": 35,
+							"enc": "A rubble-strewn passage that appears to have been recently cleared after a cave-in"
+						},
+						{
+							"min": 36,
+							"max": 37,
+							"enc": "1d8+1 giant bats"
+						},
+						{
+							"min": 38,
+							"max": 39,
+							"enc": "3d6 kobolds"
+						},
+						{
+							"min": 40,
+							"max": 41,
+							"enc": "2d4 grimlocks"
+						},
+						{
+							"min": 42,
+							"max": 43,
+							"enc": "1d4+3 swarm of swarms of bats"
+						},
+						{
+							"min": 44,
+							"max": 44,
+							"enc": "1 dwarf prospector  scout) looking for gold"
+						},
+						{
+							"min": 45,
+							"max": 45,
+							"enc": "1 carrion crawler or 1 gelatinous cube"
+						},
+						{
+							"min": 46,
+							"max": 46,
+							"enc": "1d8 darkmantles or 2d4 piercers"
+						},
+						{
+							"min": 47,
+							"max": 47,
+							"enc": "1 hell hound"
+						},
+						{
+							"min": 48,
+							"max": 48,
+							"enc": "1d3 specters"
+						},
+						{
+							"min": 49,
+							"max": 49,
+							"enc": "1d4 bugbears"
+						},
+						{
+							"min": 50,
+							"max": 50,
+							"enc": "1d10+5 winged winged kobolds"
+						},
+						{
+							"min": 51,
+							"max": 51,
+							"enc": "1d4 fire snakes"
+						},
+						{
+							"min": 52,
+							"max": 52,
+							"enc": "2d8+1 troglodytes"
+						},
+						{
+							"min": 53,
+							"max": 53,
+							"enc": "1d6 giant spiders"
+						},
+						{
+							"min": 54,
+							"max": 54,
+							"enc": "3d6 kuo-toa"
+						},
+						{
+							"min": 55,
+							"max": 55,
+							"enc": "1 goblin boss with 2d4 goblins"
+						},
+						{
+							"min": 56,
+							"max": 56,
+							"enc": "4d4 grimlocks"
+						},
+						{
+							"min": 57,
+							"max": 57,
+							"enc": "1 ochre jelly"
+						},
+						{
+							"min": 58,
+							"max": 58,
+							"enc": "2d10 giant centipedes"
+						},
+						{
+							"min": 59,
+							"max": 59,
+							"enc": "1 nothic or 1 giant toad"
+						},
+						{
+							"min": 60,
+							"max": 60,
+							"enc": "1d4 myconid myconid adults with 5d4 myconid myconid sprouts"
+						},
+						{
+							"min": 61,
+							"max": 61,
+							"enc": "1 minotaur skeleton or 1 minotaur"
+						},
+						{
+							"min": 62,
+							"max": 62,
+							"enc": "3d6 drow"
+						},
+						{
+							"min": 63,
+							"max": 63,
+							"enc": "1 mimic or 1 doppelganger"
+						},
+						{
+							"min": 64,
+							"max": 64,
+							"enc": "1d6+3 hobgoblins"
+						},
+						{
+							"min": 65,
+							"max": 65,
+							"enc": "1 intellect devourer or 1 spectator"
+						},
+						{
+							"min": 66,
+							"max": 66,
+							"enc": "1d8+1 orcs"
+						},
+						{
+							"min": 67,
+							"max": 68,
+							"enc": "A faint tapping coming from inside a nearby wall"
+						},
+						{
+							"min": 69,
+							"max": 69,
+							"enc": "1 gibbering mouther or 1 water weird"
+						},
+						{
+							"min": 70,
+							"max": 70,
+							"enc": "1d12 gas gas spores"
+						},
+						{
+							"min": 71,
+							"max": 71,
+							"enc": "1 giant constrictor snake"
+						},
+						{
+							"min": 72,
+							"max": 72,
+							"enc": "1d10 shadows"
+						},
+						{
+							"min": 73,
+							"max": 73,
+							"enc": "1d3 grells"
+						},
+						{
+							"min": 74,
+							"max": 74,
+							"enc": "1d4 wights"
+						},
+						{
+							"min": 75,
+							"max": 75,
+							"enc": "1d8+1 quaggoth spore quaggoth spore servants"
+						},
+						{
+							"min": 76,
+							"max": 76,
+							"enc": "1d2 gargoyles"
+						},
+						{
+							"min": 77,
+							"max": 77,
+							"enc": "1d4 ogres or 1d3 ettins"
+						},
+						{
+							"min": 78,
+							"max": 78,
+							"enc": "1d4 dwarf explorers  veterans)"
+						},
+						{
+							"min": 79,
+							"max": 80,
+							"enc": "An abandoned miners' camp spattered with blood and littered with the contents of 1d3 @item dungeoneer's pack|phb|dungeoneer's packs"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1 chuul or 1 salamander"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "1d4 phase phase spiders or 1d3 hook hook horrors"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "5d4 duergar"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "1 ghost or 1 flameskull or 1 wraith"
+						},
+						{
+							"min": 85,
+							"max": 85,
+							"enc": "1 druid with 1 polar bear  cave bear)"
+						},
+						{
+							"min": 86,
+							"max": 86,
+							"enc": "1 hobgoblin captain with 1d4 half-ogre (half-ogres and 2d10 hobgoblins"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1 earth elemental or 1 black pudding"
+						},
+						{
+							"min": 88,
+							"max": 88,
+							"enc": "1 kuo-toa monitor with 1d8+1 kuo-toa kuo-toa whips"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "1 quaggoth thonot with 1d3 quaggoths"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1 beholder zombie or 1 bone naga (bone naga"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1 orc Eye of Gruumsh with 1d4 orogs and 2d8 orcs"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1d4 ghasts with 1d10 ghouls"
+						},
+						{
+							"min": 93,
+							"max": 95,
+							"enc": "A reeking puddle where slimy water has dripped from the ceiling"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1 otyugh or 1 roper"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 vampire spawn"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 chimera"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 mind flayer"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 spirit naga"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "3d6 swarm of swarms of bats"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "1d4 giant spiders or 1d4 giant toads"
+						},
+						{
+							"min": 3,
+							"max": 3,
+							"enc": "1 mimic"
+						},
+						{
+							"min": 4,
+							"max": 4,
+							"enc": "2d4 gray grey oozes"
+						},
+						{
+							"min": 5,
+							"max": 5,
+							"enc": "2d10 orcs or 3d6 troglodytes"
+						},
+						{
+							"min": 6,
+							"max": 6,
+							"enc": "3d6 grimlocks"
+						},
+						{
+							"min": 7,
+							"max": 7,
+							"enc": "1d6+2 magma magma mephits"
+						},
+						{
+							"min": 8,
+							"max": 8,
+							"enc": "1 goblin boss with 2d4 goblins"
+						},
+						{
+							"min": 9,
+							"max": 9,
+							"enc": "2d4 darkmantles"
+						},
+						{
+							"min": 10,
+							"max": 10,
+							"enc": "2d8+1 drow"
+						},
+						{
+							"min": 11,
+							"max": 11,
+							"enc": "2d10 piercers"
+						},
+						{
+							"min": 12,
+							"max": 12,
+							"enc": "1d4 minotaur minotaur skeletons"
+						},
+						{
+							"min": 13,
+							"max": 14,
+							"enc": "3d6 deep gnomes"
+						},
+						{
+							"min": 15,
+							"max": 15,
+							"enc": "1 druid with 1 polar bear  cave bear)"
+						},
+						{
+							"min": 16,
+							"max": 17,
+							"enc": "3d6 orcs"
+						},
+						{
+							"min": 18,
+							"max": 18,
+							"enc": "1 bone naga (bone naga"
+						},
+						{
+							"min": 19,
+							"max": 20,
+							"enc": "2d6 bugbears"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "Luminescent fungi growing on the walls of a moist cave, filling it with dim light"
+						},
+						{
+							"min": 26,
+							"max": 26,
+							"enc": "2d4 specters"
+						},
+						{
+							"min": 27,
+							"max": 27,
+							"enc": "1d12+4 shadows"
+						},
+						{
+							"min": 28,
+							"max": 28,
+							"enc": "1d3 gibbering gibbering mouthers"
+						},
+						{
+							"min": 29,
+							"max": 30,
+							"enc": "4d4 hobgoblins"
+						},
+						{
+							"min": 31,
+							"max": 32,
+							"enc": "1d4 carrion carrion crawlers"
+						},
+						{
+							"min": 33,
+							"max": 34,
+							"enc": "1 black pudding"
+						},
+						{
+							"min": 35,
+							"max": 35,
+							"enc": "1d4 ochre ochre jellies"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A patch of mold that appears yellow when light is directed toward it"
+						},
+						{
+							"min": 41,
+							"max": 41,
+							"enc": "1d4 nothics"
+						},
+						{
+							"min": 42,
+							"max": 43,
+							"enc": "2d8+1 gas gas spores"
+						},
+						{
+							"min": 44,
+							"max": 45,
+							"enc": "1d3 gelatinous gelatinous cubes"
+						},
+						{
+							"min": 46,
+							"max": 46,
+							"enc": "1 ghost"
+						},
+						{
+							"min": 47,
+							"max": 48,
+							"enc": "1 flameskull"
+						},
+						{
+							"min": 49,
+							"max": 50,
+							"enc": "2d8 duergar"
+						},
+						{
+							"min": 51,
+							"max": 51,
+							"enc": "1 wraith"
+						},
+						{
+							"min": 52,
+							"max": 52,
+							"enc": "1 umber hulk"
+						},
+						{
+							"min": 53,
+							"max": 53,
+							"enc": "1 xorn"
+						},
+						{
+							"min": 54,
+							"max": 54,
+							"enc": "1d6+2 dwarf hunters  veterans) searching for trolls"
+						},
+						{
+							"min": 55,
+							"max": 55,
+							"enc": "1 hobgoblin captain with 3d10 hobgoblins"
+						},
+						{
+							"min": 56,
+							"max": 56,
+							"enc": "1 roper"
+						},
+						{
+							"min": 57,
+							"max": 57,
+							"enc": "1 kuo-toa monitor with 1d4 kuo-toa kuo-toa whips and 1d8+1 kuo-toa"
+						},
+						{
+							"min": 58,
+							"max": 58,
+							"enc": "1d3 water weirds"
+						},
+						{
+							"min": 59,
+							"max": 59,
+							"enc": "1d4 ghasts with 1d10 ghouls"
+						},
+						{
+							"min": 60,
+							"max": 60,
+							"enc": "1 otyugh"
+						},
+						{
+							"min": 61,
+							"max": 62,
+							"enc": "A merchant caravan consisting of 1 drow mage, 2 drow elite warriors, and 2d10 quaggoths"
+						},
+						{
+							"min": 63,
+							"max": 63,
+							"enc": "1d4 wights"
+						},
+						{
+							"min": 64,
+							"max": 64,
+							"enc": "1d4 doppelgangers"
+						},
+						{
+							"min": 65,
+							"max": 65,
+							"enc": "2d8 fire snakes"
+						},
+						{
+							"min": 66,
+							"max": 66,
+							"enc": "1d4 spectators"
+						},
+						{
+							"min": 67,
+							"max": 67,
+							"enc": "1 orc Eye of Gruumsh with 1d4 orogs and 2d10+3 orcs"
+						},
+						{
+							"min": 68,
+							"max": 68,
+							"enc": "1d3 vampire spawn"
+						},
+						{
+							"min": 69,
+							"max": 69,
+							"enc": "1d4 hook hook horrors or 1d4 minotaurs"
+						},
+						{
+							"min": 70,
+							"max": 70,
+							"enc": "3d6 quaggoth spore quaggoth spore servants"
+						},
+						{
+							"min": 71,
+							"max": 72,
+							"enc": "1d3 grells"
+						},
+						{
+							"min": 73,
+							"max": 73,
+							"enc": "1d6+1 intellect intellect devourers"
+						},
+						{
+							"min": 74,
+							"max": 74,
+							"enc": "1d10 gargoyles"
+						},
+						{
+							"min": 75,
+							"max": 75,
+							"enc": "1 beholder zombie"
+						},
+						{
+							"min": 76,
+							"max": 77,
+							"enc": "1 quaggoth thonot with 2d4 quaggoths"
+						},
+						{
+							"min": 78,
+							"max": 78,
+							"enc": "1d6 ettins or 1d4 trolls"
+						},
+						{
+							"min": 79,
+							"max": 79,
+							"enc": "1d8+1 phase phase spiders"
+						},
+						{
+							"min": 80,
+							"max": 80,
+							"enc": "1 fomorian or 1d3 cyclopes"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1d4 earth earth elementals"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "3d6 ogres"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "1d4+1 chuuls"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "1d10 hell hell hounds"
+						},
+						{
+							"min": 85,
+							"max": 85,
+							"enc": "1d3 drow elite warriors"
+						},
+						{
+							"min": 86,
+							"max": 86,
+							"enc": "1d4 chimeras"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1d4 salamanders"
+						},
+						{
+							"min": 88,
+							"max": 88,
+							"enc": "1 cloaker"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "2d4 wights"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1d4 driders"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1 fire giant"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1 grick alpha with 2d4 gricks"
+						},
+						{
+							"min": 93,
+							"max": 93,
+							"enc": "1 mind flayer arcanist"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1d4 drow mages"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "1 spirit naga"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1d4 mind mind flayers"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 behir"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 aboleth"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 dao or 1 stone giant"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 beholder"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 16,
+					"table": [
+						{
+							"min": 1,
+							"max": 2,
+							"enc": "3d6 carrion carrion crawlers"
+						},
+						{
+							"min": 3,
+							"max": 4,
+							"enc": "1d6+1 gelatinous gelatinous cubes"
+						},
+						{
+							"min": 5,
+							"max": 6,
+							"enc": "1d8+2 gibbering gibbering mouthers"
+						},
+						{
+							"min": 7,
+							"max": 8,
+							"enc": "2d8 minotaur minotaur skeletons"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "2d6 ochre ochre jellies"
+						},
+						{
+							"min": 11,
+							"max": 12,
+							"enc": "2d4 doppelgangers"
+						},
+						{
+							"min": 13,
+							"max": 14,
+							"enc": "1d4 quaggoth quaggoth thonots with 1d10+2 quaggoths"
+						},
+						{
+							"min": 15,
+							"max": 16,
+							"enc": "1d3 ropers"
+						},
+						{
+							"min": 17,
+							"max": 18,
+							"enc": "3d6 gargoyles"
+						},
+						{
+							"min": 19,
+							"max": 20,
+							"enc": "1d10 mimics"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A 100-foot-long ravine, 4d10 feet wide and 5d20+200 feet deep"
+						},
+						{
+							"min": 26,
+							"max": 27,
+							"enc": "1 hobgoblin captain with 3d10 hobgoblins"
+						},
+						{
+							"min": 28,
+							"max": 29,
+							"enc": "2d4 spectators"
+						},
+						{
+							"min": 30,
+							"max": 31,
+							"enc": "3d6 ghasts"
+						},
+						{
+							"min": 32,
+							"max": 33,
+							"enc": "2d8 intellect intellect devourers"
+						},
+						{
+							"min": 34,
+							"max": 35,
+							"enc": "1d3 orc Eye of orc Eyes of Gruumsh with 2d4 orogs and 2d10 orcs"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A large cave containing 2d10 extraordinarily detailed statues of various creatures"
+						},
+						{
+							"min": 41,
+							"max": 42,
+							"enc": "1d8+1 kuo-toa kuo-toa monitors"
+						},
+						{
+							"min": 43,
+							"max": 44,
+							"enc": "2d4 water weirds"
+						},
+						{
+							"min": 45,
+							"max": 46,
+							"enc": "2d10 gricks"
+						},
+						{
+							"min": 47,
+							"max": 48,
+							"enc": "3d6 nothics"
+						},
+						{
+							"min": 49,
+							"max": 50,
+							"enc": "2d8+1 ogres"
+						},
+						{
+							"min": 51,
+							"max": 52,
+							"enc": "1d6+2 chuuls"
+						},
+						{
+							"min": 53,
+							"max": 54,
+							"enc": "1d8+1 ettins"
+						},
+						{
+							"min": 55,
+							"max": 55,
+							"enc": "3d6 grells"
+						},
+						{
+							"min": 56,
+							"max": 56,
+							"enc": "2d4 flameskulls"
+						},
+						{
+							"min": 57,
+							"max": 57,
+							"enc": "2d12 dwarf soldiers  veterans) on patrol"
+						},
+						{
+							"min": 58,
+							"max": 58,
+							"enc": "2d8 hell hell hounds"
+						},
+						{
+							"min": 59,
+							"max": 59,
+							"enc": "1d10 ghosts"
+						},
+						{
+							"min": 60,
+							"max": 60,
+							"enc": "3d4 wights"
+						},
+						{
+							"min": 61,
+							"max": 61,
+							"enc": "3d6 phase phase spiders"
+						},
+						{
+							"min": 62,
+							"max": 62,
+							"enc": "1d8+1 bone naga (bone nagas"
+						},
+						{
+							"min": 63,
+							"max": 65,
+							"enc": "A shrill scream followed by dark laughter"
+						},
+						{
+							"min": 66,
+							"max": 66,
+							"enc": "1d4 chimeras"
+						},
+						{
+							"min": 67,
+							"max": 67,
+							"enc": "1d10 black black puddings"
+						},
+						{
+							"min": 68,
+							"max": 68,
+							"enc": "3d6 minotaurs"
+						},
+						{
+							"min": 69,
+							"max": 69,
+							"enc": "2d4 otyughs"
+						},
+						{
+							"min": 70,
+							"max": 70,
+							"enc": "1d6+1 beholder beholder zombies"
+						},
+						{
+							"min": 71,
+							"max": 71,
+							"enc": "4d4 hook hook horrors"
+						},
+						{
+							"min": 72,
+							"max": 72,
+							"enc": "1d8+1 umber umber hulks"
+						},
+						{
+							"min": 73,
+							"max": 73,
+							"enc": "2d4 salamanders"
+						},
+						{
+							"min": 74,
+							"max": 74,
+							"enc": "1d3 grick grick alphas"
+						},
+						{
+							"min": 75,
+							"max": 75,
+							"enc": "1d6+2 xorn"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A ruined village that once belonged to deep gnomes. A search has a 50% chance of uncovering 1d3 @item potion of healing|dmg|potions of healing and a 25% chance of finding a random common magic item"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "2d4 earth earth elementals"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "1d3 spirit spirit nagas"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "1d8+1 cyclopes"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "1d6+2 trolls"
+						},
+						{
+							"min": 85,
+							"max": 85,
+							"enc": "2d4 stone giants"
+						},
+						{
+							"min": 86,
+							"max": 86,
+							"enc": "2d4 wraiths"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1d4 fomorians"
+						},
+						{
+							"min": 88,
+							"max": 88,
+							"enc": "1d3 drow mages with 1d4 drow elite warriors"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "1d10 vampire spawn"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1d3 cloakers"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1d4 fire giants"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1 mind flayer arcanist with 1d6+1 mind mind flayers"
+						},
+						{
+							"min": 93,
+							"max": 93,
+							"enc": "1d4 dao"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1d8+1 driders"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "1d3 behirs"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1d4 aboleths"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 beholder"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 young red shadow dragon"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 death tyrant"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 purple worm"
+						}
+					]
+				},
+				{
+					"minlvl": 17,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1d4 grick grick alphas"
+						},
+						{
+							"min": 2,
+							"max": 2,
+							"enc": "2d8 spectators"
+						},
+						{
+							"min": 3,
+							"max": 4,
+							"enc": "3d6 minotaurs or 2d8 kuo-toa kuo-toa monitors"
+						},
+						{
+							"min": 5,
+							"max": 6,
+							"enc": "2d8 grells"
+						},
+						{
+							"min": 7,
+							"max": 8,
+							"enc": "2d10 phase phase spiders"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "4d4 hell hell hounds"
+						},
+						{
+							"min": 11,
+							"max": 12,
+							"enc": "1d6+2 ropers"
+						},
+						{
+							"min": 13,
+							"max": 14,
+							"enc": "2d10 wights"
+						},
+						{
+							"min": 15,
+							"max": 16,
+							"enc": "3d6 doppelgangers"
+						},
+						{
+							"min": 17,
+							"max": 18,
+							"enc": "1d8+1 chimeras"
+						},
+						{
+							"min": 19,
+							"max": 20,
+							"enc": "1d4 cloakers"
+						},
+						{
+							"min": 21,
+							"max": 21,
+							"enc": "1d4 hobgoblin hobgoblin captains with 5d10 hobgoblins"
+						},
+						{
+							"min": 22,
+							"max": 23,
+							"enc": "1d8+1 earth earth elementals"
+						},
+						{
+							"min": 24,
+							"max": 25,
+							"enc": "2d4 vampire spawn"
+						},
+						{
+							"min": 26,
+							"max": 27,
+							"enc": "3d6 minotaurs"
+						},
+						{
+							"min": 28,
+							"max": 30,
+							"enc": "A 30-foot-tall inverted black pyramid floating 1 inch above the floor in a large cave"
+						},
+						{
+							"min": 31,
+							"max": 32,
+							"enc": "1d10 beholder beholder zombies"
+						},
+						{
+							"min": 33,
+							"max": 34,
+							"enc": "1d4 mind flayer mind flayer arcanists"
+						},
+						{
+							"min": 35,
+							"max": 36,
+							"enc": "1d6+2 otyughs"
+						},
+						{
+							"min": 37,
+							"max": 38,
+							"enc": "1d12 trolls"
+						},
+						{
+							"min": 39,
+							"max": 40,
+							"enc": "1d10 wraiths"
+						},
+						{
+							"min": 41,
+							"max": 43,
+							"enc": "A beautiful obsidian sculpture of a panther lying on the floor"
+						},
+						{
+							"min": 44,
+							"max": 45,
+							"enc": "1d4 drow mages with 1d6 drow elite warriors"
+						},
+						{
+							"min": 46,
+							"max": 47,
+							"enc": "1d4 spirit spirit nagas"
+						},
+						{
+							"min": 48,
+							"max": 49,
+							"enc": "1d8+1 salamanders"
+						},
+						{
+							"min": 50,
+							"max": 51,
+							"enc": "2d4 umber umber hulks"
+						},
+						{
+							"min": 52,
+							"max": 53,
+							"enc": "1d10 xorn"
+						},
+						{
+							"min": 54,
+							"max": 56,
+							"enc": "1 young red shadow dragon"
+						},
+						{
+							"min": 57,
+							"max": 59,
+							"enc": "2d4 fomorians"
+						},
+						{
+							"min": 60,
+							"max": 62,
+							"enc": "1d8+1 driders"
+						},
+						{
+							"min": 63,
+							"max": 65,
+							"enc": "1d20+20 spiders crawling on the walls of a web-filled cave"
+						},
+						{
+							"min": 66,
+							"max": 68,
+							"enc": "1d4 fire giants"
+						},
+						{
+							"min": 69,
+							"max": 70,
+							"enc": "1d10 mind mind flayers"
+						},
+						{
+							"min": 71,
+							"max": 73,
+							"enc": "2d4 stone giants"
+						},
+						{
+							"min": 74,
+							"max": 76,
+							"enc": "1d12 cyclopes"
+						},
+						{
+							"min": 77,
+							"max": 80,
+							"enc": "A large cave in which stands a 50-foot-tall idol of Blibdoolpoolp"
+						},
+						{
+							"min": 81,
+							"max": 85,
+							"enc": "1d3 dao"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "1d4 beholders"
+						},
+						{
+							"min": 91,
+							"max": 93,
+							"enc": "1d4 behirs"
+						},
+						{
+							"min": 94,
+							"max": 96,
+							"enc": "1 death tyrant"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1d3 purple purple worms"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "2d4 aboleths"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Underwater",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 10,
+							"enc": "3d6 quippers"
+						},
+						{
+							"min": 11,
+							"max": 14,
+							"enc": "2d4 steam steam mephits"
+						},
+						{
+							"min": 15,
+							"max": 18,
+							"enc": "1d4 sahuagin"
+						},
+						{
+							"min": 19,
+							"max": 22,
+							"enc": "2d6 merfolk"
+						},
+						{
+							"min": 23,
+							"max": 25,
+							"enc": "2d4 corpses of drowned sailors tangled in kelp"
+						},
+						{
+							"min": 26,
+							"max": 29,
+							"enc": "2d4 constrictor snakes"
+						},
+						{
+							"min": 30,
+							"max": 33,
+							"enc": "1d4 reef reef sharks"
+						},
+						{
+							"min": 34,
+							"max": 37,
+							"enc": "1 swarm of quippers"
+						},
+						{
+							"min": 38,
+							"max": 40,
+							"enc": "A bed of enormous clams"
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "1d10 merfolk with 1d3 giant sea horses"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "1 giant octopus"
+						},
+						{
+							"min": 51,
+							"max": 55,
+							"enc": "1 merrow"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1 plesiosaurus"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "2d10 pieces of corroded brass dinnerware littering the bottom"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1 giant constrictor snake"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "1 sea hag"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A school of silvery fish darting through the water"
+						},
+						{
+							"min": 81,
+							"max": 85,
+							"enc": "1d4 hunter hunter sharks"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "1 sahuagin priestess with 2d4 sahuagin"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1d4 killer killer whales"
+						},
+						{
+							"min": 97,
+							"max": 98,
+							"enc": "1 giant shark"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 water elemental"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 sahuagin baron"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 2,
+							"enc": "3d6 steam steam mephits"
+						},
+						{
+							"min": 3,
+							"max": 4,
+							"enc": "1d10 sahuagin"
+						},
+						{
+							"min": 5,
+							"max": 6,
+							"enc": "1 giant octopus"
+						},
+						{
+							"min": 7,
+							"max": 8,
+							"enc": "3d6 constrictor snakes"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "2d10 merfolk with 1d4 giant sea horses"
+						},
+						{
+							"min": 11,
+							"max": 15,
+							"enc": "1d4 sea sea hags"
+						},
+						{
+							"min": 16,
+							"max": 20,
+							"enc": "2d4 swarm of swarms of quippers"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A sunken galleon with a 50% chance of a random treasure hoard inside (roll on the Treasure Hoard: Challenge 5-10 table in chapter 7 of the @italic Dungeon Master's Guide)"
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "1d4 plesiosauruses"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "3d6 reef reef sharks"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "An abandoned bathysphere"
+						},
+						{
+							"min": 41,
+							"max": 50,
+							"enc": "1d4 giant constrictor snakes"
+						},
+						{
+							"min": 51,
+							"max": 55,
+							"enc": "2d4 hunter hunter sharks"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1d3 sahuagin priestesses with 2d10 sahuagin"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "An empty castle made from coral"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1d4 killer killer whales"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "1d10 merrow"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "An eerie statue of a squatting humanoid, with bat wings on its back and tentacles sprouting from its face"
+						},
+						{
+							"min": 81,
+							"max": 85,
+							"enc": "1d4 water elementals"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "1 sahuagin baron with 2d8 sahuagin"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1d4 giant sharks"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1 marid"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 storm giant"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 10,
+							"enc": "1 sahuagin baron with 1d4 sahuagin priestesses and 2d10 sahuagin"
+						},
+						{
+							"min": 11,
+							"max": 35,
+							"enc": "1d10 killer killer whales"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A ghost ship passing overhead, containing 2d6+10 ghosts"
+						},
+						{
+							"min": 41,
+							"max": 60,
+							"enc": "1d6 giant sharks"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "A 1-mile-radius sphere of effervescent water that allows air-breathing creatures to breathe water while in the sphere"
+						},
+						{
+							"min": 66,
+							"max": 75,
+							"enc": "1d10 water elementals"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A shimmering, blue-green portal to the Elemental Plane of Water"
+						},
+						{
+							"min": 81,
+							"max": 90,
+							"enc": "1d4 marids"
+						},
+						{
+							"min": 91,
+							"max": 96,
+							"enc": "1d3 storm giants"
+						},
+						{
+							"min": 97,
+							"max": 99,
+							"enc": "1 dragon turtle"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 kraken"
+						}
+					]
+				}
+			]
+		},
+		{
+			"location": "Urban",
+			"source": "XGE",
+			"tables": [
+				{
+					"minlvl": 1,
+					"maxlvl": 4,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1d6 cats"
+						},
+						{
+							"min": 2,
+							"max": 3,
+							"enc": "1 commoner with 1d6 goats"
+						},
+						{
+							"min": 4,
+							"max": 5,
+							"enc": "2d10 rats"
+						},
+						{
+							"min": 6,
+							"max": 6,
+							"enc": "1 raven perched on a signpost"
+						},
+						{
+							"min": 7,
+							"max": 7,
+							"enc": "1 commoner on a draft horse"
+						},
+						{
+							"min": 8,
+							"max": 8,
+							"enc": "2d4 mastiffs"
+						},
+						{
+							"min": 9,
+							"max": 9,
+							"enc": "1d2 commoners leading 1d4 mules or 1d4 ponies"
+						},
+						{
+							"min": 10,
+							"max": 10,
+							"enc": "1 pseudodragon"
+						},
+						{
+							"min": 11,
+							"max": 11,
+							"enc": "1 spy"
+						},
+						{
+							"min": 12,
+							"max": 13,
+							"enc": "1d8+1 acolytes"
+						},
+						{
+							"min": 14,
+							"max": 14,
+							"enc": "1d6+6 flying flying snakes"
+						},
+						{
+							"min": 15,
+							"max": 15,
+							"enc": "3d6 kobolds"
+						},
+						{
+							"min": 16,
+							"max": 16,
+							"enc": "2d4 giant centipedes"
+						},
+						{
+							"min": 17,
+							"max": 17,
+							"enc": "1d8+1 skeletons"
+						},
+						{
+							"min": 18,
+							"max": 19,
+							"enc": "1d6+2 swarm of swarms of rats"
+						},
+						{
+							"min": 20,
+							"max": 20,
+							"enc": "1d12 zombies"
+						},
+						{
+							"min": 21,
+							"max": 25,
+							"enc": "A peddler weighed down with a load of pots, pans, and other basic supplies"
+						},
+						{
+							"min": 26,
+							"max": 26,
+							"enc": "1 giant wasp"
+						},
+						{
+							"min": 27,
+							"max": 28,
+							"enc": "1 warhorse"
+						},
+						{
+							"min": 29,
+							"max": 29,
+							"enc": "2d8 cultists"
+						},
+						{
+							"min": 30,
+							"max": 31,
+							"enc": "3d4 giant rats"
+						},
+						{
+							"min": 32,
+							"max": 32,
+							"enc": "2d8 stirges"
+						},
+						{
+							"min": 33,
+							"max": 33,
+							"enc": "1d3+2 giant poisonous snakes"
+						},
+						{
+							"min": 34,
+							"max": 34,
+							"enc": "1d4+2 swarm of swarms of bats"
+						},
+						{
+							"min": 35,
+							"max": 35,
+							"enc": "2d4 winged winged kobolds"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A wagon loaded with apples that has a broken wheel and holds up traffic"
+						},
+						{
+							"min": 41,
+							"max": 41,
+							"enc": "1 crocodile"
+						},
+						{
+							"min": 42,
+							"max": 43,
+							"enc": "1 swarm of insects"
+						},
+						{
+							"min": 44,
+							"max": 45,
+							"enc": "3d6 bandits"
+						},
+						{
+							"min": 46,
+							"max": 47,
+							"enc": "1d3+2 nobles on riding riding horses with an escort of 1d10 guards"
+						},
+						{
+							"min": 48,
+							"max": 48,
+							"enc": "2d4 kenku"
+						},
+						{
+							"min": 49,
+							"max": 49,
+							"enc": "1d6+2 smoke smoke mephits"
+						},
+						{
+							"min": 50,
+							"max": 50,
+							"enc": "1d8+1 swarm of swarms of ravens"
+						},
+						{
+							"min": 51,
+							"max": 52,
+							"enc": "1 wererat"
+						},
+						{
+							"min": 53,
+							"max": 54,
+							"enc": "1d3 half-ogre (half-ogres"
+						},
+						{
+							"min": 55,
+							"max": 56,
+							"enc": "1 mimic"
+						},
+						{
+							"min": 57,
+							"max": 58,
+							"enc": "1d4 ghouls"
+						},
+						{
+							"min": 59,
+							"max": 60,
+							"enc": "1d4 specters"
+						},
+						{
+							"min": 61,
+							"max": 62,
+							"enc": "1d10 shadows"
+						},
+						{
+							"min": 63,
+							"max": 65,
+							"enc": "Someone empties a chamber pot onto the street from a second-floor window"
+						},
+						{
+							"min": 66,
+							"max": 67,
+							"enc": "1 ghast"
+						},
+						{
+							"min": 68,
+							"max": 69,
+							"enc": "1 priest"
+						},
+						{
+							"min": 70,
+							"max": 71,
+							"enc": "1 will-o'-wisp"
+						},
+						{
+							"min": 72,
+							"max": 73,
+							"enc": "1d3 giant-spiders"
+						},
+						{
+							"min": 74,
+							"max": 75,
+							"enc": "1d4 yuan-ti yuan-ti purebloods"
+						},
+						{
+							"min": 76,
+							"max": 77,
+							"enc": "2d4 thugs"
+						},
+						{
+							"min": 78,
+							"max": 80,
+							"enc": "A doomsayer who preaches the end of the world from a street corner"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1 cambion"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "1 vampire spawn"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "1 couatl"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "1 ghost"
+						},
+						{
+							"min": 85,
+							"max": 85,
+							"enc": "1 succubus or 1 incubus"
+						},
+						{
+							"min": 86,
+							"max": 86,
+							"enc": "1 bandit captain with 3d6 bandits"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1d4+1 cult cult fanatics"
+						},
+						{
+							"min": 88,
+							"max": 88,
+							"enc": "1 knight or 1 veteran"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "1 water weird"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "1 wight"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1 mage"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1 shield guardian"
+						},
+						{
+							"min": 93,
+							"max": 93,
+							"enc": "1 gladiator"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1 revenant"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "2d4 gargoyles"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "1d4 doppelgangers"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 oni"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 invisible stalker"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1d3+1 phase phase spiders"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 assassin"
+						}
+					]
+				},
+				{
+					"minlvl": 5,
+					"maxlvl": 10,
+					"table": [
+						{
+							"min": 1,
+							"max": 2,
+							"enc": "1d10 kenku"
+						},
+						{
+							"min": 3,
+							"max": 4,
+							"enc": "2d6 giant centipedes"
+						},
+						{
+							"min": 5,
+							"max": 6,
+							"enc": "2d8 skeletons"
+						},
+						{
+							"min": 7,
+							"max": 8,
+							"enc": "1d6 swarm of swarms of bats and 1d6 swarm of swarms of rats"
+						},
+						{
+							"min": 9,
+							"max": 10,
+							"enc": "3d6 winged winged kobolds"
+						},
+						{
+							"min": 11,
+							"max": 13,
+							"enc": "2d4 specters"
+						},
+						{
+							"min": 14,
+							"max": 16,
+							"enc": "1d4 wights"
+						},
+						{
+							"min": 17,
+							"max": 19,
+							"enc": "4d4 acolytes on draft draft horses"
+						},
+						{
+							"min": 20,
+							"max": 22,
+							"enc": "3d6 giant centipedes"
+						},
+						{
+							"min": 23,
+							"max": 25,
+							"enc": "A talkative urchin, badgering passersby to serve as their guide through the community for a price of 1 sp"
+						},
+						{
+							"min": 26,
+							"max": 28,
+							"enc": "1d10 spies"
+						},
+						{
+							"min": 29,
+							"max": 31,
+							"enc": "3d6 crocodiles"
+						},
+						{
+							"min": 32,
+							"max": 34,
+							"enc": "1d6+2 swarm of swarms of insects"
+						},
+						{
+							"min": 35,
+							"max": 37,
+							"enc": "2d4 smoke smoke mephits"
+						},
+						{
+							"min": 38,
+							"max": 40,
+							"enc": "A noble shouts \\"
+						},
+						{
+							"min": 41,
+							"max": 43,
+							"enc": "1 succubus or 1 incubus"
+						},
+						{
+							"min": 44,
+							"max": 46,
+							"enc": "1d10 half-ogre (half-ogres"
+						},
+						{
+							"min": 47,
+							"max": 49,
+							"enc": "2d10 giant wasps"
+						},
+						{
+							"min": 50,
+							"max": 51,
+							"enc": "4d10 zombies"
+						},
+						{
+							"min": 52,
+							"max": 53,
+							"enc": "1d4 knights on warhorses"
+						},
+						{
+							"min": 54,
+							"max": 55,
+							"enc": "1d4+1 water weirds"
+						},
+						{
+							"min": 56,
+							"max": 57,
+							"enc": "1d8+1 mimics"
+						},
+						{
+							"min": 58,
+							"max": 59,
+							"enc": "2d8 giant spiders"
+						},
+						{
+							"min": 60,
+							"max": 61,
+							"enc": "3d6 shadows"
+						},
+						{
+							"min": 62,
+							"max": 65,
+							"enc": "An actor leans out from a second-story window to call to passersby, announcing a show"
+						},
+						{
+							"min": 66,
+							"max": 67,
+							"enc": "1 bandit captain with 3d8 bandits"
+						},
+						{
+							"min": 68,
+							"max": 69,
+							"enc": "1d10 will-o'-will-o'-wisps"
+						},
+						{
+							"min": 70,
+							"max": 71,
+							"enc": "2d4 priests"
+						},
+						{
+							"min": 72,
+							"max": 74,
+							"enc": "3d6 yuan-ti yuan-ti purebloods"
+						},
+						{
+							"min": 75,
+							"max": 76,
+							"enc": "2d10 thugs"
+						},
+						{
+							"min": 77,
+							"max": 80,
+							"enc": "A fortune-teller reads cards for those who pay a price of 1 sp"
+						},
+						{
+							"min": 81,
+							"max": 81,
+							"enc": "1d3 gladiators"
+						},
+						{
+							"min": 82,
+							"max": 82,
+							"enc": "1d4+1 couatls"
+						},
+						{
+							"min": 83,
+							"max": 83,
+							"enc": "1d8 ghosts"
+						},
+						{
+							"min": 84,
+							"max": 84,
+							"enc": "2d4 doppelgangers"
+						},
+						{
+							"min": 85,
+							"max": 85,
+							"enc": "1d6+2 phase phase spiders"
+						},
+						{
+							"min": 86,
+							"max": 86,
+							"enc": "2d4 veterans"
+						},
+						{
+							"min": 87,
+							"max": 87,
+							"enc": "1d8 ghasts with 2d6 ghouls"
+						},
+						{
+							"min": 88,
+							"max": 88,
+							"enc": "3d6 gargoyles"
+						},
+						{
+							"min": 89,
+							"max": 89,
+							"enc": "2d10 cult cult fanatics"
+						},
+						{
+							"min": 90,
+							"max": 90,
+							"enc": "3d6 wererats"
+						},
+						{
+							"min": 91,
+							"max": 91,
+							"enc": "1 assassin"
+						},
+						{
+							"min": 92,
+							"max": 92,
+							"enc": "1d3 invisible invisible stalkers"
+						},
+						{
+							"min": 93,
+							"max": 93,
+							"enc": "1 gray slaad"
+						},
+						{
+							"min": 94,
+							"max": 94,
+							"enc": "1 young silver dragon"
+						},
+						{
+							"min": 95,
+							"max": 95,
+							"enc": "1d4 cambions or 1d4 revenants"
+						},
+						{
+							"min": 96,
+							"max": 96,
+							"enc": "3d6 wights"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 archmage"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "2d4 vampire spawn or 1d4 oni"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 mage with 1 shield guardian"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 rakshasa or 1 vampire"
+						}
+					]
+				},
+				{
+					"minlvl": 11,
+					"maxlvl": 16,
+					"table": [
+						{
+							"min": 1,
+							"max": 1,
+							"enc": "1 mimic"
+						},
+						{
+							"min": 2,
+							"max": 5,
+							"enc": "1 bandit captain with 5d10 bandits, all on riding riding horses"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "1d10 knights on warhorses (one knight is a doppelganger)"
+						},
+						{
+							"min": 11,
+							"max": 13,
+							"enc": "1d8 succubi or 1d8 incubi"
+						},
+						{
+							"min": 14,
+							"max": 16,
+							"enc": "3d6 cult cult fanatics"
+						},
+						{
+							"min": 17,
+							"max": 19,
+							"enc": "1d10 wights"
+						},
+						{
+							"min": 20,
+							"max": 22,
+							"enc": "3d6 wererats"
+						},
+						{
+							"min": 23,
+							"max": 25,
+							"enc": "A distant boom followed by a plume of smoke rising from the other side of the community"
+						},
+						{
+							"min": 26,
+							"max": 28,
+							"enc": "1d8+1 ghosts"
+						},
+						{
+							"min": 29,
+							"max": 31,
+							"enc": "2d10 gargoyles"
+						},
+						{
+							"min": 32,
+							"max": 34,
+							"enc": "1d6+2 water weirds"
+						},
+						{
+							"min": 35,
+							"max": 37,
+							"enc": "1d4+4 will-o'-will-o'-wisps"
+						},
+						{
+							"min": 38,
+							"max": 40,
+							"enc": "Street performers putting on a puppet show, involving two puppets beating each other with sticks to the amusement of the gathered crowd"
+						},
+						{
+							"min": 41,
+							"max": 43,
+							"enc": "2d4 couatls"
+						},
+						{
+							"min": 44,
+							"max": 46,
+							"enc": "2d8 ghasts"
+						},
+						{
+							"min": 47,
+							"max": 51,
+							"enc": "1d8+1 veterans"
+						},
+						{
+							"min": 52,
+							"max": 55,
+							"enc": "3d4 priests"
+						},
+						{
+							"min": 56,
+							"max": 58,
+							"enc": "2d4 cambions"
+						},
+						{
+							"min": 59,
+							"max": 61,
+							"enc": "1d10 revenants"
+						},
+						{
+							"min": 62,
+							"max": 65,
+							"enc": "2d4 phase phase spiders"
+						},
+						{
+							"min": 66,
+							"max": 69,
+							"enc": "A scruffy commoner that ducks into an alley to make a purchase from a suspicious looking figure"
+						},
+						{
+							"min": 70,
+							"max": 72,
+							"enc": "1d8 invisible invisible stalkers"
+						},
+						{
+							"min": 73,
+							"max": 75,
+							"enc": "1d8+1 gladiators"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "Two farmers trading blows over the price of potatoes (50% chance for one farmer to be a retired assassin)"
+						},
+						{
+							"min": 81,
+							"max": 82,
+							"enc": "1d4 young silver young silver dragons"
+						},
+						{
+							"min": 83,
+							"max": 84,
+							"enc": "1d4 assassins"
+						},
+						{
+							"min": 85,
+							"max": 86,
+							"enc": "1d8 oni"
+						},
+						{
+							"min": 87,
+							"max": 88,
+							"enc": "1d4 mages with 1d4 shield shield guardians"
+						},
+						{
+							"min": 89,
+							"max": 90,
+							"enc": "1d10 vampire spawn"
+						},
+						{
+							"min": 91,
+							"max": 92,
+							"enc": "1 adult silver dragon"
+						},
+						{
+							"min": 93,
+							"max": 94,
+							"enc": "1d4 gray gray slaadi"
+						},
+						{
+							"min": 95,
+							"max": 96,
+							"enc": "1 vampire spellcaster vampire or 1 vampire warrior vampire"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1 rakshasa"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1 vampire"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1 ancient silver dragon"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 archmage speeding down the street on a riding horse, blasting 1d4 guards with spells"
+						}
+					]
+				},
+				{
+					"minlvl": 17,
+					"maxlvl": 20,
+					"table": [
+						{
+							"min": 1,
+							"max": 5,
+							"enc": "1d10 invisible invisible stalkers"
+						},
+						{
+							"min": 6,
+							"max": 10,
+							"enc": "1d10 revenants"
+						},
+						{
+							"min": 11,
+							"max": 14,
+							"enc": "1d6+2 gladiators"
+						},
+						{
+							"min": 15,
+							"max": 18,
+							"enc": "2d4 cambions"
+						},
+						{
+							"min": 19,
+							"max": 22,
+							"enc": "2d6 succubi or 2d6 incubi"
+						},
+						{
+							"min": 23,
+							"max": 25,
+							"enc": "A witch  archmage) who zooms overhead on a @item broom of flying"
+						},
+						{
+							"min": 26,
+							"max": 30,
+							"enc": "1d4 gray gray slaadi"
+						},
+						{
+							"min": 31,
+							"max": 35,
+							"enc": "2d8 couatls"
+						},
+						{
+							"min": 36,
+							"max": 40,
+							"enc": "A distraught parent who rushes up to people, begging for help for a child who fell into the sewer"
+						},
+						{
+							"min": 41,
+							"max": 45,
+							"enc": "1d3 young silver young silver dragons"
+						},
+						{
+							"min": 46,
+							"max": 50,
+							"enc": "3d6 ghosts"
+						},
+						{
+							"min": 51,
+							"max": 55,
+							"enc": "1 adult silver dragon"
+						},
+						{
+							"min": 56,
+							"max": 60,
+							"enc": "1d4 mages with 1d4 shield shield guardians"
+						},
+						{
+							"min": 61,
+							"max": 65,
+							"enc": "An aggressive merchant who hawks wares to passersby, claiming to be the purveyor of the finest silks in all the land"
+						},
+						{
+							"min": 66,
+							"max": 70,
+							"enc": "1 ancient silver dragon"
+						},
+						{
+							"min": 71,
+							"max": 75,
+							"enc": "3d6 vampire spawn"
+						},
+						{
+							"min": 76,
+							"max": 80,
+							"enc": "A patrol of 2d10 guards marching up the street, searching for someone or something"
+						},
+						{
+							"min": 81,
+							"max": 85,
+							"enc": "1d10 assassins"
+						},
+						{
+							"min": 86,
+							"max": 90,
+							"enc": "1d4+1 gray gray slaadi"
+						},
+						{
+							"min": 91,
+							"max": 93,
+							"enc": "1d10 oni"
+						},
+						{
+							"min": 95,
+							"max": 96,
+							"enc": "1 vampire spellcaster vampire or 1 vampire warrior vampire"
+						},
+						{
+							"min": 97,
+							"max": 97,
+							"enc": "1d4 archmages"
+						},
+						{
+							"min": 98,
+							"max": 98,
+							"enc": "1d3 rakshasas"
+						},
+						{
+							"min": 99,
+							"max": 99,
+							"enc": "1d4 vampires"
+						},
+						{
+							"min": 0,
+							"max": 0,
+							"enc": "1 tarrasque"
+						}
+					]
+				}
+			]
+		}
+	]
+}
