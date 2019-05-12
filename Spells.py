@@ -1,3 +1,8 @@
+####################################################################################################
+# Welcome to the D&D Command Line Interface (CLI)! The purpose of this program is to help DMs      #
+# by putting all the information that you regularly need only ONE click away with no loading time! #
+####################################################################################################
+
 from Dice import *
 from prettytable import PrettyTable
 from cmd2 import Cmd, with_argparser, with_category
@@ -5,7 +10,6 @@ from cmd2.argparse_completer import *
 import shlex
 from Info import *
 import json
-import dungeonGenerator
 
 print_rolls = True
 list_of_items = []
@@ -13,7 +17,7 @@ list_of_items = []
 
 class Spells(Cmd):
     intro = 'Hello! Please type the name of a spell or effect (all lowercase, underscore in place of space). ' \
-            'Type help or ? to list all spells, or help "spell_name" for its full description.'
+            'Type help or ? to list all available commands, or help "command" for its full description.'
     prompt = 'Spell/Effect: '
 
     # Creates a list with the name of all the items in the item.json file
@@ -28,6 +32,10 @@ class Spells(Cmd):
 
     def __init__(self):
         Cmd.__init__(self)
+        hidden_cmds = {'edit', 'alias', 'help', 'history', 'load', 'macro', 'py',
+                       'pyscript', 'set', 'shell', 'shortcuts', 'test_all_cmds'}
+
+        self.hidden_commands += hidden_cmds
 
     @with_category('Other')
     def do_quit(self, arg):
@@ -46,6 +54,18 @@ class Spells(Cmd):
         """Turned on by default. Turning it off results in only the end sum of die rolls being shown."""
         global print_rolls
         print_rolls = not print_rolls
+
+    @with_category('Other')
+    def do_print_all_spells(self, arg):
+        """Prints a table which includes all spells. Mostly used for debugging."""
+        all_spell_helper()
+
+    @with_category('Other')
+    def do_test_all_cmds(self, arg):
+        """Hidden command used for debugging."""
+        cmds = Cmd.get_visible_commands(self)
+        for cmd in cmds:
+            Cmd.onecmd(self, cmd)
 
     @with_category('Utility')
     def do_d4(self, arg):
@@ -159,10 +179,11 @@ class Spells(Cmd):
         for i in range(6):
             roll_4d6_remove_lowest()
 
+    '''
     @with_category('Utility')
     def do_generate_dungeon(self, arg):
         dungeonGenerator.placeRandomRooms(4, 8, stepSize=1, margin=3, attempts=500)
-
+    '''
 
     @with_category('Encounters')
     def do_encounter_arctic(self, arg):
@@ -1036,8 +1057,8 @@ At Higher Levels. When you cast this spell using a spell slot of 5th level or hi
         """The next time you hit a creature with a melee weapon attack during this spell’s duration, you weapon flares with a bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.
 
 A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded."""
-        print_description('3rd', 'Blinding Smite', '1 Bonus Action', '1 Minute [C]', 'Self', 'CON Save', 'Radiant/Blind',
-                          'V,' 'Evocation')
+        print_description('3rd', 'Blinding Smite', '1 Bonus Action', '1 Minute [C]', 'Self', 'CON Save',
+                          'Radiant/Blind', 'V', 'Evocation')
         self.do_d8('3')
 
     @with_category('Spells')
@@ -1653,6 +1674,14 @@ Material Component: Ruby dust worth 50 gp, which the spell consumes."""
         print_description('2nd', 'Continual Flame', '1 Action', 'Until Dispelled', 'Touch', 'None', 'Creation',
                           'V, S, M', 'Evocation')
 
+    ###############################################################################################################
+    # With 400 spells to go, I realised I had to make some changes if I'm to ever finish typing them all in.      #
+    # As a result, all spells from this point on uses the "spell_helper" function to print the information table. #
+    # The spell helper uses the information from the allSpells.json file.                                         #
+    # Since there are many projects on github that use the same data folder with the same jsons in it and none    #
+    # of them claim to have made it I don't know who to give credit to. Just know that I didn't make it myself.   #
+    ###############################################################################################################
+
     @with_category('Spells')
     def do_control_flames(self, arg):
         """You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:
@@ -1778,6 +1807,231 @@ Material Components: Clay, ash, and mandrake root, all of which the spell consum
 Link: https://www.dndbeyond.com/monsters/homunculus"""
         spell_helper('Create Homunculus')
 
+    @with_category('Spells')
+    def do_create_or_destroy_water(self, arg):
+        """
+You either create or destroy water.
+
+Create Water. You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.
+
+Destroy Water. You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.
+
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.
+
+Material Component: A drop of water if creating water or a few grains of sand if destroying it."""
+        spell_helper('Create or Destroy Water')
+
+
+    @with_category('Spells')
+    def do_create_undead(self, arg):
+        """You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids within range. Each corpse becomes a ghoul under your control. (The GM has game statistics for these creatures.)
+
+As a bonus action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.
+
+The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones.
+
+At Higher Levels. When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummy(ies).
+
+Ghoul Link: https://www.dndbeyond.com/monsters/ghoul
+
+Material Components: One clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse."""
+        spell_helper('Create Undead')
+
+
+    @with_category('Spells')
+    def do_creation(self, arg):
+        """You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range: soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before.
+
+The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
+
+Using any material created by this spell as another spell's material component causes that spell to fail.
+
+At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th.
+
+Material Component: A tiny piece of matter of the same type of the item you plan to create."""
+        spell_helper('Creation')
+        table = PrettyTable()
+        table.add_column('Material', ['Vegetable Matter', 'Stone or Crystal', 'Precious Metals', 'Gems',
+                                      'Adamantine or Mithral'])
+        table.add_column('Duration', ['1 Day', '12 Hours', '1 Hour', '10 Minutes', '1 Minute'])
+        print(table)
+
+    @with_category('Spells')
+    def do_crown_of_madness(self, arg):
+        """One humanoid of your choice that you can see within range must succeed on a Wisdom saving throw or become charmed by you for the duration.
+While the target is charmed in this way, a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.
+
+The charmed target must use its action before moving on each of its turns to make a melee attack against a creature other than itself that you mentally choose. The target can act normally on its turn if you choose no creature or if none are within its reach.
+
+On your subsequent turns, you must use your action to maintain control over the target, or the spell ends. Also, the target can make a Wisdom saving throw at the end of each of its turns. On a success, the spell ends.
+
+"""
+        spell_helper('Crown of Madness')
+
+
+    @with_category('Spells')
+    def do_crown_of_stars(self, arg):
+        """Seven star-like motes of light appear and orbit your head until the spell ends. You can use a bonus action to send one of the motes streaking toward one creature or object within 120 feet of you. When you do so, make a ranged spell attack. On a hit, the target takes 4d12 radiant damage. Whether you hit or miss, the mote is expended. The spell ends early if you expend the last mote.
+
+If you have four or more motes remaining, they shed bright light in a 30-foot radius and dim light for an additional 30 feet. If you have one to three motes remaining, they shed dim light in a 30-foot radius.
+
+At Higher Levels. When you cast this spell using a spell slot of 8th level or higher, the number of motes created increases by two for each slot level above 7th."""
+        spell_helper('Crown of Stars')
+        self.do_d12('4')
+
+    @with_category('Spells')
+    def do_crusaders_mantle(self, arg):
+        """Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra 1d4 radiant damage when it hits with a weapon attack."""
+        spell_helper("Crusader's Mantle")
+
+    @with_category('Spells')
+    def do_cure_wounds(self, arg):
+        """A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
+
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."""
+        spell_helper('Cure Wounds')
+        global print_rolls
+        die_rolls = 1
+        minimum_spell_level = 1
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
+
+    @with_category('Spells')
+    def do_dancing_lights(self, arg):
+        """You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10- foot radius.
+
+As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.
+
+Material Component: A bit of phosphorus or wychwood, or a glowworm."""
+        spell_helper('Dancing Lights')
+
+    @with_category('Spells')
+    def do_danse_macabre(self, arg):
+        """Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a zombie or a skeleton (the statistics for zombies and skeletons are in the Monster Manual), and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.
+
+You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.
+
+The creatures are under your control until the spell ends, after which they become inanimate once more.
+
+At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, you animate up to two additional corpses for each slot level above 5th.
+
+Zombie: https://www.dndbeyond.com/monsters/zombie
+Skeleton: https://www.dndbeyond.com/monsters/skeleton"""
+        spell_helper('Danse Macabre')
+
+    @with_category('Spells')
+    def do_darkness(self, arg):
+        """Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.
+
+If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
+
+If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.
+
+Material Components: Bat fur and a drop of pitch or piece of coal."""
+        spell_helper('Darkness')
+
+    @with_category('Spells')
+    def do_darkvision(self, arg):
+        """You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.
+
+Material Component: Either a pinch of dried carrot or an agate."""
+        spell_helper('Darkvision')
+
+    @with_category('Spells')
+    def do_dawn(self, arg):
+        """The light of dawn shines down on a location you specify within range. Until the spell ends, a 30-foot-radius, 40-foot-high cylinder of bright light glimmers there. This light is sunlight.
+
+When the cylinder appears, each creature in it must make a Constitution saving throw, taking 4d10 radiant damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw whenever it ends its turn in the cylinder.
+
+If you’re within 60 feet of the cylinder, you can move it up to 60 feet as a bonus action on your turn.
+
+Material Component: A sunburst pendant worth at least 100 gp."""
+        spell_helper('Dawn')
+        self.do_d10('4')
+
+    @with_category('Spells')
+    def do_daylight(self, arg):
+        """A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.
+
+If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.
+
+If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled."""
+        spell_helper('Daylight')
+
+    @with_category('Spells')
+    def do_death_ward(self, arg):
+        """You touch a creature and grant it a measure of protection from death.
+
+The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.
+
+If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends."""
+        spell_helper('Death Ward')
+
+    @with_category('Spells')
+    def do_delayed_blast_fireball(self, arg):
+        """A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your concentration is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.
+
+The spell's base damage is 12d6. If at the end of your turn the bead has not yet detonated, the damage increases by 1d6.
+
+If the glowing bead is touched before the interval has expired, the creature touching it must make a Dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in flame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes.
+
+The fire damages objects in the area and ignites flammable objects that aren't being worn or carried.
+
+At Higher Levels. When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th.
+
+Material Components: A tiny ball of bat guano and sulfur."""
+        spell_helper('Delayed Blast Fireball')
+        global print_rolls
+        rounds = input('Number of rounds since spell was cast: ')
+        try:
+            if int(rounds) <= 10:
+                die_rolls = 12 + int(rounds)
+                minimum_spell_level = 7
+                cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
+            else:
+                print('Input has to be a number between 1 and 10')
+                return
+        except ValueError:
+            print('Input Has to be a number between 1 and 10')
+
+    @with_category('Spells')
+    def do_demiplane(self, arg):
+        """You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the spell ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side.
+
+Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead.
+"""
+        spell_helper('Demiplane')
+
+    @with_category('Spells')
+    def do_destructive_wave(self, arg):
+        """You strike the ground, creating a burst of divine energy that ripples outward from you. Each creature you choose within 30 feet of you must succeed on a Constitution saving throw or take 5d6 thunder damage, as well as 5d6 radiant or necrotic damage (your choice), and be knocked prone. A creature that succeeds on its saving throw takes half as much damage and isn’t knocked prone.
+
+"""
+        spell_helper('Destructive Wave')
+        self.do_d6('5')
+
+    @with_category('Spells')
+    def do_detect_evil_and_good(self, arg):
+        """For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.
+
+The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."""
+        spell_helper('Detect Evil and Good')
+
+    @with_category('Spells')
+    def do_detect_magic(self, arg):
+        """For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.
+
+The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."""
+        spell_helper('Detect Magic')
+
+    @with_category('Spells')
+    def do_detect_poison_and_disease(self, arg):
+        """For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.
+
+The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
+
+Material Component: A yew leaf."""
+        spell_helper('Detect Poison and Disease')
+
 
     '''
     @with_category('Spells')
@@ -1789,7 +2043,7 @@ Link: https://www.dndbeyond.com/monsters/homunculus"""
         die_rolls = x
         minimum_spell_level = y
         cast_dz(die_rolls, minimum_spell_level, arg, print_rolls)
-        
+
     @with_category('Spells')
     def do_(self, arg):
         """"""
@@ -1884,15 +2138,17 @@ def encounter_helper(arg, encounter_location):
     else:
         print("This feature requires the players' level as input (1 - 20).")
 
-# This function is awful, please don't look at it
+
+# This function looks like a mess.
+# The (awesome) guy(s) who made the json file didn't make it to be used by a python application.
 def spell_helper(arg):
-    all_spells_json = open('data/spells/allSpells.json')
+    all_spells_json = open('data/allSpells.json')
     all_spells_json = json.load(all_spells_json)
     all_spells = all_spells_json['spell']
     table = PrettyTable()
     table.field_names = ['LEVEL', 'NAME', 'CASTING TIME', 'DURATION', 'RANGE/AREA', 'ATTACK/SAVE', 'DAMAGE',
                          'COMPONENTS', 'SCHOOL']
-    attack_save, damage_effect, components, level, name, casting_time, duration, range_area, school, d_e\
+    attack_save, damage_effect, components, level, name, casting_time, duration, range_area, school, d_e \
         = '', '', '', '', '', '', '', '', '', ''
     schools = {'A': 'Abjuration', 'C': 'Conjuration', 'D': 'Divination', 'E': 'Enchantment', 'V': 'Evocation',
                'I': 'Illusion', 'N': 'Necromancy', 'T': 'Transmutation'}
@@ -1904,7 +2160,8 @@ def spell_helper(arg):
             if 'meta' in spell:
                 casting_time += ' [R]'
             if 'duration' in spell['duration'][0]:
-                duration = str(spell['duration'][0]['duration']['amount']) + ' ' + str(spell['duration'][0]['duration']['type']).capitalize()
+                duration = str(spell['duration'][0]['duration']['amount']) + ' ' + str(
+                    spell['duration'][0]['duration']['type']).capitalize()
             else:
                 duration = str(spell['duration'][0]['type']).capitalize()
             if 'concentration' in spell['duration'][0]:
@@ -1938,8 +2195,67 @@ def spell_helper(arg):
         attack_save = 'Ranged Spell Attack'
     elif attack_save[0] == 'M':
         attack_save = 'Melee Spell Attack'
-    table.add_row([level, name, casting_time, duration, range_area, attack_save, d_e, components, dict.get(schools, school)])
+    table.add_row(
+        [level, name, casting_time, duration, range_area, attack_save, d_e, components, dict.get(schools, school)])
     print(table)
+
+
+def all_spell_helper():
+    all_spells_json = open('data/allSpells.json')
+    all_spells_json = json.load(all_spells_json)
+    all_spells = all_spells_json['spell']
+    table = PrettyTable()
+    table.field_names = ['LEVEL', 'NAME', 'CASTING TIME', 'DURATION', 'RANGE/AREA', 'ATTACK/SAVE', 'DAMAGE',
+                         'COMPONENTS', 'SCHOOL']
+    schools = {'A': 'Abjuration', 'C': 'Conjuration', 'D': 'Divination', 'E': 'Enchantment', 'V': 'Evocation',
+               'I': 'Illusion', 'N': 'Necromancy', 'T': 'Transmutation'}
+    for spell in all_spells:
+        attack_save, damage_effect, components, level, name, casting_time, duration, range_area, school, d_e \
+            = '', '', '', '', '', '', '', '', '', ''
+        level = spell['level']
+        name = spell['name']
+        casting_time = str(spell['time'][0]['number']) + ' ' + str(spell['time'][0]['unit']).capitalize()
+        if 'meta' in spell:
+            casting_time += ' [R]'
+        if 'duration' in spell['duration'][0]:
+            duration = str(spell['duration'][0]['duration']['amount']) + ' ' + str(
+                spell['duration'][0]['duration']['type']).capitalize()
+        else:
+            duration = str(spell['duration'][0]['type']).capitalize()
+        if 'concentration' in spell['duration'][0]:
+            duration += ' [C]'
+        if 'distance' in spell['range']:
+            if 'amount' in spell['range']['distance']:
+                range_area = str(spell['range']['distance']['amount']) + ' '
+            range_area += str(spell['range']['distance']['type']).capitalize() + '/'
+        range_area += str(spell['range']['type']).capitalize()
+        if 'savingThrow' in spell:
+            attack_save = str(spell['savingThrow'][0]).capitalize()
+        elif 'spellAttack' in spell:
+            attack_save = spell['spellAttack']
+        else:
+            attack_save = 'None'
+        if 'damageInflict' in spell:
+            damage_effect = spell['damageInflict']
+            for word in damage_effect:
+                d_e += (str(word).capitalize() + ' ')
+        else:
+            d_e = 'None'
+        if 'v' in spell['components']:
+            components += 'V'
+        if 's' in spell['components']:
+            components += ' S'
+        if 'm' in spell['components']:
+            components += ' M'
+        school = spell['school']
+        if attack_save[0] == 'R':
+            attack_save = 'Ranged Spell Attack'
+        elif attack_save[0] == 'M':
+            attack_save = 'Melee Spell Attack'
+        table.add_row(
+            [level, name, casting_time, duration, range_area, attack_save, d_e, components, dict.get(schools, school)])
+    print(table)
+
 
 if __name__ == '__main__':
     app = Spells()
