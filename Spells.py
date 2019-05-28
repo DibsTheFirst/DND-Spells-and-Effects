@@ -39,6 +39,22 @@ class Spells(Cmd):
 
         self.hidden_commands += hidden_cmds
 
+    # In my world, dwarven cities are laid out in such a way (using magic) that every location can be reached from
+    # anywhere if you follow a laid out path (which is also an address). The higher the number of turns to your address
+    # the more well off you are.
+    @with_category('Personal')
+    def do_path(self, arg):
+        result = ''
+        for i in range(1, int(arg) + 1):
+            turn = random.randint(1, 3)
+            if turn == 1:
+                result += 'R '
+            elif turn == 2:
+                result += 'F '
+            elif turn == 3:
+                result += 'L '
+        print(result)
+
     @with_category('Other')
     def do_quit(self, arg):
         """Exit the application"""
@@ -176,16 +192,15 @@ class Spells(Cmd):
                 print_item(item)
 
     @with_category('Utility')
+    def do_loot(self, arg):
+        cr = check_arg_range_20(arg)
+        roll_loot(cr)
+
+    @with_category('Utility')
     def do_create_character(self, arg):
         """Rolls 4d6 and removes the lowest roll. Does it once for every stat(6 times)."""
         for i in range(6):
             roll_4d6_remove_lowest()
-
-    '''
-    @with_category('Utility')
-    def do_generate_dungeon(self, arg):
-        dungeonGenerator.placeRandomRooms(4, 8, stepSize=1, margin=3, attempts=500)
-    '''
 
     @with_category('Encounters')
     def do_encounter_arctic(self, arg):
@@ -380,20 +395,102 @@ class Spells(Cmd):
             total = roll_d4(10, print_rolls)
             print(' + 20 =', total + 20)
 
-    @with_category('Spells')
-    def do_fireball(self, arg):
-        """A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame.
-Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw.
-A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
-The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.
-At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
-Material components: A tiny ball of bat guano and sulfur."""
-        print_description('3rd', 'Fireball', '1 Action', 'Instantaneous', '150ft/20ft radius', 'DEX Save', 'Fire',
-                          'V, S, M', 'Evocation')
-        global print_rolls
-        die_rolls = 8
-        minimum_spell_level = 3
-        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
+    @with_category('Names')
+    def do_dragonborn(self, arg):
+        option = input('Type "f" for female, "m" for male or "c" for clan: ')
+        str(option).lower()
+        if option == 'f' or 'm' or 'c':
+            get_name('Dragonborn', option)
+        else:
+            print('Invalid input')
+
+    @with_category('Names')
+    def do_dwarf(self, arg):
+        option = input('Type "f" for female, "m" for male, "c" for clan or "dc" for Duergar clan: ')
+        str(option).lower()
+        if option == 'f' or 'm' or 'c' or 'dc':
+            get_name('Dwarf', option)
+        else:
+            print('Invalid input')
+
+    @with_category('Names')
+    def do_elf(self, arg):
+        option = input('Type "fa" for female adult, "ma" for male adult, "ch" for child or "fam" for family: ')
+        str(option).lower()
+        if option == 'fa' or 'ma' or 'fam' or 'ch':
+            get_name('Elf', option)
+        else:
+            print('Invalid input')
+
+    @with_category('Names')
+    def do_gnome(self, arg):
+        option = input('Type "f" for female, "m" for male or "c" for clan: ')
+        str(option).lower()
+        if option == 'f' or 'm' or 'c':
+            get_name('Gnome', option)
+        else:
+            print('Invalid input')
+
+    @with_category('Names')
+    def do_halfling(self, arg):
+        option = input('Type "f" for female, "m" for male or "c" for clan: ')
+        str(option).lower()
+        if option == 'f' or 'm' or 'c':
+            get_name('Halfling', option)
+        else:
+            print('Invalid input')
+
+    @with_category('Names')
+    def do_half_orc(self, arg):
+        option = input('Type "f" for female or "m" for male: ')
+        str(option).lower()
+        if option == 'f' or 'm':
+            get_name('Half-Orc', option)
+        else:
+            print('Invalid input')
+
+    @with_category('Names')
+    def do_tiefling(self, arg):
+        option = input('Type "f" for female, "m" for male or "v" for virtue: ')
+        str(option).lower()
+        if option == 'f' or 'm' or 'v':
+            get_name('Tiefling', option)
+        else:
+            print('Invalid input')
+
+    @with_category('Names')
+    def do_human(self, arg):
+        origin = {'a': 'Arabic', 'c': 'Celtic', 'ch': 'Chinese', 'e': 'Egyptian', 'en': 'English', 'f': 'French',
+                  'g': 'German', 'i': 'Indian', 'm': 'Mesoamerican', 'j': 'Japanese', 'nc': 'Niger-Congo',
+                  'n': 'Norse', 'p': 'Polynesian', 'r': 'Roman', 's': 'Slavic', 'sp': 'Spanish', 'gr': 'Greek'}
+        option = input('Type "a" for Arabic, "c" for Celtic, "ch" for Chinese, "e" for Egyptian, "en" for English, '
+                       '"f" for French, "g" for German, "i" for Indian, "m" for Mesoamerican, "j" for Japanese, '
+                       '"nc" for Niger-Congo, "n" for Norse, "p" for Polynesian, "r" for Roman, "s" for Slavic, '
+                       '"sp" for Spanish, or "gr" for Greek: ')
+        str(option).lower()
+        if option in origin.keys():
+            option = origin.get(option)
+        else:
+            print('Invalid Input')
+            return
+        sexes = {'f': 'Female', 'm': 'Male'}
+        sex = input('Type "f" for female or "m" for male')
+        str(sex).lower()
+        if sex == 'f' or 'm':
+            option += ', ' + sexes.get(sex)
+            get_name('Human', option)
+        else:
+            print('Invalid input')
+
+    @with_category('Names')
+    def do_gith(self, arg):
+        option = input('Type "gyf" for Githyanki female, "gym" for Githyanki male, "gzf" for Githzerai female or'
+                       '"gzm" for Githzerai male: ')
+        str(option).lower()
+        if option == 'gyf' or 'gym' or 'gzf' or 'gzm':
+            get_name('Gith', option)
+        else:
+            print('Invalid input')
 
     @with_category('Spells')
     def do_abi_dalzims_horrid_wilting(self, arg):
@@ -2158,6 +2255,7 @@ A creature restrained by the tentacles can use its action to make a Strength or 
 
 Material Components: a piece of tentacle from a giant octopus or a giant squid"""
         spell_helper("Evard's Black Tentacles")
+        self.do_d6('3')
 
     @with_category('Spells')
     def do_expeditious_retreat(self, arg):
@@ -2170,14 +2268,16 @@ Material Components: a piece of tentacle from a giant octopus or a giant squid""
     def do_eyebite(self, arg):
         """For the spell's duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your action to target another creature but can't target a creature again if it has succeeded on a saving throw against this casting of eyebite.
 
-{'type': 'entries', 'name': 'Asleep', 'entries': ['The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake.']}
+Asleep: The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake.
 
-{'type': 'entries', 'name': 'Panicked', 'entries': ['The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends.']}
+Panicked: The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends.
 
-{'type': 'entries', 'name': 'Sickened', 'entries': ['The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends.']}
+Sickened: The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends.
 
 """
         spell_helper("Eyebite")
+        print('Wisdom Save', end='')
+        self.do_d20()
 
     @with_category('Spells')
     def do_fabricate(self, arg):
@@ -2198,6 +2298,7 @@ Any attack roll against an affected creature or object has advantage if the atta
 
 """
         spell_helper("Faerie Fire")
+        spell_save('D')
 
     @with_category('Spells')
     def do_false_life(self, arg):
@@ -2207,6 +2308,11 @@ At Higher Levels: When you cast this spell using a spell slot of 2nd level or hi
 
 Material Components: a small amount of alcohol or distilled spirits"""
         spell_helper("False Life")
+        nr = 1
+        if arg:
+            nr = check_arg_range_20(arg)
+        add_damage = 4 + 5 * (nr - 1)
+        cast_d4(1, 1, '1', print_rolls, additional_damage=add_damage)
 
     @with_category('Spells')
     def do_fear(self, arg):
@@ -2216,6 +2322,7 @@ While frightened by this spell, a creature must take the Dash action and move aw
 
 Material Components: a white feather or the heart of a hen"""
         spell_helper("Fear")
+        spell_save('W')
 
     @with_category('Spells')
     def do_feather_fall(self, arg):
@@ -2236,6 +2343,8 @@ The spell can also be ended by greater restoration, heal, or wish.
 
 Material Components: a handful of clay, crystal, glass, or mineral spheres"""
         spell_helper("Feeblemind")
+        self.do_d6('4')
+        spell_save('I')
 
     @with_category('Spells')
     def do_feign_death(self, arg):
@@ -2306,6 +2415,10 @@ A humanoid killed by this spell rises at the start of your next turn as a zombie
 
 """
         spell_helper("Finger of Death")
+        global print_rolls
+        die_rolls = 7
+        minimum_spell_level = 7
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls, additional_damage=30, dice_per_level=0)
 
     @with_category('Spells')
     def do_fire_bolt(self, arg):
@@ -2315,6 +2428,10 @@ This spell's damage increases by 1d10 when you reach 5th level 2d10, 11th level 
 
 """
         spell_helper("Fire Bolt")
+        global print_rolls
+        die_rolls = 1
+        minimum_spell_level = 1
+        cast_d10(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_fire_shield(self, arg):
@@ -2326,6 +2443,10 @@ In addition, whenever a creature within 5 feet of you hits you with a melee atta
 
 Material Components: a bit of phosphorus or a firefly"""
         spell_helper("Fire Shield")
+        global print_rolls
+        die_rolls = 2
+        minimum_spell_level = 4
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=0)
 
     @with_category('Spells')
     def do_fire_storm(self, arg):
@@ -2335,17 +2456,25 @@ The fire damages objects in the area and ignites flammable objects that aren't b
 
 """
         spell_helper("Fire Storm")
+        global print_rolls
+        die_rolls = 7
+        minimum_spell_level = 7
+        cast_d10(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=0)
 
     @with_category('Spells')
     def do_fireball(self, arg):
-        """A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
-
+        """A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame.
+Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw.
+A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
 The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.
-
-At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
-
-Material Components: a tiny ball of bat guano and sulfur"""
-        spell_helper("Fireball")
+At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.
+Material components: A tiny ball of bat guano and sulfur."""
+        print_description('3rd', 'Fireball', '1 Action', 'Instantaneous', '150ft/20ft radius', 'DEX Save', 'Fire',
+                          'V, S, M', 'Evocation')
+        global print_rolls
+        die_rolls = 8
+        minimum_spell_level = 3
+        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_flame_blade(self, arg):
@@ -2355,10 +2484,14 @@ You can use your action to make a melee spell attack with the fiery blade. On a 
 
 The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
 
-At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 3d62,4,6,81d6 for every two slot levels above 2nd.
+At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.
 
 Material Components: leaf of sumac"""
         spell_helper("Flame Blade")
+        global print_rolls
+        die_rolls = 3
+        minimum_spell_level = 2
+        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls, increment=2)
 
     @with_category('Spells')
     def do_flame_strike(self, arg):
@@ -2368,6 +2501,15 @@ At Higher Levels: When you cast this spell using a spell slot of 6th level or hi
 
 Material Components: pinch of sulfur"""
         spell_helper("Flame Strike")
+        global print_rolls
+        print('Fire Damage: ', end='')
+        die_rolls = 4
+        minimum_spell_level = 5
+        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
+        print('Radiant Damage: ', end='')
+        die_rolls = 4
+        minimum_spell_level = 5
+        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_flaming_sphere(self, arg):
@@ -2381,6 +2523,10 @@ At Higher Levels: When you cast this spell using a spell slot of 3rd level or hi
 
 Material Components: a bit of tallow, a pinch of brimstone, and a dusting of powdered iron"""
         spell_helper("Flaming Sphere")
+        global print_rolls
+        die_rolls = 2
+        minimum_spell_level = 2
+        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_flesh_to_stone(self, arg):
@@ -2394,6 +2540,31 @@ If you maintain your concentration on this spell for the entire possible duratio
 
 Material Components: a pinch of lime, water, and earth"""
         spell_helper("Flesh to Stone")
+        spell_save('C')
+
+    @with_category('Spells')
+    def do_floating_disk(self, arg):
+        """This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground in an unoccupied space of your choice that you can see within range. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.
+
+The disk is immobile while you are within 20 feet of it. If you move more than 20 feet away from it, the disk follows you so that it remains within 20 feet of you. It can move across uneven terrain, up or down stairs, slopes and the like, but it can't cross an elevation change of 10 feet or more. For example, the disk can't move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom.
+
+If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.
+
+Material Component: A drop of mercury."""
+        print_description('1st', 'Floating Disk', '1 Action [R]', '1 Hour', '30ft', 'None', 'Movement',
+                          'V, S, M', 'Conjuration')
+
+    @with_category('Spells')
+    def do_flock_of_familiars(self, arg):
+        """You temporarily summon three familiars — spirits that take animal forms of your choice. Each familiar uses the same rules and options for a familiar conjured by the find familiar spell. All the familiars conjured by this spell must be the same type of creature (celestials, fey, or fiends; your choice). If you already have a familiar conjured by the find familiar spell or similar means, then one fewer familiars are conjured by this spell.
+
+Familiars summoned by this spell can telepathically communicate with you and share their visual or auditory senses while they are within 1 mile of you.
+
+When you cast a spell with a range of touch, one of the familiars conjured by this spell can deliver the spell, as normal. However, you can cast a touch spell through only one familiar per turn.
+
+At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you conjure an additional familiar for each slot level above 2nd."""
+        print_description('2nd', 'Flock of Familiars', '1 Minute', '1 Hour [C]', 'Touch', 'None', 'None',
+                          'V, S', 'Conjuration')
 
     @with_category('Spells')
     def do_fly(self, arg):
@@ -2425,6 +2596,7 @@ The spell's area can't overlap with the area of another forbiddance spell. If yo
 
 Material Components: {'text': 'a sprinkling of holy water, rare incense, and powdered ruby worth at least 1,000 gp', 'cost': 1000}"""
         spell_helper("Forbiddance")
+        self.do_d10('5')
 
     @with_category('Spells')
     def do_forcecage(self, arg):
@@ -2504,6 +2676,8 @@ At Higher Levels: When you cast this spell using a spell slot of 7th or 8th leve
 
 """
         spell_helper("Geas")
+        spell_save('W')
+        self.do_d10('5')
 
     @with_category('Spells')
     def do_gentle_repose(self, arg):
@@ -2557,14 +2731,19 @@ You can further refine the trigger so the spell activates only under certain cir
 
 When you inscribe the glyph, choose explosive runes or a spell glyph.
 
-{'type': 'entries', 'name': 'Explosive Runes', 'entries': ['When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one.']}
+Explosive Runes: When triggered, the glyph erupts with magical energy in a 20-foot-radius sphere centered on the glyph. The sphere spreads around corners. Each creature in the area must make a Dexterity saving throw. A creature takes 5d8 acid, cold, fire, lightning, or thunder damage on a failed saving throw (your choice when you create the glyph), or half as much damage on a successful one.']}
 
-{'type': 'entries', 'name': 'Spell Glyph', 'entries': ['You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration.']}
+Spell Glyph: 'You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration.']}
 
 At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, the damage of an explosive runes glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding.
 
-Material Components: {'text': 'incense and powdered diamond worth at least 200 gp, which the spell consumes', 'cost': 200, 'consume': True}"""
+Material Components: incense and powdered diamond worth at least 200 gp, which the spell consumes."""
         spell_helper("Glyph of Warding")
+        print('Explosive Rune: ', end='')
+        global print_rolls
+        die_rolls = 5
+        minimum_spell_level = 3
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_goodberry(self, arg):
@@ -2583,6 +2762,7 @@ Until the spell ends, you can direct the vine to lash out at the same creature o
 
 """
         spell_helper("Grasping Vine")
+        spell_save('D')
 
     @with_category('Spells')
     def do_grease(self, arg):
@@ -2592,6 +2772,7 @@ When the grease appears, each creature standing in its area must succeed on a De
 
 Material Components: a bit of pork rind or butter"""
         spell_helper("Grease")
+        spell_save('D')
 
     @with_category('Spells')
     def do_greater_invisibility(self, arg):
@@ -2617,6 +2798,8 @@ Any creature hostile to you that moves to a space within 10 feet of the guardian
 
 """
         spell_helper("Guardian of Faith")
+        spell_save('D')
+        print('Damage: 20')
 
     @with_category('Spells')
     def do_guards_and_wards(self, arg):
@@ -2656,6 +2839,10 @@ At Higher Levels: When you cast this spell using a spell slot of 2nd level or hi
 
 """
         spell_helper("Guiding Bolt")
+        global print_rolls
+        die_rolls = 4
+        minimum_spell_level = 1
+        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_gust_of_wind(self, arg):
@@ -2669,6 +2856,7 @@ As a bonus action on each of your turns before the spell ends, you can change th
 
 Material Components: a legume seed"""
         spell_helper("Gust of Wind")
+        spell_save('S')
 
     @with_category('Spells')
     def do_hail_of_thorns(self, arg):
@@ -2678,6 +2866,11 @@ At Higher Levels: If you cast this spell using a spell slot of 2nd level or high
 
 """
         spell_helper("Hail of Thorns")
+        spell_save('D')
+        global print_rolls
+        die_rolls = 1
+        minimum_spell_level = 1
+        cast_d10(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_hallow(self, arg):
@@ -2709,6 +2902,7 @@ Second, you can bind an extra effect to the area. Choose the effect from the fol
 
 Material Components: {'text': 'herbs, oils, and incense worth at least 1,000 gp, which the spell consumes', 'cost': 1000, 'consume': True}"""
         spell_helper("Hallow")
+        spell_save('Ca')
 
     @with_category('Spells')
     def do_hallucinatory_terrain(self, arg):
@@ -2725,6 +2919,9 @@ Material Components: a stone, a twig, and a bit of green plant"""
 
 """
         spell_helper("Harm")
+        spell_save('C')
+        global print_rolls
+        self.do_d6('14')
 
     @with_category('Spells')
     def do_haste(self, arg):
@@ -2743,6 +2940,7 @@ At Higher Levels: When you cast this spell using a spell slot of 7th level or hi
 
 """
         spell_helper("Heal")
+        print('Heal: 70')
 
     @with_category('Spells')
     def do_healing_word(self, arg):
@@ -2752,6 +2950,10 @@ At Higher Levels: When you cast this spell using a spell slot of 2nd level or hi
 
 """
         spell_helper("Healing Word")
+        global print_rolls
+        die_rolls = 1
+        minimum_spell_level = 1
+        cast_d4(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_heat_metal(self, arg):
@@ -2763,6 +2965,10 @@ At Higher Levels: When you cast this spell using a spell slot of 3rd level or hi
 
 Material Components: a piece of iron and a flame"""
         spell_helper("Heat Metal")
+        global print_rolls
+        die_rolls = 2
+        minimum_spell_level = 2
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_hellish_rebuke(self, arg):
@@ -2772,6 +2978,10 @@ At Higher Levels: When you cast this spell using a spell slot of 2nd level or hi
 
 """
         spell_helper("Hellish Rebuke")
+        global print_rolls
+        die_rolls = 2
+        minimum_spell_level = 1
+        cast_d10(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_heroes_feast(self, arg):
@@ -2812,6 +3022,7 @@ At Higher Levels: When you cast this spell using a spell slot of 6th level or hi
 
 Material Components: a small, straight piece of iron"""
         spell_helper("Hold Monster")
+        spell_save('W')
 
     @with_category('Spells')
     def do_hold_person(self, arg):
@@ -2821,6 +3032,7 @@ At Higher Levels: When you cast this spell using a spell slot of 3rd level or hi
 
 Material Components: a small, straight piece of iron"""
         spell_helper("Hold Person")
+        spell_save('W')
 
     @with_category('Spells')
     def do_holy_aura(self, arg):
@@ -2837,6 +3049,11 @@ The void creates a warp in the fabric of space, and the area is difficult terrai
 
 Material Components: a pickled octopus tentacle"""
         spell_helper("Hunger of Hadar")
+        spell_save('D')
+        print('Cold Damage: ', end='')
+        self.do_d6('2')
+        print('Acid Damage: ')
+        self.do_d6('2')
 
     @with_category('Spells')
     def do_hunters_mark(self, arg):
@@ -2855,6 +3072,7 @@ The spell ends for an affected creature if it takes any damage or if someone els
 
 Material Components: a glowing stick of incense or a crystal vial filled with phosphorescent material"""
         spell_helper("Hypnotic Pattern")
+        spell_save('W')
 
     @with_category('Spells')
     def do_ice_storm(self, arg):
@@ -2866,6 +3084,14 @@ At Higher Levels: When you cast this spell using a spell slot of 5th level or hi
 
 Material Components: a pinch of dust and a few drops of water"""
         spell_helper("Ice Storm")
+        spell_save('D')
+        global print_rolls
+        print('Bludgeoning Damage: ', end='')
+        die_rolls = 2
+        minimum_spell_level = 4
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
+        print('Cold Damage: ', end='')
+        self.do_d6('4')
 
     @with_category('Spells')
     def do_identify(self, arg):
@@ -2923,6 +3149,7 @@ You can use a particular special component to create only one prison at a time. 
 
 Material Components: {'text': 'a vellum depiction or a carved statuette in the likeness of the target, and a special component that varies according to the version of the spell you choose, worth at least 500 gp per Hit Die of the target', 'cost': 500}"""
         spell_helper("Imprisonment")
+        spell_save('W')
 
     @with_category('Spells')
     def do_incendiary_cloud(self, arg):
@@ -2934,6 +3161,8 @@ The cloud moves 10 feet directly away from you in a direction that you choose at
 
 """
         spell_helper("Incendiary Cloud")
+        spell_save('D')
+        self.do_d8('10')
 
     @with_category('Spells')
     def do_inflict_wounds(self, arg):
@@ -2943,6 +3172,10 @@ At Higher Levels: When you cast this spell using a spell slot of 2nd level or hi
 
 """
         spell_helper("Inflict Wounds")
+        global print_rolls
+        die_rolls = 3
+        minimum_spell_level = 1
+        cast_d10(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_insect_plague(self, arg):
@@ -2954,6 +3187,11 @@ At Higher Levels: When you cast this spell using a spell slot of 6th level or hi
 
 Material Components: a few grains of sugar, some kernels of grain, and a smear of fat"""
         spell_helper("Insect Plague")
+        spell_save('C')
+        global print_rolls
+        die_rolls = 4
+        minimum_spell_level = 5
+        cast_d10(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_invisibility(self, arg):
@@ -3032,6 +3270,7 @@ When the spell ends, the target floats gently to the ground if it is still aloft
 
 Material Components: either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end"""
         spell_helper("Levitate")
+        spell_save('C')
 
     @with_category('Spells')
     def do_light(self, arg):
@@ -3054,6 +3293,14 @@ At Higher Levels: When you cast this spell using a spell slot of 4th level or hi
 
 """
         spell_helper("Lightning Arrow")
+        global print_rolls
+        die_rolls = 4
+        minimum_spell_level = 3
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
+        spell_save('D')
+        die_rolls = 2
+        minimum_spell_level = 3
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_lightning_bolt(self, arg):
@@ -3065,6 +3312,11 @@ At Higher Levels: When you cast this spell using a spell slot of 4th level or hi
 
 Material Components: a bit of fur and a rod of amber, crystal, or glass"""
         spell_helper("Lightning Bolt")
+        spell_save('D')
+        global print_rolls
+        die_rolls = 8
+        minimum_spell_level = 3
+        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_locate_animals_or_plants(self, arg):
@@ -3136,6 +3388,7 @@ At Higher Levels: When you cast this spell using a spell slot of 4th level or hi
 
 Material Components: {'text': 'holy water or powdered silver and iron worth at least 100 gp, which the spell consumes', 'cost': 100, 'consume': True}"""
         spell_helper("Magic Circle")
+        spell_save('Ca')
 
     @with_category('Spells')
     def do_magic_jar(self, arg):
@@ -3155,6 +3408,7 @@ When the spell ends, the container is destroyed.
 
 Material Components: {'text': 'a gem, crystal, reliquary, or some other ornamental container worth at least 500 gp', 'cost': 500}"""
         spell_helper("Magic Jar")
+        spell_save('Ca')
 
     @with_category('Spells')
     def do_magic_missile(self, arg):
@@ -3164,6 +3418,10 @@ At Higher Levels: When you cast this spell using a spell slot of 2nd level or hi
 
 """
         spell_helper("Magic Missile")
+        arg = shlex.split(arg)
+        spell_level = int(arg.pop(0))
+        total = roll_d4(spell_level + 2, print_rolls)
+        print(' =', total, '+', spell_level + 2, '=', total + spell_level + 2)
 
     @with_category('Spells')
     def do_magic_mouth(self, arg):
@@ -3206,6 +3464,10 @@ At Higher Levels: When you cast this spell using a spell slot of 6th level or hi
 
 """
         spell_helper("Mass Cure Wounds")
+        global print_rolls
+        die_rolls = 3
+        minimum_spell_level = 5
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_mass_heal(self, arg):
@@ -3213,6 +3475,7 @@ At Higher Levels: When you cast this spell using a spell slot of 6th level or hi
 
 """
         spell_helper("Mass Heal")
+        print('Heal: 700')
 
     @with_category('Spells')
     def do_mass_healing_word(self, arg):
@@ -3222,6 +3485,10 @@ At Higher Levels: When you cast this spell using a spell slot of 4th level or hi
 
 """
         spell_helper("Mass Healing Word")
+        global print_rolls
+        die_rolls = 1
+        minimum_spell_level = 3
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_mass_suggestion(self, arg):
@@ -3237,6 +3504,7 @@ At Higher Levels: When you cast this spell using a 7th-level spell slot, the dur
 
 Material Components: a snake's tongue and either a bit of honeycomb or a drop of sweet oil"""
         spell_helper("Mass Suggestion")
+        spell_save('W')
 
     @with_category('Spells')
     def do_maze(self, arg):
@@ -3268,6 +3536,15 @@ At Higher Levels: When you cast this spell using a spell slot of 3rd level or hi
 
 Material Components: powdered rhubarb leaf and an adder's stomach"""
         spell_helper("Melf's Acid Arrow")
+        global print_rolls
+        print('Initial Damage: ', end='')
+        die_rolls = 4
+        minimum_spell_level = 2
+        cast_d4(die_rolls, minimum_spell_level, arg, print_rolls)
+        print('End of Turn: ', end='')
+        die_rolls = 2
+        minimum_spell_level = 3
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_mending(self, arg):
@@ -3295,6 +3572,14 @@ The spell damages objects in the area and ignites flammable objects that aren't 
 
 """
         spell_helper("Meteor Swarm")
+        spell_save('D')
+        global print_rolls
+        for i in range(0, 4):
+            print('Fire Damage: ', end='')
+            self.do_d6('20')
+            print('Bludgeoning Damage: ', end='')
+            self.do_d6('20')
+            print('\n')
 
     @with_category('Spells')
     def do_mind_blank(self, arg):
@@ -3378,6 +3663,7 @@ At Higher Levels: If you cast this spell using a spell slot of 6th level or high
 
 """
         spell_helper("Modify Memory")
+        spell_save('W')
 
     @with_category('Spells')
     def do_moonbeam(self, arg):
@@ -3393,6 +3679,11 @@ At Higher Levels: When you cast this spell using a spell slot of 3rd level or hi
 
 Material Components: several seeds of any moonseed plant and a piece of opalescent feldspar"""
         spell_helper("Moonbeam")
+        spell_save('C')
+        global print_rolls
+        die_rolls = 2
+        minimum_spell_level = 2
+        cast_d10(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_mordenkainens_faithful_hound(self, arg):
@@ -3439,6 +3730,7 @@ When the sword appears, you make a melee spell attack against a target of your c
 
 Material Components: {'text': 'a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp', 'cost': 250}"""
         spell_helper("Mordenkainen's Sword")
+        self.do_d10('3')
 
     @with_category('Spells')
     def do_move_earth(self, arg):
@@ -3487,6 +3779,11 @@ At Higher Levels: When you cast this spell using a spell slot of 7th level or hi
 
 Material Components: a small crystal sphere"""
         spell_helper("Otiluke's Freezing Sphere")
+        spell_save('C')
+        global print_rolls
+        die_rolls = 10
+        minimum_spell_level = 6
+        cast_d6(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_otilukes_resilient_sphere(self, arg):
@@ -3500,6 +3797,7 @@ A disintegrate spell targeting the globe destroys it without harming anything in
 
 Material Components: a hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic"""
         spell_helper("Otiluke's Resilient Sphere")
+        spell_save('D')
 
     @with_category('Spells')
     def do_ottos_irresistible_dance(self, arg):
@@ -3509,6 +3807,7 @@ A dancing creature must use all its movement to dance without leaving its space 
 
 """
         spell_helper("Otto's Irresistible Dance")
+        spell_save('W')
 
     @with_category('Spells')
     def do_pass_without_trace(self, arg):
@@ -3540,6 +3839,8 @@ An affected target is so convinced of the phantasm's reality that it can even ta
 
 Material Components: a bit of fleece"""
         spell_helper("Phantasmal Force")
+        spell_save('I')
+        self.do_d6()
 
     @with_category('Spells')
     def do_phantasmal_killer(self, arg):
@@ -3549,6 +3850,11 @@ At Higher Levels: When you cast this spell using a spell slot of 5th level or hi
 
 """
         spell_helper("Phantasmal Killer")
+        spell_save('W')
+        global print_rolls
+        die_rolls = 4
+        minimum_spell_level = 4
+        cast_d10(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_phantom_steed(self, arg):
@@ -3586,6 +3892,7 @@ At Higher Levels: When you cast this spell using a spell slot of a higher level,
 
 Material Components: {'text': 'a jewel worth at least 1,000 gp, which the spell consumes', 'cost': 1000, 'consume': True}"""
         spell_helper("Planar Binding")
+        spell_save('Ca')
 
     @with_category('Spells')
     def do_plane_shift(self, arg):
@@ -3597,6 +3904,7 @@ You can use this spell to banish an unwilling creature to another plane. Choose 
 
 Material Components: {'text': 'a forked, metal rod worth at least 250 gp, attuned to a particular plane of existence', 'cost': 250}"""
         spell_helper("Plane Shift")
+        spell_save('Ca')
 
     @with_category('Spells')
     def do_plant_growth(self, arg):
@@ -3619,6 +3927,11 @@ This spell's damage increases by 1d12 when you reach 5th level 2d12, 11th level 
 
 """
         spell_helper("Poison Spray")
+        spell_save('C')
+        global print_rolls
+        die_rolls = 1
+        minimum_spell_level = 1
+        cast_d12(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_polymorph(self, arg):
@@ -3634,6 +3947,7 @@ The target's gear melds into the new form. The creature can't activate, use, wie
 
 Material Components: a caterpillar cocoon"""
         spell_helper("Polymorph")
+        spell_save('W')
 
     @with_category('Spells')
     def do_power_word_heal(self, arg):
@@ -3666,6 +3980,10 @@ At Higher Levels: When you cast this spell using a spell slot of 3rd level or hi
 
 """
         spell_helper("Prayer of Healing")
+        global print_rolls
+        die_rolls = 2
+        minimum_spell_level = 2
+        cast_d8(die_rolls, minimum_spell_level, arg, print_rolls)
 
     @with_category('Spells')
     def do_prestidigitation(self, arg):
@@ -3682,24 +4000,27 @@ If you cast this spell multiple times, you can have up to three of its non-insta
     def do_prismatic_spray(self, arg):
         """Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it.
 
-{'type': 'entries', 'name': '1-Red', 'entries': ['The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.']}
+1-Red: The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.
 
-{'type': 'entries', 'name': '2-Orange', 'entries': ['The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.']}
+2-Orange: The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.
 
-{'type': 'entries', 'name': '3-Yellow', 'entries': ['The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.']}
+3-Yellow: 'The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.
 
-{'type': 'entries', 'name': '4-Green', 'entries': ['The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one.']}
+4-Green: The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one.
 
-{'type': 'entries', 'name': '5-Blue', 'entries': ['The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one.']}
+5-Blue: The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one.
 
-{'type': 'entries', 'name': '6-Indigo', 'entries': ["On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive, keep track of both until the target collects three of a kind."]}
+6-Indigo: On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive, keep track of both until the target collects three of a kind.
 
-{'type': 'entries', 'name': '7-Violet', 'entries': ["On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)"]}
+7-Violet: On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.
 
-{'type': 'entries', 'name': '8-Special', 'entries': ['The target is struck by two rays. Roll twice more, rerolling any 8.']}
+8-Special: The target is struck by two rays. Roll twice more, rerolling any 8.
 
 """
         spell_helper("Prismatic Spray")
+        spell_save('D')
+        global print_rolls
+        self.do_d6('10')
 
     @with_category('Spells')
     def do_prismatic_wall(self, arg):
@@ -3711,22 +4032,25 @@ The wall consists of seven layers, each with a different color. When a creature 
 
 The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. An antimagic field has no effect on a prismatic wall.
 
-{'type': 'entries', 'name': 'Red', 'entries': ["The creature takes 10d6 fire damage on a failed save, or half as much damage on a successful one. While this layer is in place, nonmagical ranged attacks can't pass through the wall. The layer can be destroyed by dealing at least 25 cold damage to it."]}
+Red: The creature takes 10d6 fire damage on a failed save, or half as much damage on a successful one. While this layer is in place, nonmagical ranged attacks can't pass through the wall. The layer can be destroyed by dealing at least 25 cold damage to it.
 
-{'type': 'entries', 'name': 'Orange', 'entries': ["The creature takes 10d6 acid damage on a failed save, or half as much damage on a successful one. While this layer is in place, magical ranged attacks can't pass through the wall. The layer is destroyed by a strong wind."]}
+Orange: The creature takes 10d6 acid damage on a failed save, or half as much damage on a successful one. While this layer is in place, magical ranged attacks can't pass through the wall. The layer is destroyed by a strong wind.
 
-{'type': 'entries', 'name': 'Yellow', 'entries': ['The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 60 force damage to it.']}
+Yellow: The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 60 force damage to it.
 
-{'type': 'entries', 'name': 'Green', 'entries': ['The creature takes 10d6 poison damage on a failed save, or half as much damage on a successful one. A passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.']}
+Green: The creature takes 10d6 poison damage on a failed save, or half as much damage on a successful one. A passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.
 
-{'type': 'entries', 'name': 'Blue', 'entries': ['The creature takes 10d6 cold damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 25 fire damage to it.']}
+Blue: The creature takes 10d6 cold damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 25 fire damage to it.
 
-{'type': 'entries', 'name': 'Indigo', 'entries': ["On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive; keep track of both until the creature collects three of a kind.", "While this layer is in place, spells can't be cast through the wall. The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level."]}
+Indigo: On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive; keep track of both until the creature collects three of a kind.", "While this layer is in place, spells can't be cast through the wall. The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level.
 
-{'type': 'entries', 'name': 'Violet', 'entries': ["On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects."]}
+Violet: On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects.
 
 """
         spell_helper("Prismatic Wall")
+        for i in range(0, 5):
+            self.do_d6('10')
+            print('\n')
 
     @with_category('Spells')
     def do_produce_flame(self, arg):
@@ -4755,288 +5079,6 @@ An affected creature is aware of the spell and can thus avoid answering question
         spell_helper("Zone of Truth")
 
     @with_category('Spells')
-    def do_abi_dalzims_horrid_wilting(self, arg):
-        """You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren't affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 12d8 necrotic damage on a failed save, or half as much damage on a successful one.
-
-Nonmagical plants in the area that aren't creatures, such as trees and shrubs, wither and die instantly.
-
-Material Components: a bit of sponge"""
-        spell_helper("Abi-Dalzim's Horrid Wilting")
-
-    @with_category('Spells')
-    def do_absorb_elements(self, arg):
-        """The spell captures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggering damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.
-
-At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.
-
-"""
-        spell_helper("Absorb Elements")
-
-    @with_category('Spells')
-    def do_aganazzars_scorcher(self, arg):
-        """A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one.
-
-At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
-
-Material Components: a red dragon's scale"""
-        spell_helper("Aganazzar's Scorcher")
-
-    @with_category('Spells')
-    def do_beast_bond(self, arg):
-        """You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast's Intelligence score is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet of you that you can see.
-
-Material Components: a bit of fur wrapped in a cloth"""
-        spell_helper("Beast Bond")
-
-    @with_category('Spells')
-    def do_bones_of_the_earth(self, arg):
-        """You cause up to six pillars of stone to burst from places on the ground that you can see within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet. The ground where a pillar appears must be wide enough for its diameter, and you can target the ground under a creature if that creature is Medium or smaller. Each pillar has AC 5 and 30 hit points. When reduced to 0 hit points, a pillar crumbles into rubble, which creates an area of difficult terrain with a 10-foot radius that lasts until the rubble is cleared. Each 5-foot-diameter portion of the area requires at least 1 minute to clear by hand.
-
-If a pillar is created under a creature, that creature must succeed on a Dexterity saving throw or be lifted by the pillar. A creature can choose to fail the save.
-
-If a pillar is prevented from reaching its full height because of a ceiling or other obstacle, a creature on the pillar takes 6d6 bludgeoning damage and is restrained, pinched between the pillar and the obstacle. The restrained creature can use an action to make a Strength or Dexterity check (the creature's choice) against the spell's save DC. On a success, the creature is no longer restrained and must either move off the pillar or fall off it.
-
-At Higher Levels: When you cast this spell using a spell slot of 7th level or higher, you can create two additional pillars for each slot level above 6th.
-
-"""
-        spell_helper("Bones of the Earth")
-
-    @with_category('Spells')
-    def do_catapult(self, arg):
-        """Choose one object weighing 1 to 5 pounds within range that isn't being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. When the object strikes something, the object and what it strikes each take 3d8 bludgeoning damage.
-
-At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by 1d8, for each slot level above 1st.
-
-"""
-        spell_helper("Catapult")
-
-    @with_category('Spells')
-    def do_catnap(self, arg):
-        """You make a calming gesture, and up to three willing creatures of your choice that you can see within range fall unconscious for the spell's duration. The spell ends on a target early if it takes damage or someone uses an action to shake or slap it awake. If a target remains unconscious for the full duration, that target gains the benefit of a short rest, and it can't be affected by this spell again until it finishes a long rest.
-
-At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3rd.
-
-Material Components: a pinch of sand"""
-        spell_helper("Catnap")
-
-    @with_category('Spells')
-    def do_cause_fear(self, arg):
-        """You awaken the sense of mortality in one creature you can see within range. A construct or an undead is immune to this effect. The target must succeed on a Wisdom saving throw or become frightened of you until the spell ends. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
-
-At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
-
-"""
-        spell_helper("Cause Fear")
-
-    @with_category('Spells')
-    def do_ceremony(self, arg):
-        """You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.
-
-{'type': 'entries', 'name': 'Atonement', 'entries': ['You touch one willing creature whose alignment has changed, and you make a DC 20 Wisdom (Insight) check. On a successful check, you restore the target to its original alignment.']}
-
-{'type': 'entries', 'name': 'Bless Water', 'entries': ['You touch one vialphb of water and cause it to become Holy Water (flask)phbholy water.']}
-
-{'type': 'entries', 'name': 'Coming of Age', 'entries': ['You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a d4 and add the number rolled to the ability check. A creature can benefit from this rite only once.']}
-
-{'type': 'entries', 'name': 'Dedication', 'entries': ["You touch one humanoid who wishes to be dedicated to your god's service. For the next 24 hours, whenever the target makes a saving throw, it can roll a d4 and add the number rolled to the save. A creature can benefit from this rite only once."]}
-
-{'type': 'entries', 'name': 'Funeral Rite', 'entries': ["You touch one corpse, and for the next 7 days, the target can't become undead by any means short of a wish spell."]}
-
-{'type': 'entries', 'name': 'Wedding', 'entries': ['You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed.']}
-
-Material Components: {'text': '25 gp worth of powdered silver, which the spell consumes', 'cost': 25, 'consume': True}"""
-        spell_helper("Ceremony")
-
-    @with_category('Spells')
-    def do_chaos_bolt(self, arg):
-        """You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attack's damage type, as shown below.
-
-At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, each target takes 2d8 1d6 extra damage of the type rolled for each slot level above 1st.
-
-"""
-        spell_helper("Chaos Bolt")
-
-    @with_category('Spells')
-    def do_charm_monster(self, arg):
-        """You attempt to charm a creature you can see within range. It must make a Wisdom saving throw, and it does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature is friendly to you. When the spell ends, the creature knows it was charmed by you.
-
-At Higher Levels: When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them.
-
-"""
-        spell_helper("Charm Monster")
-
-    @with_category('Spells')
-    def do_control_flames(self, arg):
-        """You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:
-
-{'type': 'list', 'items': ['You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.', 'You instantaneously extinguish the flames within the cube.', 'You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.', 'You cause simple shapes such as the vague form of a creature, an inanimate object, or a location 4to appear within the flames and animate as you like. The shapes last for 1 hour.']}
-
-If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action.
-
-"""
-        spell_helper("Control Flames")
-
-    @with_category('Spells')
-    def do_control_winds(self, arg):
-        """You take control of the air in a 100-foot cube that you can see within range. Choose one of the following effects when you cast the spell. The effect lasts for the spell's duration, unless you use your action on a later turn to switch to a different effect. You can also use your action to temporarily halt the effect or to restart one you've halted.
-
-{'type': 'entries', 'name': 'Gusts', 'entries': ['A wind picks up within the cube, continually blowing in a horizontal direction you designate. You choose the intensity of the wind: calm, moderate, or strong. If the wind is moderate or strong, ranged weapon attacks that pass through it or that are made against targets within the cube have disadvantage on their attack rolls. If the wind is strong, any creature moving against the wind must spend 1 extra foot of movement for each foot moved.']}
-
-{'type': 'entries', 'name': 'Downdraft', 'entries': ['You cause a sustained blast of strong wind to blow downward from the top of the cube. Ranged weapon attacks that pass through the cube or that are made against targets within it have disadvantage on their attack rolls. A creature must make a Strength saving throw if it flies into the cube for the first time on a turn or starts its turn there flying. On a failed save, the creature is knocked prone.']}
-
-{'type': 'entries', 'name': 'Updraft', 'entries': ["You cause a sustained updraft within the cube, rising upward from the cube's bottom side. Creatures that end a fall within the cube take only half damage from the fall. When a creature in the cube makes a vertical jump, the creature can jump up to 10 feet higher than normal."]}
-
-"""
-        spell_helper("Control Winds")
-
-    @with_category('Spells')
-    def do_create_bonfire(self, arg):
-        """You create a bonfire on ground that you can see within range. Until the spell ends, the magic bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it moves into the bonfire's space for the first time on a turn or ends its turn there.
-
-The bonfire ignites flammable objects in its area that aren't being worn or carried.
-
-The spell's damage increases by 1d8 when you reach 5th level 2d8, 11th level 3d8, and 17th level 4d8.
-
-"""
-        spell_helper("Create Bonfire")
-
-    @with_category('Spells')
-    def do_create_homunculus(self, arg):
-        """While speaking an intricate incantation, you cut yourself with a jewel-encrusted dagger, taking 2d4 piercing damage that can't be reduced in any way. You then drip your blood on the spell's other components and touch them, transforming them into a special construct called a homunculus.
-
-The statistics of the homunculus are in the Monster Manual. It is your faithful companion, and it dies if you die. Whenever you finish a long rest, you can spend up to half your Hit Dice if the homunculus is on the same plane of existence as you. When you do so, roll each die and add your Constitution modifier to it. Your hit point maximum is reduced by the total, and the homunculus's hit point maximum and current hit points are both increased by it. This process can reduce you to no lower than 1 hit point, and the change to your and the homunculus's hit points ends when you finish your next long rest. The reduction to your hit point maximum can't be removed by any means before then, except by the homunculus's death.
-
-You can have only one homunculus at a time. If you cast this spell while your homunculus lives, the spell fails.
-
-Material Components: {'text': 'clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 1,000 gp', 'cost': 1000, 'consume': True}"""
-        spell_helper("Create Homunculus")
-
-    @with_category('Spells')
-    def do_crown_of_stars(self, arg):
-        """Seven star-like motes of light appear and orbit your head until the spell ends. You can use a bonus action to send one of the motes streaking toward one creature or object within 120 feet of you. When you do so, make a ranged spell attack. On a hit, the target takes 4d12 radiant damage. Whether you hit or miss, the mote is expended. The spell ends early if you expend the last mote.
-
-If you have four or more motes remaining, they shed bright light in a 30-foot radius and dim light for an additional 30 feet. If you have one to three motes remaining, they shed dim light in a 30-foot radius.
-
-At Higher Levels: When you cast this spell using a spell slot of 8th level or higher, the number of motes created increases by two for each slot level above 7th.
-
-"""
-        spell_helper("Crown of Stars")
-
-    @with_category('Spells')
-    def do_danse_macabre(self, arg):
-        """Threads of dark power leap from your fingers to pierce up to five Small or Medium corpses you can see within range. Each corpse immediately stands up and becomes undead. You decide whether it is a zombie or a skeleton (the statistics for zombiemmzombies and skeletonmmskeletons are in the Monster Manual), and it gains a bonus to its attack and damage rolls equal to your spellcasting ability modifier.
-
-You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.
-
-The creatures are under your control until the spell ends, after which they become inanimate once more.
-
-At Higher Levels: When you cast this spell using a spell slot of 6th level or higher, you animate up to two additional corpses for each slot level above 5th.
-
-"""
-        spell_helper("Danse Macabre")
-
-    @with_category('Spells')
-    def do_dawn(self, arg):
-        """The light of dawn shines down on a location you specify within range. Until the spell ends, a 30-foot-radius, 40-foot-high cylinder of bright light glimmers there. This light is sunlight.
-
-When the cylinder appears, each creature in it must make a Constitution saving throw, taking 4d10 radiant damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw whenever it ends its turn in the cylinder.
-
-If you're within 60 feet of the cylinder, you can move it up to 60 feet as a bonus action on your turn.
-
-Material Components: {'text': 'a sunburst pendant worth at least 100 gp', 'cost': 100}"""
-        spell_helper("Dawn")
-
-    @with_category('Spells')
-    def do_dragons_breath(self, arg):
-        """You touch one willing creature and imbue it with the power to spew magical energy from its mouth, provided it has one. Choose acid, cold, fire, lightning, or poison. Until the spell ends, the creature can use an action to exhale energy of the chosen type in a 15-foot cone. Each creature in that area must make a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save, or half as much damage on a successful one.
-
-At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.
-
-Material Components: a hot pepper"""
-        spell_helper("Dragon's Breath")
-
-    @with_category('Spells')
-    def do_druid_grove(self, arg):
-        """You invoke the spirits of nature to protect an area outdoors or underground. The area can be as small as a 30-foot cube or as large as a 90-foot cube. Buildings and other structures are excluded from the affected area. If you cast this spell in the same area every day for a year, the spell lasts until dispelled.
-
-The spell creates the following effects within the area. When you cast this spell, you can specify creatures as friends who are immune to the effects. You can also specify a password that, when spoken aloud, makes the speaker immune to these effects.
-
-The entire warded area radiates magic. A dispel magic cast on the area, if successful, removes only one of the following effects, not the entire area. That spell's caster chooses which effect to end. Only when all its effects are gone is this spell dispelled.
-
-{'type': 'entries', 'name': 'Solid Fog', 'entries': ['You can fill any number of 5-foot squares on the ground with thick fog, making them heavily obscured. The fog reaches 10 feet high. In addition, every foot of movement through the fog costs 2 extra feet. To a creature immune to this effect, the fog obscures nothing and looks like soft mist, with motes of green light floating in the air.']}
-
-{'type': 'entries', 'name': 'Grasping Undergrowth', 'entries': ["You can fill any number of 5-foot squares on the ground that aren't filled with fog with grasping weeds and vines, as if they were affected by an entangle spell. To a creature immune to this effect, the weeds and vines feel soft and reshape themselves to serve as temporary seats or beds."]}
-
-{'type': 'entries', 'name': 'Grove Guardians', 'entries': ["You can animate up to four trees in the area, causing them to uproot themselves from the ground. These trees have the same statistics as an awakened tree, which appears in the Monster Manual, except they can't speak, and their bark is covered with druidic symbols. If any creature not immune to this effect enters the warded area, the grove guardians fight until they have driven off or slain the intruders. The grove guardians also obey your spoken commands (no action required by you) that you issue while in the area. If you don't give them commands and no intruders are present, the grove guardians do nothing. The grove guardians can't leave the warded area. When the spell ends, the magic animating them disappears, and the trees take root again if possible."]}
-
-{'type': 'entries', 'name': 'Additional Spell Effect', 'entries': ['You can place your choice of one of the following magical effects within the warded area:']}
-
-{'type': 'list', 'items': ['A constant gust of wind in two locations of your choice', 'Spike growth in one location of your choice', 'Wind wall in two locations of your choice']}
-
-To a creature immune to this effect, the winds are a fragrant, gentle breeze, and the area of spike growth is harmless.
-
-Material Components: {'text': 'mistletoe, which the spell consumes, that was harvested with a golden sickle under the light of a full moon', 'consume': True}"""
-        spell_helper("Druid Grove")
-
-    @with_category('Spells')
-    def do_dust_devil(self, arg):
-        """Choose an unoccupied 5-foot cube of air that you can see within range. An elemental force that resembles a dust devil appears in the cube and lasts for the spell's duration.
-
-Any creature that ends its turn within 5 feet of the dust devil must make a Strength saving throw. On a failed save, the creature takes 1d8 bludgeoning damage and is pushed 10 feet away from the dust devil. On a successful save, the creature takes half as much damage and isn't pushed.
-
-As a bonus action, you can move the dust devil up to 30 feet in any direction. If the dust devil moves over sand, dust, loose dirt, or light gravel, it sucks up the material and forms a 10-foot-radius cloud of debris around itself that lasts until the start of your next turn. The cloud heavily obscures its area.
-
-At Higher Levels: When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
-
-Material Components: a pinch of dust"""
-        spell_helper("Dust Devil")
-
-    @with_category('Spells')
-    def do_earth_tremor(self, arg):
-        """You cause a tremor in the ground within range. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes 1d6 bludgeoning damage and is knocked prone. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand.
-
-At Higher Levels: When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.
-
-"""
-        spell_helper("Earth Tremor")
-
-    @with_category('Spells')
-    def do_earthbind(self, arg):
-        """Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw, or its flying speed (if any) is reduced to 0 feet for the spell's duration. An airborne creature affected by this spell safely descends at 60 feet per round until it reaches the ground or the spell ends.
-
-"""
-        spell_helper("Earthbind")
-
-    @with_category('Spells')
-    def do_elemental_bane(self, arg):
-        """Choose one creature you can see within range, and choose one of the following damage types: acid, cold, fire, lightning, or thunder. The target must succeed on a Constitution saving throw or be affected by the spell for its duration. The first time each turn the affected target takes damage of the chosen type, the target takes an extra 2d6 damage of that type. Moreover, the target loses any resistance to that damage type until the spell ends.
-
-At Higher Levels: When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them.
-
-"""
-        spell_helper("Elemental Bane")
-
-    @with_category('Spells')
-    def do_enemies_abound(self, arg):
-        """You reach into the mind of one creature you can see and force it to make an Intelligence saving throw. A creature automatically succeeds if it is immune to being frightened. On a failed save, the target loses the ability to distinguish friend from foe, regarding all creatures it can see as enemies until the spell ends. Each time the target takes damage, it can repeat the saving throw, ending the effect on itself on a success.
-
-Whenever the affected creature chooses another creature as a target, it must choose the target at random from among the creatures it can see within range of the attack, spell, or other ability it's using. If an enemy provokes an opportunity attack from the affected creature, the creature must make that attack if it is able to.
-
-"""
-        spell_helper("Enemies Abound")
-
-    @with_category('Spells')
-    def do_enervation(self, arg):
-        """A tendril of inky darkness reaches out from you, touching a creature you can see within range to drain life from it. The target must make a Dexterity saving throw. On a successful save, the target takes 2d8 necrotic damage, and the spell ends. On a failed save, the target takes 4d8 necrotic damage, and until the spell ends, you can use your action on each of your turns to automatically deal 4d8 necrotic damage to the target. The spell ends if you use your action to do anything else, if the target is ever outside the spell's range, or if the target has total cover from you.
-
-Whenever the spell deals damage to a target, you regain hit points equal to half the amount of necrotic damage the target takes.
-
-At Higher Levels: When you cast this spell using a spell slot of 6th level or higher, the damage increases by 4d8 1d8 for each slot level above 5th.
-
-"""
-        spell_helper("Enervation")
-
-    @with_category('Spells')
     def do_erupting_earth(self, arg):
         """Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes 3d12 bludgeoning damage on a failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.
 
@@ -6006,7 +6048,7 @@ def check_arg_range_100(arg):
         print('Invalid Argument')
 
 
-def check_arg_range_20(arg):
+def check_arg_range_20(arg) -> int:
     arg = shlex.split(arg)
     if len(arg) == 1 and str.isdigit(arg[0]):
         nr = int(arg[0])
@@ -6057,7 +6099,7 @@ def encounter_helper(arg, encounter_location):
                 print(dict.get(encounter, 'enc'))
                 break
     else:
-        print("This feature requires the players' level as input (1 - 20).")
+        print("This feature requires the players' level as input (1 - 20)")
 
 
 # This function looks like a mess.
@@ -6176,6 +6218,154 @@ def all_spell_helper():
         table.add_row(
             [level, name, casting_time, duration, range_area, attack_save, d_e, components, dict.get(schools, school)])
     print(table)
+
+
+def spell_save(type):
+    types = {'S': 'Strength', 'D': 'Dexterity', 'C': 'Constitution',
+             'I': 'Intelligence', 'W': 'Wisdom', 'Ca': 'Charisma'}
+    type = dict.get(types, type)
+    print(type, 'Save:', d20())
+
+
+def get_name(race, option):
+    if race is not 'Human':
+        options_dict = {'f': 'Female', 'm': 'Male', 'c': 'Clan', 'fa': 'Female Adult', 'ma': 'Male Adult', 'fam': 'Family',
+                        'dc': 'Duergar Clan', 'ch': 'Child', 'v': 'Virtue', 'gyf': 'Githyanki, Female',
+                        'gym:': 'Githyanki, Male', 'gzf': 'Githzerai, Female', 'gzm': 'Githzerai, Male'}
+        option = dict.get(options_dict, option)
+    all_names_json = open('data/names.json')
+    all_names_json = json.load(all_names_json)
+    all_names = all_names_json['name']
+    for name in all_names:
+        if dict.get(name, 'race') == race:
+            for options in dict.get(name, 'tables'):
+                if dict.get(options, 'option') == option:
+                    roll = d100() - 1
+                    for entries in dict.get(options, 'table'):
+                        if dict.get(entries, 'min') <= roll <= dict.get(entries, 'max'):
+                            print(dict.get(entries, 'enc'))
+                            break
+                    break
+            break
+
+
+def roll_loot(cr):
+    all_loot_json = open('data/loot.json')
+    all_loot_json = json.load(all_loot_json)
+    all_loot = all_loot_json['hoard']
+    for hoard in all_loot:
+        if hoard['mincr'] <= cr <= hoard['maxcr']:
+            roll = d100()
+            for table in hoard['table']:
+                if table['min'] <= roll <= table['max']:
+                    if 'artobjects' in table:
+                        get_art_objects(table['artobjects']['type'], table['artobjects']['amount'], all_loot_json)
+                    if 'gems' in table:
+                        get_gemstones(table['gems']['type'], table['gems']['amount'], all_loot_json)
+                    if 'magicitems' in table:
+                        if len(table['magicitems']['type']) == 1:
+                            get_magic_items(table['magicitems']['type'], table['magicitems']['amount'], all_loot_json)
+                        else:
+                            get_magic_items(table['magicitems']['type'], table['magicitems']['amount'], all_loot_json)
+                            get_magic_items(table['magicitems']['type'][2], table['magicitems']['amount'][4:], all_loot_json)
+
+
+def get_magic_items(table, amount, all_loot_json):
+    magic_items = all_loot_json['magicitems']
+    for tables in magic_items:
+        if tables['type'] == table:
+            number_of_rolls = amount[0]
+            dice = amount[1] + amount[2]
+            if dice == 'd1':
+                d100_roll = d100()
+                for item in tables['table']:
+                    if item['min'] <= d100_roll <= item['max']:
+                        if 'item' in item:
+                            print(item['item'])
+                        elif 'choose' in item:
+                            if 'fromGroup' in item['choose']:
+                                print(item['choose']['fromGroup'][0])
+                            elif 'fromGeneric' in item['choose']:
+                                print(item['choose']['fromGeneric'][0])
+            elif dice == 'd4':
+                roll = 0
+                for i in range(0, int(number_of_rolls)):
+                    roll += d4()
+                for i in range(0, roll):
+                    d100_roll = d100()
+                    for item in tables['table']:
+                        if item['min'] <= d100_roll <= item['max']:
+                            if 'item' in item:
+                                print(item['item'])
+                            elif 'choose' in item:
+                                if 'fromGroup' in item['choose']:
+                                    print(item['choose']['fromGroup'][0])
+                                elif 'fromGeneric' in item['choose']:
+                                    print(item['choose']['fromGeneric'][0])
+            elif dice == 'd6':
+                roll = 0
+                for i in range(0, int(number_of_rolls)):
+                    roll += d6()
+                for i in range(0, roll):
+                    d100_roll = d100()
+                    for item in tables['table']:
+                        if item['min'] <= d100_roll <= item['max']:
+                            if 'item' in item:
+                                print(item['item'])
+                            elif 'choose' in item:
+                                if 'fromGroup' in item['choose']:
+                                    print(item['choose']['fromGroup'][0])
+                                elif 'fromGeneric' in item['choose']:
+                                    print(item['choose']['fromGeneric'][0])
+    print('\n')
+
+
+def get_art_objects(table, amount, all_loot_json):
+    art_objects = all_loot_json['artobjects']
+    number_of_rolls = amount[0]
+    dice = amount[1] + amount[2]
+    for art in art_objects:
+        if table == art['type']:
+            print('\n' + art['name'] + ':')
+            if dice == 'd1':
+                print(art['table'][d10() - 1])
+            if dice == 'd4':
+                roll = 0
+                for i in range(0, int(number_of_rolls)):
+                    roll += d4()
+                for i in range(0, roll):
+                    print(art['table'][d10() - 1])
+            if dice == 'd6':
+                roll = 0
+                for i in range(0, int(number_of_rolls)):
+                    roll += d6()
+                for i in range(0, roll):
+                    print(art['table'][d10() - 1])
+    print('\n')
+
+
+def get_gemstones(table, amount, all_loot_json):
+    gemstones = all_loot_json['gemstones']
+    number_of_rolls = amount[0]
+    dice = amount[1] + amount[2]
+    for gem in gemstones:
+        if table == gem['type']:
+            print('\n' + gem['name'] + ':')
+            if dice == 'd1':
+                print(gem['table'][random.randint(0, len(gem['table']) - 1)])
+            if dice == 'd4':
+                roll = 0
+                for i in range(0, int(number_of_rolls)):
+                    roll += d4()
+                for i in range(0, roll):
+                    print(gem['table'][random.randint(0, len(gem['table']) - 1)])
+            if dice == 'd6':
+                roll = 0
+                for i in range(0, int(number_of_rolls)):
+                    roll += d6()
+                for i in range(0, roll):
+                    print(gem['table'][random.randint(0, len(gem['table']) - 1)])
+    print('\n')
 
 
 if __name__ == '__main__':
