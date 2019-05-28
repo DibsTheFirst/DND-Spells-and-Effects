@@ -238,7 +238,7 @@ def cast_d4(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, 
             print(' =', total, '+', additional_damage, '=', total_add)
 
 
-def cast_d6(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0):
+def cast_d6(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0, increment=1):
     die_rolls
     minimum_spell_level
     arg = shlex.split(arg)
@@ -250,6 +250,11 @@ def cast_d6(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, 
             arg.sort()
             if str.isdigit(arg[0]) and arg[1] == 'crit':
                 spell_level = int(arg.pop(0))
+                for i in range(0, increment):
+                    if (spell_level - minimum_spell_level - i) % increment == 0:
+                        temp_level = (spell_level - minimum_spell_level - i) / increment
+                        spell_level = minimum_spell_level + int(temp_level)
+                        break
                 if spell_level < minimum_spell_level:
                     print('Spell has to be cast at minimum %i level' % minimum_spell_level)
                 else:
@@ -263,6 +268,11 @@ def cast_d6(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, 
                 print('Invalid Arguments')
         elif len(arg) == 1 and str.isdigit(arg[0]):
             spell_level = int(arg.pop())
+            for i in range(0, increment):
+                if (spell_level - minimum_spell_level - i) % increment == 0:
+                    temp_level = (spell_level - minimum_spell_level - i) / increment
+                    spell_level = minimum_spell_level + int(temp_level)
+                    break
             if spell_level < minimum_spell_level:
                 print('Spell has to be cast at minimum %i level' % minimum_spell_level)
             else:
@@ -290,7 +300,7 @@ def cast_d6(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, 
             print(' =', total, '+', additional_damage, '=', total_add)
 
 
-def cast_d8(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0):
+def cast_d8(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0, increment=1):
     die_rolls
     minimum_spell_level
     arg = shlex.split(arg)
@@ -302,6 +312,11 @@ def cast_d8(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, 
             arg.sort()
             if str.isdigit(arg[0]) and arg[1] == 'crit':
                 spell_level = int(arg.pop(0))
+                for i in range(0, increment):
+                    if (spell_level - minimum_spell_level - i) % increment == 0:
+                        temp_level = (spell_level - minimum_spell_level - i) / increment
+                        spell_level = minimum_spell_level + int(temp_level)
+                        break
                 if spell_level < minimum_spell_level:
                     print('Spell has to be cast at minimum %i level' % minimum_spell_level)
                 else:
@@ -316,6 +331,11 @@ def cast_d8(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, 
                 print('Invalid Arguments')
         elif len(arg) == 1 and str.isdigit(arg[0]):
             spell_level = int(arg.pop())
+            for i in range(0, increment):
+                if (spell_level - minimum_spell_level - i) % increment == 0:
+                    temp_level = (spell_level - minimum_spell_level - i) / increment
+                    spell_level = minimum_spell_level + int(temp_level)
+                    break
             if spell_level < minimum_spell_level:
                 print('Spell has to be cast at minimum %i level' % minimum_spell_level)
             else:
@@ -343,7 +363,7 @@ def cast_d8(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, 
             print(' =', total, '+', additional_damage, '=', total_add)
 
 
-def cast_d10(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0):
+def cast_d10(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0, increment=1):
     die_rolls
     minimum_spell_level
     arg = shlex.split(arg)
@@ -355,6 +375,11 @@ def cast_d10(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1,
             arg.sort()
             if str.isdigit(arg[0]) and arg[1] == 'crit':
                 spell_level = int(arg.pop(0))
+                for i in range(0, increment):
+                    if (spell_level - minimum_spell_level - i) % increment == 0:
+                        temp_level = (spell_level - minimum_spell_level - i) / increment
+                        spell_level = minimum_spell_level + int(temp_level)
+                        break
                 if spell_level < minimum_spell_level:
                     print('Spell has to be cast at minimum %i level' % minimum_spell_level)
                 else:
@@ -369,6 +394,11 @@ def cast_d10(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1,
                 print('Invalid Arguments')
         elif len(arg) == 1 and str.isdigit(arg[0]):
             spell_level = int(arg.pop())
+            for i in range(0, increment):
+                if (spell_level - minimum_spell_level - i) % increment == 0:
+                    temp_level = (spell_level - minimum_spell_level - i) / increment
+                    spell_level = minimum_spell_level + int(temp_level)
+                    break
             if spell_level < minimum_spell_level:
                 print('Spell has to be cast at minimum %i level' % minimum_spell_level)
             else:
@@ -396,7 +426,7 @@ def cast_d10(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1,
             print(' =', total, '+', additional_damage, '=', total_add)
 
 
-def cast_d12(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0):
+def cast_d12(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0, increment=1):
     die_rolls
     minimum_spell_level
     arg = shlex.split(arg)
@@ -408,6 +438,11 @@ def cast_d12(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1,
             arg.sort()
             if str.isdigit(arg[0]) and arg[1] == 'crit':
                 spell_level = int(arg.pop(0))
+                for i in range(0, increment):
+                    if (spell_level - minimum_spell_level - i) % increment == 0:
+                        temp_level = (spell_level - minimum_spell_level - i) / increment
+                        spell_level = minimum_spell_level + int(temp_level)
+                        break
                 if spell_level < minimum_spell_level:
                     print('Spell has to be cast at minimum %i level' % minimum_spell_level)
                 else:
@@ -422,6 +457,11 @@ def cast_d12(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1,
                 print('Invalid Arguments')
         elif len(arg) == 1 and str.isdigit(arg[0]):
             spell_level = int(arg.pop())
+            for i in range(0, increment):
+                if (spell_level - minimum_spell_level - i) % increment == 0:
+                    temp_level = (spell_level - minimum_spell_level - i) / increment
+                    spell_level = minimum_spell_level + int(temp_level)
+                    break
             if spell_level < minimum_spell_level:
                 print('Spell has to be cast at minimum %i level' % minimum_spell_level)
             else:
@@ -449,7 +489,7 @@ def cast_d12(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1,
             print(' =', total, '+', additional_damage, '=', total_add)
 
 
-def cast_d20(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0):
+def cast_d20(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0, increment=1):
     die_rolls
     minimum_spell_level
     arg = shlex.split(arg)
@@ -461,6 +501,11 @@ def cast_d20(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1,
             arg.sort()
             if str.isdigit(arg[0]) and arg[1] == 'crit':
                 spell_level = int(arg.pop(0))
+                for i in range(0, increment):
+                    if (spell_level - minimum_spell_level - i) % increment == 0:
+                        temp_level = (spell_level - minimum_spell_level - i) / increment
+                        spell_level = minimum_spell_level + int(temp_level)
+                        break
                 if spell_level < minimum_spell_level:
                     print('Spell has to be cast at minimum %i level' % minimum_spell_level)
                 else:
@@ -475,6 +520,11 @@ def cast_d20(die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1,
                 print('Invalid Arguments')
         elif len(arg) == 1 and str.isdigit(arg[0]):
             spell_level = int(arg.pop())
+            for i in range(0, increment):
+                if (spell_level - minimum_spell_level - i) % increment == 0:
+                    temp_level = (spell_level - minimum_spell_level - i) / increment
+                    spell_level = minimum_spell_level + int(temp_level)
+                    break
             if spell_level < minimum_spell_level:
                 print('Spell has to be cast at minimum %i level' % minimum_spell_level)
             else:
@@ -536,4 +586,38 @@ def cast_d100(die_rolls, minimum_spell_level, arg):
             print('Invalid Argument')
     else:
         total = roll_d100(die_rolls, print_rolls)
+        print(' =', total)
+
+
+def roll_dice(dice: str, die_rolls, minimum_spell_level, arg, print_rolls, dice_per_level=1, additional_damage=0, increment=1):
+    die_rolls
+    minimum_spell_level
+    arg = shlex.split(arg)
+    if arg:
+        if len(arg) > 2:
+            print('Too many arguments')
+            return
+        elif len(arg) == 2:
+            arg.sort()
+            if str.isdigit(arg[0]) and arg[1] == 'crit':
+                spell_level = int(arg.pop(0))
+                if spell_level < minimum_spell_level:
+                    print('Spell has to be cast at minimum %i level' % minimum_spell_level)
+                else:
+                    total = exec('roll_' + dice + '(die_rolls, print_rolls)')
+            else:
+                print('Invalid Arguments')
+        elif len(arg) == 1 and str.isdigit(arg[0]):
+            spell_level = int(arg.pop())
+            if spell_level < minimum_spell_level:
+                print('Spell has to be cast at minimum %i level' % minimum_spell_level)
+            else:
+                total = exec('roll_' + dice + '(die_rolls, print_rolls)')
+        elif len(arg) == 1 and arg[0] == 'crit':
+            total = roll_d20(die_rolls, print_rolls)
+
+        else:
+            print('Invalid Argument')
+    else:
+        total = exec('roll_' + dice + '(die_rolls + ((spell_level - minimum_spell_level) * dice_per_level), print_rolls)')
         print(' =', total)
